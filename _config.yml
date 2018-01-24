@@ -13,24 +13,28 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: James Leahy
+title: "James Leahy"
 email: defuncart@gmail.com
-description: A 2D mobile game developer with a pasion for music composition and language learning.
+description: >- # this means to ignore newlines until "baseurl:"
+  2D Mobile Game Developer. Specialized in Unity.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: defuncart
 github_username:  defuncart
+#show_downloads: true
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: jekyll-theme-tactile
 plugins:
 #  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
+exclude:
+- ".gitignore"
+- vendor
 #   - Gemfile
 #   - Gemfile.lock
 #   - node_modules

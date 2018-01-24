@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Caoga caoga
+description: A fun Irish language learning game.
 permalink: /games/caogacaoga/
 ---
 
