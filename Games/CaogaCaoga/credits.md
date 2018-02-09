@@ -9,50 +9,33 @@ permalink: /games/caogacaoga/credits
 
 **Concept**, **Design** and **Programming** by James Leahy.
 
-<strong>Special</strong> thanks to my friends and family for all their supports, and everyone who took part in the early-access testing phase for their invaluable feedback.
+<strong>Special</strong> thanks to my friends and family for all their support, and everyone who took part in the early-access testing phase for their invaluable feedback.
 
 ## Artwork
 
-All artwork by James Leahy except:
+Illustrations by [Freepik](https://freepik.com), edited by James Leahy except:
+- colors by James Leahy
+- numbers1 by James Leahy
+- numbers2 by James Leahy
+- numbers4 utilizes [Emoji](https://github.com/mozilla/fxemoji/blob/gh-pages/LICENSE.md) by Mozilla, edited (no clock face). 'second', 'minute', 'hour' feature font ['ww-digital'](http://www.dafont.com/de/ww-digital.font) by Michelle Laura
+- emotions utilizes Emoji by Mozilla
+- countries edited from [Flagpedia](http://flagpedia.net/)
+- places2/busStop by Graphiqastock / Freepik, edited by James Leahy
+- places3/gasStation by iconicbestiary / Freepik, edited by James Leahy
 
--f
+Logo by James Leahy.
 
-Assets/Resources/Spites/UI by James Leahy
+Photos courtesy of [Pixabay](https://pixabay.com/) (licensed under CC0).
 
-Assets/Resources/Spites/Words by Freepix, edited by James Leahy, except:
-/colors by James Leahy
-/numbers1 by James Leahy
-/numbers2 by James Leahy
-/numbers4 utilizes Emoji by Mozilla, edited (no clock face). 'second', 'minute', 'hour' feature font 'ww-digital' by Michelle Laura http://www.dafont.com/de/ww-digital.font
-/emotions utilizes Emoji by Mozilla
-/countries edited from Flagpedia
-/places2/busStop by Graphiqastock / Freepik, edited by James Leahy
-/places3/gasStation by iconicbestiary / Freepik, edited by James Leahy
-Photos are by Pixabay, licenced under CC0.
-
-Game logo by James Leahy
-
-Assets/Sprites/Onboarding by Freepix, edited by James Leahy
-
-Assets/Sprites/UI by James leahy except:
-avatar, levelLocked and levelTestHolder by Freepix, edited by James Leahy
-home, play, repeat, return and video by Kenney
-levelHolder by zirconicusso/Freepik
-
-Links
-http://www.abair.tcd.ie/
-http://flagpedia.net/
-https://freepik.com
-https://github.com/mozilla/fxemoji/blob/gh-pages/LICENSE.md
-https://kenney.nl/
-https://pixabay.com/
-https://responsivevoice.org/license/
+UI artwork by James Leahy except:
+- levelLocked and levelTestHolder by Freepix, edited by James Leahy
+- levelHolder by zirconicusso/Freepik
 
 ## Audio
 
 All sound effects composed by Gray Dawn.
 
-Irish words courtesy of Teanglann. Some words were synthesized by ABAIR, TCD.
+Recordings of native speakers courtesy of [Teanglann](http://www.teanglann.ie/ga). Some words were synthesized by [ABAIR, TCD](http://www.abair.tcd.ie/).
 
 ## Translation
 
