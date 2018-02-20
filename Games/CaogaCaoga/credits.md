@@ -36,7 +36,7 @@ UI artwork by James Leahy except:
 
 All sound effects composed by Gray Dawn.
 
-Recordings of native speakers courtesy of Teanglann's [Pronunciation Database](http://www.teanglann.ie/en/fuaim/). Some words were synthesized by [ABAIR, TCD](http://www.abair.tcd.ie/).
+Recordings of native speakers courtesy of Teanglann's [Pronunciation Database](http://www.teanglann.ie/en/fuaim/). Remaining words were synthesized by [ABAIR, TCD](http://www.abair.tcd.ie/).
 
 ## Translation
 
