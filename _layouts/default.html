@@ -29,34 +29,20 @@
             {% assign page_paths = site.header_pages | default: default_paths %}
             {% if page_paths %}
               <div class="trigger">
-                <!-- <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a> -->
                 <a class="site-title" rel="author" href="{{ "/" | relative_url }}">Home</a>
                 <span>&emsp;</span>
-                <!-- <a class="page-link" rel="author" href="{{ relative_url }}/games">Games</a> -->
-                <!-- <span>&emsp;</span> -->
-                <a class="page-link" rel="author" href="{{ relative_url }}/games/caogacaoga">Caoga caoga</a>
+                <a class="site-title" rel="author" href="{{ relative_url }}/games">Games</a>
                 <span>&emsp;</span>
-                <a class="page-link" rel="author" href="{{ relative_url }}/games/polnapol">Pół na pół</a>
+                <a class="site-title" rel="author" href="{{ relative_url }}/music">Music</a>
                 <span>&emsp;</span>
-                <!-- <a class="page-link" rel="author" href="{{ relative_url }}/blog">Blog</a> -->
-                <!-- <span>&emsp;</span> -->
-
-                <!-- {% for path in page_paths %}
-                  {% assign my_page = site.pages | where: "path", path | first %}
-                  {% if my_page.title %}
-                    <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-                    <span>&emsp;</span>
-                  {% endif %}
-                {% endfor %} -->
+                <a class="site-title" rel="author" href="{{ relative_url }}/about">About</a>
+                <span>&emsp;</span>
               </div>
-            <!-- </nav> -->
             {% endif %}
           </div>
-          <p></p> <!-- divider -->
+          <p></p>
 
-          <!-- {% include navigation.html context="/" %} -->
           <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-          <!-- <h2>{{ page.description | default: site.description | default: site.github.project_tagline }}</h2> -->
           {% if page.description %}
             <h2>{{ page.description }}</h2>
           {% endif %}

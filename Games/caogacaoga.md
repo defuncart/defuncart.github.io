@@ -9,20 +9,24 @@ permalink: /games/caogacaoga/
 
 *Caoga caoga* is a fun Irish vocabulary learning game where beginners of all ages learn vocabulary by associating words with descriptive images.
 
-The game consists of twenty-four topics with over 450 words for A1/A2 and B1 CERF language learners, and four fun word-image games: Fifty-Fifty, Multiple Choice, Matching and Spelling. Pronunciation recordings of native speakers are included.
+- 24 topics with over 450 words for A1/A2 and B1 CERF language learners.
+- Four fun word-image games: Fifty-Fifty, Multiple Choice, Matching and Spelling.
+- Pronunciation recordings of native speakers in three dialects: Connacht, Munster and Ulster.
+- Bite-sized lessons which can be completed on the go or fitted into a busy schedule.
+- 100% free, no ads and works offline.
 
-<!-- ![]({{site.url}}/assets/images/games/caogacaoga/caogacaoga.gif) -->
+{% include youtube.html id="fgzioREqJuo" %}
 
-{% include youtube.html id="W84aUrFof_U" %}
+Whether you are studying Irish at school, or looking to learn the language later in life, Caoga caoga will help you increase your vocabulary in a relaxed manner while having fun. One of the first games of its kind for the Irish language where everyday vocabulary is learned by completing diverse listening, matching and writing exercises, accompanied by descriptive illustrations and native pronunciation.
 
-On the first of March Caoga caoga will be released for free on the Apple App Store and Google Play. If you would like to test the game beforehand, please sign up [here](https://docs.google.com/forms/d/e/1FAIpQLSc7A-UT1TGFphvXG3IVQZk6n7deuGP9p1Rd0RWU0EArWA0Ijw/viewform) to the early testing program.
-
-<!-- <table style="width:100%" height="100%" cellspacing="25" cellpadding="0">
+So what are you waiting for? Download Caoga caoga today and start learning your first cúpla focal!
+<table style="width:100%" height="100%" cellspacing="25" cellpadding="0">
   <tr>
     <th align="center"><a href="{{page.url}}iOS"><img src="{{site.url}}/assets/images/games/mobilestores/download_app_store_logo.png"></a></th>
     <th align="center"><a href="{{page.url}}Android"><img src="{{site.url}}/assets/images/games/mobilestores/get_on_google_play_logo.png"></a></th>
   </tr>
-</table> -->
+</table>
+<p></p>
 
 <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc7A-UT1TGFphvXG3IVQZk6n7deuGP9p1Rd0RWU0EArWA0Ijw/viewform?embedded=true" width="760" height="1200" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe> -->
 

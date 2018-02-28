@@ -2,8 +2,16 @@
 layout: page
 title: Games
 description:
-permalink: /games
+permalink: /games/
 ---
 
-<h2 style="text-align:center">This site is presently under construction!</h2>
-<h2 style="text-align:center">Click <a href="{{site.url}}/games/caogacaoga">here</a> for <em>Caoga caoga</em>.
+James is presently developing innovative language learning games which will be released throughout the first half of 2018.
+
+<table style="width:100%" height="100%" cellspacing="25" cellpadding="0">
+  <tr>
+    <th align="center"><a href="{{page.url}}caogacaoga"><img src="{{site.url}}/assets/images/games/caogacaoga/icon.png"></a>
+    <br><b><em>Caoga caoga</em></b></th>
+    <th align="center"><a href="{{page.url}}polnapol"><img src="{{site.url}}/assets/images/games/polnapol/icon.png"></a>
+    <br><b><em>Pół na pół</em></b></th>
+  </tr>
+  </table>

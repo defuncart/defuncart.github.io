@@ -13,10 +13,10 @@ Special thanks to my friends and family for all their support, and everyone who 
 
 ## Artwork
 
-Illustrations by [Freepik](https://freepik.com), edited by James Leahy except:
+Illustrations designed by [Freepik](https://freepik.com), edited by James Leahy except:
 - colors by James Leahy
 - countries1 by James Leahy
-- emotions utilize [Emoji](https://github.com/mozilla/fxemoji/blob/gh-pages/LICENSE.md) by Mozilla
+- emotions by Mozilla ([Emoji](https://github.com/mozilla/fxemoji/blob/gh-pages/LICENSE.md) licensed under CC Attribution)
 - languages by James Leahy
 - numbers1 by James Leahy
 - numbers2 by James Leahy
@@ -30,16 +30,16 @@ Photos courtesy of [Pixabay](https://pixabay.com/) (licensed under CC0).
 
 UI artwork by James Leahy except:
 - levelTestHolder by Freepix, edited by James Leahy
-- levelHolder by zirconicusso/Freepik
+- levelHolder by zirconicusso / Freepik, edited by James Leahy
 
 ## Audio
 
 All sound effects composed by Gray Dawn.
 
-Recordings of native speakers courtesy of Teanglann's [Pronunciation Database](http://www.teanglann.ie/en/fuaim/). Remaining words were synthesized by [ABAIR, TCD](http://www.abair.tcd.ie/).
+Recordings of native speakers courtesy of Teanglann's [Pronunciation Database](http://www.teanglann.ie/en/fuaim/). Remaining words were synthesized by [ABAIR](http://www.abair.tcd.ie/).
 
 ## Translation
 
 Vocabulary written by James Leahy using [Foclóir Gaeilge-Béarla (Ó Dónaill, 1977)](http://www.teanglann.ie/ga/fgb/) and [Foclóir Nua Béarla-Gaeilge](https://www.focloir.ie/ga/) as sources.
 
-User interface: English written by James Leahy. German and Polish written by James Leahy, proofread by Joanna Laskowska.
+User interface: English, German and Polish written by James Leahy.
