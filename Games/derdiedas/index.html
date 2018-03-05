@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Der Die Das</title>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Web.json");
+    </script>
+  </head>
+  <body>
+    <div id="gameContainer" style="width: 288px; height: 512px; margin: auto"></div>
+      <p><strong><em>Der Die Das</em></strong> is a fun German article quiz game in which the player tries to guess the correct article for a set of nouns.<br><br>
+        Presently the game is in the early development stage:
+        <ul>
+          <li>Contains 350 nouns adhering to the Goethe-Institut A1 examination.</li>
+          <li>Words are pronounced uses speech synthesis.</li>
+          <li>Each correct answer earns one point. A false answer resets the score to zero.</li>
+          <li>Various tips to recognize articles for certain nouns are included.</li>
+          <li>Progress and difficult nouns can be viewed from a list overview.</li>
+        </ul>
+        Development roadmap:
+        <ul>
+          <li>Add nouns adhering to Goethe-Institut A2 and B1. B2 will be considered if there is sufficient interest.</li>
+          <li>Include more tips.</li>
+          <li>User Interface tweeks.</li>
+          <li>Release test version on Android and iOS.</li>
+        </ul>
+        <strong>NOTE: </strong><em>Der Die Das</em> is a game in which the player tests their knowledge of German articles for a set of nouns, it isn't designed to teach vocabulary.<br>
+        There are presently no plans to include English (or other language) translations for the German nouns.
+      </p>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScVCDJvX2snPYbkDm8MLuApN4YKAB86S1fKD3mdmw8-AtbF0Q/viewform?embedded=true" width="1280" height="2000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+  </body>
+</html>
