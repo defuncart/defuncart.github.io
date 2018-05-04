@@ -9,10 +9,10 @@ James Leahy is an Irish-born, Berlin-based 2D Mobile Game Developer who has ship
 
 <table style="width:100%" height="100%" cellspacing="25" cellpadding="0">
   <tr>
-    <th align="center"><a href="{{page.url}}games/caogacaoga"><img src="{{site.url}}/assets/images/games/caogacaoga/icon.png"></a>
+    <th align="center"><a href="{{page.url}}games/caogacaoga/"><img src="{{site.url}}/assets/images/games/caogacaoga/icon.png"></a>
     <br><b><em>Caoga caoga</em></b></th>
-    <th align="center"><a href="{{page.url}}games/polnapol"><img src="{{site.url}}/assets/images/games/polnapol/icon.png"></a>
-    <br><b><em>Pół na pół</em></b></th>
+    <th align="center"><a href="{{page.url}}games/derdiedas/"><img src="{{site.url}}/assets/images/games/derdiedas/iconAndroid.png"></a>
+    <br><b><em>Der Die Das</em></b></th>
   </tr>
 </table>
 <p></p>

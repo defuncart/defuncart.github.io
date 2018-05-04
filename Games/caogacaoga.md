@@ -15,9 +15,9 @@ permalink: /games/caogacaoga/
 
 {% include youtube.html id="fgzioREqJuo" %}
 
-Whether you are studying Irish at school, or looking to learn the language later in life, Caoga caoga will help you increase your vocabulary in a relaxed manner while having fun. One of the first games of its kind for the Irish language where everyday vocabulary is learned by completing diverse listening, matching and writing exercises, accompanied by descriptive illustrations and native pronunciation.
+Whether you are studying Irish at school, or looking to learn the language later in life, *Caoga caoga* will help you increase your vocabulary in a relaxed manner while having fun. One of the first games of its kind for the Irish language where everyday vocabulary is learned by completing diverse listening, matching and writing exercises, accompanied by descriptive illustrations and native pronunciation.
 
-So what are you waiting for? Download Caoga caoga today and start learning your first cúpla focal!
+So what are you waiting for? Download *Caoga caoga* today and start learning your first cúpla focal!
 <table style="width:100%" height="100%" cellspacing="25" cellpadding="0">
   <tr>
     <th align="center"><a href="{{page.url}}iOS"><img src="{{site.url}}/assets/images/games/mobilestores/download_app_store_logo.png"></a></th>
