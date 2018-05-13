@@ -13,6 +13,6 @@ permalink: /games/fiftyfifty/
 - Bite-sized lessons which can be completed on the go or fitted into a busy schedule.
 - 100% free, no ads and works offline.
 
-Whether you are studying English at school, or looking to learn the language later in life, *Fifty Fifty* will help you increase your vocabulary in a relaxed manner while having fun. One of the first games of its kind for the English language where everyday vocabulary is learned by completing diverse listening, matching and writing exercises, accompanied by descriptive illustrations and pronunciation recordings.
+<!-- Whether you are studying English at school, or looking to learn the language later in life, *Fifty Fifty* will help you increase your vocabulary in a relaxed manner while having fun. One of the first games of its kind for the English language where everyday vocabulary is learned by completing diverse listening, matching and writing exercises, accompanied by descriptive illustrations and pronunciation recordings. -->
 
 *Fifty Fifty* is presently in development. A testing phase will be commencing soon.

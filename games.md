@@ -15,9 +15,9 @@ James is presently developing innovative language learning games which will be r
     <br><b><em>Der Die Das</em></b></th>
   </tr>
   <tr>
-    <th align="center"><a href="{{page.url}}fiftyfifty/"><img src="{{site.url}}/assets/images/games/fiftyfifty/icon.png"></a>
-    <br><b><em>Fifty Fifty</em></b></th>
+    <th align="center"><a href="{{page.url}}funfzigfunfzig/"><img src="{{site.url}}/assets/images/games/funfzigfunfzig/icon.png"></a>
+    <br><b><em>Fünfzig-Fünfzig</em></b></th>
     <th align="center"><a href="{{page.url}}polnapol/"><img src="{{site.url}}/assets/images/games/polnapol/icon.png"></a>
     <br><b><em>Pół na pół</em></b></th>
   </tr>
-  </table>
+</table>
