@@ -5,7 +5,7 @@ description:
 permalink: /games/
 ---
 
-James is presently developing innovative language learning games which will be released throughout the first half of 2018.
+James is presently developing innovative language learning games which will be released throughout 2018.
 
 <table style="width:100%" height="100%" cellspacing="25" cellpadding="0">
   <tr>

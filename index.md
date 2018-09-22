@@ -5,7 +5,7 @@
 layout: default
 ---
 
-James Leahy is an Irish-born, Berlin-based 2D Mobile Game Developer who has shipped successful games to the App Store. He is presently developing innovative language learning games which will be released throughout the first half of 2018.
+James Leahy is an Irish-born, Berlin-based 2D Mobile Game Developer who has shipped successful games to the App Store. He is presently developing innovative language learning games which will be released throughout 2018.
 
 <table style="width:100%" height="100%" cellspacing="25" cellpadding="0">
   <tr>
@@ -19,7 +19,7 @@ James Leahy is an Irish-born, Berlin-based 2D Mobile Game Developer who has ship
 
 As an audiovisual artist, James has performed internationally in Ireland, Germany, Italy, Poland, the United Kingdom and Ukraine. His artwork has been exhibited in Ireland and the United Kingdom.
 
-James is an active educator who often conducts workshops in the Creative Coding sphere, especially *Programming for Artists*.
+James is an active educator who often conducts workshops within the Creative Coding sphere, especially *Programming for Artists*. Moreover, he has given talks at Game Development Conferences.
 
 <table style="width:100%" height="100%" cellspacing="25" cellpadding="0">
   <tr>

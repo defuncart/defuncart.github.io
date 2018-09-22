@@ -7,7 +7,7 @@ permalink: /about/
 
 James Leahy is 2D Mobile Game Developer who has shipped successful games to the App Store. Hailing from a mathematical and computer science background, James is specialized in the Unity Game Engine, while also proficient with the SpriteKit framework and CocosCreator. He previously worked as an iOS Developer and also has a background in digital art and music composition.
 
-James is passionate about language learning and creative coding, having previously created custom applications for live audiovisual performance and language learning. He is presently developing innovative language learning games which will be released throughout the first half of 2018.
+James is passionate about language learning and creative coding, having previously created custom applications for live audiovisual performance and language learning. He is presently developing innovative language learning games which will be released throughout 2018.
 
 [Resumé]({{page.url}}resume)
 
