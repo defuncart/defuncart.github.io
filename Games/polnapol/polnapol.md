@@ -22,4 +22,6 @@ permalink: /games/polnapol/
 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfLhUFytfKTBA2XQxE9u29M6n7ZD0ExGBin4qItOmp2_jgLJA/viewform?embedded=true" width="625" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 
+Special thanks to ResponsiveVoice's speech synthesis. A full list of credits can be viewed [here]({{page.url}}credits){:target="_blank"}.
+
 [Press Release]({{page.url}}press){:target="_blank"}.

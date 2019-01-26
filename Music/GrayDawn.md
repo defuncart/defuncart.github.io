@@ -9,6 +9,12 @@ Gray Dawn is the main musical output of James Leahy, an Irish-born, Berlin-based
 
 <table style="width:100%" height="100%" cellspacing="5" cellpadding="0">
   <tr>
+    <th><a href="die-neumayer.html"><img src="https://f4.bcbits.com/img/a2572849150_16.jpg" style="width:50% height:25%"></a></th>
+  </tr>
+  <tr>
+    <th align="center"><b><i>Die Neumayer</i></b></th>
+  </tr>
+  <tr>
     <th><a href="czternascie-czeci-a-moll.html"><img src="https://f4.bcbits.com/img/a2617889452_16.jpg" style="width:50% height:25%"></a></th>
     <th><a href="fur-einen-imaginaren-film.html"><img src="https://f4.bcbits.com/img/a1243378386_16.jpg" style="width:50% height:25%"></a></th>
   </tr>
