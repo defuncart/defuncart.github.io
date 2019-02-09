@@ -18,15 +18,13 @@ permalink: /games/derdiedas/
   <img src="{{site.url}}/assets/images/games/derdiedas/derdiedas.gif" width="265" height="472"/>
 </div>
 
-*Der Die Das* will be released ca. June on the Apple App Store and Google Play. The game is now available for beta testing, simply click on a link below to join the beta testing program for either iOS or Android.
+*Der Die Das* will be released soon on the Apple App Store and Google Play. The game is now available for beta testing, simply click on a link below to join the beta testing program for either iOS or Android.
 <table style="width:100%" height="100%" cellspacing="25" cellpadding="0">
   <tr>
     <th align="center"><a href="{{page.url}}iOS">iOS</a></th>
     <th align="center"><a href="{{page.url}}Android">Android</a></th>
   </tr>
 </table>
-
-<!-- **Note:** Android users need to be logged into their Google account. -->
 
 <!-- <table style="width:100%" height="100%" cellspacing="25" cellpadding="0">
   <tr>

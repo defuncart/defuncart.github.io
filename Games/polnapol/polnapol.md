@@ -18,9 +18,13 @@ permalink: /games/polnapol/
   <img src="{{site.url}}/assets/images/games/polnapol/polnapol.gif" width="265" height="473"/>
 </div>
 
-*Pół na pół* will be released ca. June on the Apple App Store and Google Play. If you would like to test the game for free beforehand, please sign up below to the early testing program.
-
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfLhUFytfKTBA2XQxE9u29M6n7ZD0ExGBin4qItOmp2_jgLJA/viewform?embedded=true" width="625" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+*Pół na pół* will be released soon on the Apple App Store and Google Play. The game is now available for beta testing, simply click on a link below to join the beta testing program for either iOS or Android.
+<table style="width:100%" height="100%" cellspacing="25" cellpadding="0">
+  <tr>
+    <th align="center"><a href="{{page.url}}iOS">iOS</a></th>
+    <th align="center"><a href="{{page.url}}Android">Android</a></th>
+  </tr>
+</table>
 
 Special thanks to ResponsiveVoice's speech synthesis. A full list of credits can be viewed [here]({{page.url}}credits){:target="_blank"}.
 

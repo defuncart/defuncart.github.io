@@ -31,9 +31,14 @@ permalink: /games/funfzigfunfzig/
   </tr>
 </table>
 
-*Fünfzig-Fünfzig* is presently in development and will be released soon for testing. If you would like to join the early access testing phase, then please sign up below!
+*Fünfzig-Fünfzig* is presently in development. If you would like to join the early access testing phase, then please sign up below!
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeRcZXR5oA-rOZTpN7HTOYH8YfgVB7np24xNfzUKl9FCOes5g/viewform?embedded=true" width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+<table style="width:100%" height="100%" cellspacing="25" cellpadding="0">
+  <tr>
+    <th align="center"><a href="https://testflight.apple.com/join/0ock7GkK">iOS</a></th>
+    <th align="center"><a href="https://play.google.com/store/apps/details?id=com.defuncart.funfzigfunfzig">Android</a></th>
+  </tr>
+</table>
 
 Special thanks to ResponsiveVoice's speech synthesis. A full list of credits can be viewed [here]({{page.url}}credits){:target="_blank"}.
 
