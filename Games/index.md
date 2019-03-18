@@ -9,6 +9,8 @@ In his spare time, James develops innovative language learning games.
 
 <table style="width:100%" height="100%" cellspacing="25" cellpadding="0">
   <tr>
+    <th align="center"><a href="{{page.url}}alphabets/"><img src="{{site.url}}/assets/images/games/alphabets/icon.png"></a>
+    <br><b><em>Alphabets</em></b></th>
     <th align="center"><a href="{{page.url}}caogacaoga/"><img src="{{site.url}}/assets/images/games/caogacaoga/icon.png"></a>
     <br><b><em>Caoga caoga</em></b></th>
     <th align="center"><a href="{{page.url}}derdiedas/"><img src="{{site.url}}/assets/images/games/derdiedas/iconAndroid.png"></a>
