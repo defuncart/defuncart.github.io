@@ -1,0 +1,7 @@
+include: package:pedantic/analysis_options.1.9.0.yaml
+
+linter:
+  rules:
+    prefer_relative_imports: false
+    always_use_package_imports: false
+    public_member_api_docs: false
