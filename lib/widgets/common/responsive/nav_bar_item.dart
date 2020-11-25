@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
 
 class NavBarItem extends StatelessWidget {
-  final String title;
-
   const NavBarItem({
-    @required this.title,
     Key key,
-  }) : super(key: key);
+    @required this.title,
+    @required this.onPressed,
+  })  : assert(title != null),
+        assert(onPressed != null),
+        super(key: key);
+
+  final String title;
+  final VoidCallback onPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +21,7 @@ class NavBarItem extends StatelessWidget {
           fontSize: 18,
         ),
       ),
-      onPressed: () {}, //TODO
+      onPressed: onPressed,
     );
   }
 }

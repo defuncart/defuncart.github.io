@@ -1,5 +1,7 @@
 import 'package:defuncart_github_io/configs/website_content.dart';
+import 'package:defuncart_github_io/widgets/common/responsive/home_nav_bar_item.dart';
 import 'package:defuncart_github_io/widgets/common/responsive/nav_bar_item.dart';
+import 'package:defuncart_github_io/widgets/routing/routing.dart';
 import 'package:flutter/material.dart';
 
 class NavigationBar extends StatelessWidget {
@@ -43,9 +45,7 @@ class _NavBarLandscape extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: <Widget>[
-        NavBarItem(
-          title: WebsiteContent.userName,
-        ),
+        HomeNavBarItem(),
         Row(
           mainAxisAlignment: MainAxisAlignment.end,
           children: <Widget>[
@@ -53,7 +53,8 @@ class _NavBarLandscape extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(left: 24.0),
                 child: NavBarItem(
-                  title: navItem,
+                  title: navItem.title,
+                  onPressed: () => RoutePageManager.of(context).setNewRoutePath(navItem.url),
                 ),
               ),
           ],
