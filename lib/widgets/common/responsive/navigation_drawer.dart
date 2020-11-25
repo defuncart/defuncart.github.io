@@ -26,7 +26,7 @@ class NavigationDrawer extends StatelessWidget {
                   child: NavBarItem(
                     title: WebsiteContent.navBarItems[index].title,
                     onPressed: () =>
-                        RoutePageManager.of(context).setNewRoutePath(WebsiteContent.navBarItems[index].title),
+                        RoutePageManager.of(context).setNewRoutePath(WebsiteContent.navBarItems[index].url),
                   ),
                 );
               },
