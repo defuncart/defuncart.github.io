@@ -10,4 +10,6 @@ abstract class WebsiteContent {
       url: AboutScreen.address,
     ),
   ];
+
+  static const footer = 'Designed by James Leahy. Made with Flutter. Hosted on GitHub Pages.';
 }

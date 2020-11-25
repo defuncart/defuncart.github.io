@@ -1,3 +1,4 @@
+import 'package:defuncart_github_io/widgets/common/responsive/footer.dart';
 import 'package:defuncart_github_io/widgets/common/responsive/navigation_bar.dart';
 import 'package:defuncart_github_io/widgets/common/responsive/navigation_drawer.dart';
 import 'package:flutter/material.dart';
@@ -28,11 +29,14 @@ class Webpage extends StatelessWidget {
             child: Column(
               children: <Widget>[
                 NavigationBar(orientation: appOrientation),
+                SizedBox(height: 8.0),
                 Expanded(
                   child: Center(
                     child: content,
                   ),
-                )
+                ),
+                SizedBox(height: 8.0),
+                Footer(),
               ],
             ),
           ),

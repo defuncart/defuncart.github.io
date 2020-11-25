@@ -89,11 +89,13 @@ class RoutePageManager extends ChangeNotifier {
   var _isLaunchingUrl = false;
 
   Future<void> setNewRoutePath(String url) async {
-    print('setNewRoutePath: $url');
-
     if (_isLaunchingUrl) {
       return;
     }
+
+    // if (currentPath == url) {
+    //   return;
+    // }
 
     if (url == HomeScreen.address) {
       _pages.removeWhere(
