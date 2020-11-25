@@ -1,9 +1,13 @@
+import 'package:defuncart_github_io/models/nav_bar_item_model.dart';
+import 'package:defuncart_github_io/widgets/screens/about/about_screen.dart';
+
 abstract class WebsiteContent {
   static const userName = 'User\nname';
 
   static const navBarItems = [
-    'Category1',
-    'Category2',
-    'Category3',
+    NavBarItemModel(
+      title: 'About',
+      url: AboutScreen.address,
+    ),
   ];
 }
