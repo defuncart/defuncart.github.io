@@ -5,9 +5,7 @@ class NavBarItem extends StatelessWidget {
     Key key,
     @required this.title,
     @required this.onPressed,
-  })  : assert(title != null),
-        assert(onPressed != null),
-        super(key: key);
+  }) : super(key: key);
 
   final String title;
   final VoidCallback onPressed;

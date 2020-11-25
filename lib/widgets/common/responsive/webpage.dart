@@ -10,8 +10,7 @@ class Webpage extends StatelessWidget {
   const Webpage({
     @required this.content,
     Key key,
-  })  : assert(content != null),
-        super(key: key);
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
