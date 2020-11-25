@@ -69,10 +69,12 @@ class RoutePageManager extends ChangeNotifier {
     '/music/graydawn/pi': 'https://graydawn.bandcamp.com/album/--4',
   };
 
+  static const _homeScreenKey = 'HomeScreen';
+
   final List<Page> _pages = [
     MaterialPage(
       child: HomeScreen(),
-      key: const Key('HomeScreen'),
+      key: const Key(_homeScreenKey),
       name: HomeScreen.address,
     ),
   ];
@@ -95,7 +97,7 @@ class RoutePageManager extends ChangeNotifier {
 
     if (url == HomeScreen.address) {
       _pages.removeWhere(
-        (element) => element.key != const Key('HomeScreen'),
+        (element) => element.key != const Key(_homeScreenKey),
       );
     } else if (_mapAddressWebpage.containsKey(url)) {
       _pages.add(
@@ -123,7 +125,7 @@ class RoutePageManager extends ChangeNotifier {
     notifyListeners();
   }
 
-  void resetToHome() => setNewRoutePath('/');
+  void resetToHome() => setNewRoutePath(HomeScreen.address);
 }
 
 class MyAppRouteInformationParser extends RouteInformationParser<String> {
