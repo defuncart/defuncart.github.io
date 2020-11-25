@@ -5,12 +5,12 @@ import 'package:defuncart_github_io/widgets/routing/routing.dart';
 import 'package:flutter/material.dart';
 
 class NavigationBar extends StatelessWidget {
-  final Orientation orientation;
-
   const NavigationBar({
-    @required this.orientation,
     Key key,
+    @required this.orientation,
   }) : super(key: key);
+
+  final Orientation orientation;
 
   @override
   Widget build(BuildContext context) {

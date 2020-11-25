@@ -5,18 +5,18 @@ import 'package:flutter/material.dart';
 class Webpage extends StatelessWidget {
   static const _minWidthLandscape = 640;
 
-  final Widget content;
-
   const Webpage({
-    @required this.content,
     Key key,
+    @required this.content,
   }) : super(key: key);
+
+  final Widget content;
 
   @override
   Widget build(BuildContext context) {
-    return OrientationBuilder(builder: (_, orientation) {
+    return OrientationBuilder(builder: (_, deviceOrientation) {
       final appOrientation =
-          MediaQuery.of(context).size.width > _minWidthLandscape && orientation == Orientation.landscape
+          MediaQuery.of(context).size.width > _minWidthLandscape && deviceOrientation == Orientation.landscape
               ? Orientation.landscape
               : Orientation.portrait;
 
