@@ -5,11 +5,11 @@ void main() {
   test('Ensure parameters correct', () {
     final musicActModel = MusicActModel(
       title: 'Title',
-      permalink: 'Permalink',
-      artworkPath: 'artworkPath',
+      relativeUrl: 'RelativeUrl',
+      artworkPath: 'ArtworkPath',
     );
     expect(musicActModel.title, 'Title');
-    expect(musicActModel.permalink, 'Permalink');
-    expect(musicActModel.artworkPath, 'artworkPath');
+    expect(musicActModel.relativeUrl, 'RelativeUrl');
+    expect(musicActModel.artworkPath, 'ArtworkPath');
   });
 }

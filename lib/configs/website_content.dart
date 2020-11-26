@@ -10,11 +10,11 @@ abstract class WebsiteContent {
   static const navBarItems = [
     NavBarItemModel(
       title: _Music.title,
-      url: MusicScreen.address,
+      url: MusicScreen.relativeUrl,
     ),
     NavBarItemModel(
       title: 'About',
-      url: AboutScreen.address,
+      url: AboutScreen.relativeUrl,
     ),
   ];
 
@@ -33,12 +33,12 @@ class _Music {
   final acts = const [
     MusicActModel(
       title: _GrayDawn.title,
-      permalink: GrayDawnScreen.address,
+      relativeUrl: GrayDawnScreen.relativeUrl,
       artworkPath: 'music/graydawn.png',
     ),
     MusicActModel(
       title: _StrawberryComplexity.title,
-      permalink: StrawberryComplexityScreen.address,
+      relativeUrl: StrawberryComplexityScreen.relativeUrl,
       artworkPath: 'music/strawberrycomplexity.png',
     ),
   ];
@@ -61,7 +61,7 @@ class _GrayDawn {
       title: 'Die Neumayer',
       description:
           'Inspired by early 80s horror films, Die Neumayer is a cinematic narrative onboard a research station in Antarctica in which all personnel are missing and a deadly predator is on the loose...',
-      permalink: '/music/graydawn/die-neumayer',
+      relativeUrl: '/music/graydawn/die-neumayer',
       redirectUrl: 'https://graydawn.bandcamp.com/album/die-neumayer',
       artworkUrl: 'https://f4.bcbits.com/img/a2572849150_16.jpg',
     ),
@@ -69,7 +69,7 @@ class _GrayDawn {
       title: 'Czternaście części a​-​moll',
       description:
           'Czternaście części a-moll (na fortepian, kwartet smyczkowy i live elekronika) is a collection of fourteen pieces in A-minor for piano, string quartet and live electronics.',
-      permalink: '/music/graydawn/czternascie-czeci-a-moll',
+      relativeUrl: '/music/graydawn/czternascie-czeci-a-moll',
       redirectUrl: 'https://graydawn.bandcamp.com/album/czterna-cie-cz-ci-a-moll',
       artworkUrl: 'https://f4.bcbits.com/img/a2617889452_16.jpg',
     ),
@@ -77,7 +77,7 @@ class _GrayDawn {
       title: '.​.​.​für einen imaginären Film',
       description:
           'Fusing influences from electronic to contemporary classical to industrial hip-hop, ...für einen imaginären Film follows the cinematic narrative of an imaginary film. As a nod to the days of cassette tapes, the album is divided into sides A and B.',
-      permalink: '/music/graydawn/fur-einen-imaginaren-film',
+      relativeUrl: '/music/graydawn/fur-einen-imaginaren-film',
       redirectUrl: 'https://graydawn.bandcamp.com/album/f-r-einen-imagin-ren-film',
       artworkUrl: 'https://f4.bcbits.com/img/a1243378386_16.jpg',
     ),
@@ -85,7 +85,7 @@ class _GrayDawn {
       title: 'Забути тебе – це як дихати водою',
       description:
           'Accompanying, originally composed score for Забути тебе – це як дихати водою, a live audiovisual performance featuring manipulations of Sergei Parajanov’s Тіні забутих предків (1964). The short film can be viewed online here: vimeo.com/83915200',
-      permalink: '/music/graydawn/zabity-tebe-tse-jak-dihaty-vodoju',
+      relativeUrl: '/music/graydawn/zabity-tebe-tse-jak-dihaty-vodoju',
       redirectUrl: 'https://graydawn.bandcamp.com/album/--5',
       artworkUrl: 'https://f4.bcbits.com/img/a1049691118_16.jpg',
     ),
@@ -93,7 +93,7 @@ class _GrayDawn {
       title: 'П',
       description:
           'П іs an audiovisual performance developed in part for James’ MFA. The work consists of six tracks within the self-coined industrial-gothic-orchestral-electronic genre, and a heavily manipulated visual accompaniment based on an edited narrative from Аэлита (1924). A recent performance can be seen here: vimeo.com/70717757',
-      permalink: '/music/graydawn/pi',
+      relativeUrl: '/music/graydawn/pi',
       redirectUrl: 'https://graydawn.bandcamp.com/album/--4',
       artworkUrl: 'https://f4.bcbits.com/img/a3851325714_16.jpg',
     ),
@@ -101,7 +101,7 @@ class _GrayDawn {
       title: 'Батьківщина',
       description:
           'Accompanying, originally composed score for piano, mandolin and laptop to Батьківщина, a short film and Live Cinema performance edited from Alexander Dovzhenko’s Ukrainian trilogy, Звенигора (Zvenigora, 1928), Арсенал (Arsenal, 1928), and Земля (Earth, 1930). Батьківщина can be watched online here: vimeo.com/50823302',
-      permalink: '/music/graydawn/batkivshchyna',
+      relativeUrl: '/music/graydawn/batkivshchyna',
       redirectUrl: 'https://graydawn.bandcamp.com/album/--2',
       artworkUrl: 'https://f4.bcbits.com/img/a2519726181_16.jpg',
     ),
@@ -109,7 +109,7 @@ class _GrayDawn {
       title: 'Вавилон',
       description:
           'Accompanying, originally composed score for guitar, orchestra and laptop for Вавилон, a self-edited short-film based on Fritz Lang’s Metropolis (1928). The short film can be viewed online here: vimeo.com/43460162',
-      permalink: '/music/graydawn/vavilon',
+      relativeUrl: '/music/graydawn/vavilon',
       redirectUrl: 'https://graydawn.bandcamp.com/album/-',
       artworkUrl: 'https://f4.bcbits.com/img/a1510708443_16.jpg',
     ),
@@ -117,7 +117,7 @@ class _GrayDawn {
       title: 'The Light of Day',
       description:
           'A limited edition of fifty physical copies, numbered and signed by the artist, are available for £2 (includes The Light of Day). Contact defuncart@gmail.com for more information.',
-      permalink: '/music/graydawn/the-light-of-day',
+      relativeUrl: '/music/graydawn/the-light-of-day',
       redirectUrl: 'https://graydawn.bandcamp.com/album/the-light-of-day',
       artworkUrl: 'https://f4.bcbits.com/img/a0847593227_16.jpg',
     ),
@@ -125,7 +125,7 @@ class _GrayDawn {
       title: 'The Dark of Night',
       description:
           'A limited edition of fifty physical copies, numbered and signed by the artist, are available for £2 (includes The Light of Day). Contact defuncart@gmail.com for more information.',
-      permalink: '/music/graydawn/the-dark-of-night',
+      relativeUrl: '/music/graydawn/the-dark-of-night',
       redirectUrl: 'https://graydawn.bandcamp.com/album/the-dark-of-night',
       artworkUrl: 'https://f4.bcbits.com/img/a3503162987_16.jpg',
     ),
@@ -143,7 +143,7 @@ class _StrawberryComplexity {
     MusicAlbumModel(
       title: 'This is Pop Music',
       description: '',
-      permalink: '/music/strawberrycomplexity/this-is-pop-music',
+      relativeUrl: '/music/strawberrycomplexity/this-is-pop-music',
       redirectUrl: 'https://strawberrycomplexity.bandcamp.com/',
       artworkUrl: 'https://f4.bcbits.com/img/a2144420344_16.jpg',
     ),

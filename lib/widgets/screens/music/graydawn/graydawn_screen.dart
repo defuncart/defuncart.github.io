@@ -4,7 +4,7 @@ import 'package:defuncart_github_io/widgets/common/responsive/webpage.dart';
 import 'package:flutter/material.dart';
 
 class GrayDawnScreen extends StatelessWidget {
-  static const address = '/music/graydawn';
+  static const relativeUrl = '/music/graydawn';
 
   const GrayDawnScreen({Key key}) : super(key: key);
 

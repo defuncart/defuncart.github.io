@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
 class MusicScreen extends StatelessWidget {
-  static const address = '/music';
+  static const relativeUrl = '/music';
 
   const MusicScreen({Key key}) : super(key: key);
 
@@ -29,7 +29,7 @@ class MusicScreen extends StatelessWidget {
                       assetpath: act.artworkPath,
                       width: 350,
                       height: 350,
-                      onPressed: () => RoutePageManager.of(context).setNewRoutePath(act.permalink),
+                      onPressed: () => RoutePageManager.of(context).setNewRoutePath(act.relativeUrl),
                     ),
                     SizedBox(height: 8.0),
                     Text(act.title),

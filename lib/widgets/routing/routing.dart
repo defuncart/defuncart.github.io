@@ -61,17 +61,17 @@ class RoutePageManager extends ChangeNotifier {
 
   final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 
-  final _mapAddressWebpage = {
-    MusicScreen.address: () => MusicScreen(),
-    GrayDawnScreen.address: () => GrayDawnScreen(),
-    StrawberryComplexityScreen.address: () => StrawberryComplexityScreen(),
-    AboutScreen.address: () => AboutScreen(),
-    ResumeScreen.address: () => ResumeScreen(),
+  final _mapRelativeUrlScreen = {
+    MusicScreen.relativeUrl: () => MusicScreen(),
+    GrayDawnScreen.relativeUrl: () => GrayDawnScreen(),
+    StrawberryComplexityScreen.relativeUrl: () => StrawberryComplexityScreen(),
+    AboutScreen.relativeUrl: () => AboutScreen(),
+    ResumeScreen.relativeUrl: () => ResumeScreen(),
   };
 
-  final Map<String, String> _mapAddressRedirect = {
-    for (final album in WebsiteContent.music.grayDawn.albums) album.permalink: album.redirectUrl,
-    for (final album in WebsiteContent.music.strawberryComplexity.albums) album.permalink: album.redirectUrl,
+  final Map<String, String> _mapRelativeUrlRedirect = {
+    for (final album in WebsiteContent.music.grayDawn.albums) album.relativeUrl: album.redirectUrl,
+    for (final album in WebsiteContent.music.strawberryComplexity.albums) album.relativeUrl: album.redirectUrl,
   };
 
   static const _homeScreenKey = 'HomeScreen';
@@ -80,7 +80,7 @@ class RoutePageManager extends ChangeNotifier {
     MaterialPage(
       child: HomeScreen(),
       key: const Key(_homeScreenKey),
-      name: HomeScreen.address,
+      name: HomeScreen.relativeUrl,
     ),
   ];
 
@@ -93,7 +93,7 @@ class RoutePageManager extends ChangeNotifier {
 
   var _isLaunchingUrl = false;
 
-  Future<void> setNewRoutePath(String url) async {
+  Future<void> setNewRoutePath(String relativeUrl) async {
     if (_isLaunchingUrl) {
       return;
     }
@@ -102,21 +102,21 @@ class RoutePageManager extends ChangeNotifier {
     //   return;
     // }
 
-    if (url == HomeScreen.address) {
+    if (relativeUrl == HomeScreen.relativeUrl) {
       _pages.removeWhere(
         (element) => element.key != const Key(_homeScreenKey),
       );
-    } else if (_mapAddressWebpage.containsKey(url)) {
+    } else if (_mapRelativeUrlScreen.containsKey(relativeUrl)) {
       _pages.add(
         MaterialPage(
-          child: _mapAddressWebpage[url](),
+          child: _mapRelativeUrlScreen[relativeUrl](),
           key: UniqueKey(),
-          name: url,
+          name: relativeUrl,
         ),
       );
-    } else if (_mapAddressRedirect.containsKey(url)) {
+    } else if (_mapRelativeUrlRedirect.containsKey(relativeUrl)) {
       _isLaunchingUrl = true;
-      await launch(_mapAddressRedirect[url]);
+      await launch(_mapRelativeUrlRedirect[relativeUrl]);
       _isLaunchingUrl = false;
       return;
     } else {
@@ -124,7 +124,7 @@ class RoutePageManager extends ChangeNotifier {
         MaterialPage(
           child: FourZeroFourScreen(),
           key: UniqueKey(),
-          name: FourZeroFourScreen.address,
+          name: FourZeroFourScreen.relativeUrl,
         ),
       );
     }
@@ -132,7 +132,7 @@ class RoutePageManager extends ChangeNotifier {
     notifyListeners();
   }
 
-  void resetToHome() => setNewRoutePath(HomeScreen.address);
+  void resetToHome() => setNewRoutePath(HomeScreen.relativeUrl);
 }
 
 class MyAppRouteInformationParser extends RouteInformationParser<String> {

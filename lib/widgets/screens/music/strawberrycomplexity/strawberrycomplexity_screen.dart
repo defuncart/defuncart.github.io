@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:iframes/iframes.dart';
 
 class StrawberryComplexityScreen extends StatelessWidget {
-  static const address = '/music/strawberrycomplexity';
+  static const relativeUrl = '/music/strawberrycomplexity';
 
   const StrawberryComplexityScreen({Key key}) : super(key: key);
 

@@ -6,14 +6,14 @@ void main() {
     final musicAlbumModel = MusicAlbumModel(
       title: 'Title',
       description: 'Description',
-      permalink: 'Permalink',
+      relativeUrl: 'RelativeUrl',
       redirectUrl: 'RedirectUrl',
-      artworkUrl: 'artworkUrl',
+      artworkUrl: 'ArtworkUrl',
     );
     expect(musicAlbumModel.title, 'Title');
     expect(musicAlbumModel.description, 'Description');
-    expect(musicAlbumModel.permalink, 'Permalink');
+    expect(musicAlbumModel.relativeUrl, 'RelativeUrl');
     expect(musicAlbumModel.redirectUrl, 'RedirectUrl');
-    expect(musicAlbumModel.artworkUrl, 'artworkUrl');
+    expect(musicAlbumModel.artworkUrl, 'ArtworkUrl');
   });
 }

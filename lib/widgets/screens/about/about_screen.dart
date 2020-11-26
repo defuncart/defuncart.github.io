@@ -2,7 +2,7 @@ import 'package:defuncart_github_io/widgets/common/responsive/webpage.dart';
 import 'package:flutter/material.dart';
 
 class AboutScreen extends StatelessWidget {
-  static const address = '/about';
+  static const relativeUrl = '/about';
 
   const AboutScreen({Key key}) : super(key: key);
 
