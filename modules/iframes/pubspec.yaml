@@ -1,0 +1,19 @@
+name: iframes
+description: A collection of media iframes used on defuncart.com and blog.
+publish_to: 'none'
+version: 0.0.1
+
+environment:
+  sdk: ">=2.10.0 <3.0.0"
+  flutter: ">=1.22.0 <2.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  pedantic: ^1.9.0
+
+flutter:

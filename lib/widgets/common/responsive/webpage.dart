@@ -1,4 +1,3 @@
-import 'package:defuncart_github_io/widgets/common/responsive/footer.dart';
 import 'package:defuncart_github_io/widgets/common/responsive/navigation_bar.dart';
 import 'package:defuncart_github_io/widgets/common/responsive/navigation_drawer.dart';
 import 'package:flutter/material.dart';
@@ -24,20 +23,21 @@ class Webpage extends StatelessWidget {
       return Scaffold(
         drawer: appOrientation == Orientation.portrait ? NavigationDrawer() : null,
         body: SafeArea(
-          child: Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Column(
-              children: <Widget>[
-                NavigationBar(orientation: appOrientation),
-                SizedBox(height: 8.0),
-                Expanded(
-                  child: Center(
-                    child: content,
+          child: SingleChildScrollView(
+            child: Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: <Widget>[
+                  NavigationBar(orientation: appOrientation),
+                  SizedBox(height: 8.0),
+                  Flexible(
+                    child: Center(
+                      child: content,
+                    ),
                   ),
-                ),
-                SizedBox(height: 8.0),
-                Footer(),
-              ],
+                ],
+              ),
             ),
           ),
         ),
