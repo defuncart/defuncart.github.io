@@ -1,4 +1,5 @@
 import 'package:defuncart_github_io/configs/website_content.dart';
+import 'package:defuncart_github_io/widgets/common/buttons/simple_icon_button.dart';
 import 'package:defuncart_github_io/widgets/common/responsive/home_nav_bar_item.dart';
 import 'package:defuncart_github_io/widgets/common/responsive/nav_bar_item.dart';
 import 'package:defuncart_github_io/widgets/routing/routing.dart';
@@ -28,8 +29,8 @@ class _NavBarPortrait extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.start,
       children: <Widget>[
-        IconButton(
-          icon: Icon(Icons.menu),
+        SimpleIconButton(
+          icon: Icons.menu,
           onPressed: () => Scaffold.of(context).openDrawer(),
         ),
       ],

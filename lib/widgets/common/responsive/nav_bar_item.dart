@@ -1,3 +1,4 @@
+import 'package:defuncart_github_io/widgets/common/buttons/simple_text_button.dart';
 import 'package:flutter/material.dart';
 
 class NavBarItem extends StatelessWidget {
@@ -12,12 +13,11 @@ class NavBarItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return TextButton(
-      child: Text(
-        title,
-        style: const TextStyle(
-          fontSize: 18,
-        ),
+    return SimpleTextButton(
+      text: title.toUpperCase(),
+      textStyle: const TextStyle(
+        fontSize: 18,
+        fontWeight: FontWeight.bold,
       ),
       onPressed: onPressed,
     );

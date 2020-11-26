@@ -11,28 +11,32 @@ class NavigationDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          SizedBox(height: 16),
-          HomeNavBarItem(),
-          SizedBox(height: 16),
-          Expanded(
-            child: ListView.builder(
-              itemCount: WebsiteContent.navBarItems.length,
-              itemBuilder: (_, index) {
-                return Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 16.0),
-                  child: NavBarItem(
-                    title: WebsiteContent.navBarItems[index].title,
-                    onPressed: () =>
-                        RoutePageManager.of(context).setNewRoutePath(WebsiteContent.navBarItems[index].url),
-                  ),
-                );
-              },
+      child: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SizedBox(height: 16),
+            HomeNavBarItem(),
+            SizedBox(height: 16),
+            Expanded(
+              child: ListView.builder(
+                itemCount: WebsiteContent.navBarItems.length,
+                itemBuilder: (_, index) {
+                  return Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 16.0),
+                    child: NavBarItem(
+                      title: WebsiteContent.navBarItems[index].title,
+                      onPressed: () =>
+                          RoutePageManager.of(context).setNewRoutePath(WebsiteContent.navBarItems[index].url),
+                    ),
+                  );
+                },
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
