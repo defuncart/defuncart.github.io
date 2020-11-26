@@ -1,3 +1,4 @@
+import 'package:defuncart_github_io/configs/website_content.dart';
 import 'package:defuncart_github_io/widgets/screens/screens.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -61,12 +62,16 @@ class RoutePageManager extends ChangeNotifier {
   final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 
   final _mapAddressWebpage = {
+    MusicScreen.address: () => MusicScreen(),
+    GrayDawnScreen.address: () => GrayDawnScreen(),
+    StrawberryComplexityScreen.address: () => StrawberryComplexityScreen(),
     AboutScreen.address: () => AboutScreen(),
     ResumeScreen.address: () => ResumeScreen(),
   };
 
-  final _mapAddressRedirect = {
-    '/music/graydawn/pi': 'https://graydawn.bandcamp.com/album/--4',
+  final Map<String, String> _mapAddressRedirect = {
+    for (final album in WebsiteContent.music.grayDawn.albums) album.permalink: album.redirectUrl,
+    for (final album in WebsiteContent.music.strawberryComplexity.albums) album.permalink: album.redirectUrl,
   };
 
   static const _homeScreenKey = 'HomeScreen';
