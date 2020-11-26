@@ -10,8 +10,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  provider: ^4.3.2+2 
+  provider: ^4.3.2+2
   url_launcher: ^5.7.10
+  iframes:
+    path: modules/iframes
 
 dev_dependencies:
   flutter_test:
