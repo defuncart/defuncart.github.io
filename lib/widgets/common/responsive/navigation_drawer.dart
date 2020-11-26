@@ -1,5 +1,5 @@
 import 'package:defuncart_github_io/configs/website_content.dart';
-import 'package:defuncart_github_io/widgets/common/responsive/home_nav_bar_item.dart';
+import 'package:defuncart_github_io/widgets/common/buttons/simple_icon_button.dart';
 import 'package:defuncart_github_io/widgets/common/responsive/nav_bar_item.dart';
 import 'package:defuncart_github_io/widgets/routing/routing.dart';
 import 'package:flutter/foundation.dart';
@@ -18,7 +18,15 @@ class NavigationDrawer extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SizedBox(height: 16),
-            HomeNavBarItem(),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                SimpleIconButton(
+                  icon: Icons.close,
+                  onPressed: () => Navigator.pop(context),
+                ),
+              ],
+            ),
             SizedBox(height: 16),
             Expanded(
               child: ListView.builder(
