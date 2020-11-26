@@ -34,12 +34,12 @@ class _Music {
     MusicActModel(
       title: _GrayDawn.title,
       relativeUrl: GrayDawnScreen.relativeUrl,
-      artworkPath: 'music/graydawn.png',
+      artworkPath: 'assets/music/graydawn.png',
     ),
     MusicActModel(
       title: _StrawberryComplexity.title,
       relativeUrl: StrawberryComplexityScreen.relativeUrl,
-      artworkPath: 'music/strawberrycomplexity.png',
+      artworkPath: 'assets/music/strawberrycomplexity.png',
     ),
   ];
 
