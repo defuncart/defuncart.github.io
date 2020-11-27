@@ -71,7 +71,7 @@ class Avatar extends StatelessWidget {
         shape: BoxShape.circle,
         image: DecorationImage(
           fit: BoxFit.cover,
-          image: NetworkImage(
+          image: AssetImage(
             WebsiteContent.home.profileAsset,
           ),
         ),

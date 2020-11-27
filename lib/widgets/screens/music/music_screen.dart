@@ -31,7 +31,6 @@ class MusicScreen extends StatelessWidget {
                       width: 350,
                       height: 350,
                       onPressed: () => RoutePageManager.of(context).setNewRoutePath(act.relativeUrl),
-                      type: ClickableImageType.network,
                     ),
                     SizedBox(height: 8.0),
                     Text(act.title),
