@@ -5,3 +5,4 @@ export 'home_screen.dart';
 export 'music/graydawn/graydawn_screen.dart';
 export 'music/music_screen.dart';
 export 'music/strawberrycomplexity/strawberrycomplexity_screen.dart';
+export 'packages/packages_screen.dart';

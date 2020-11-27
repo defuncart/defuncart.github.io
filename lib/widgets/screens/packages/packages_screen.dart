@@ -1,0 +1,59 @@
+import 'package:defuncart_github_io/configs/website_content.dart';
+import 'package:defuncart_github_io/widgets/common/images/clickable_image.dart';
+import 'package:defuncart_github_io/widgets/common/responsive/webpage.dart';
+import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
+
+class PackagesScreen extends StatelessWidget {
+  static const relativeUrl = '/packages';
+
+  const PackagesScreen({Key key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Webpage(
+      content: Wrap(
+        children: [
+          for (final package in WebsiteContent.packages.packages)
+            SizedBox(
+              width: 350,
+              child: Card(
+                child: Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Column(
+                    children: [
+                      Text(
+                        package.title,
+                        style: Theme.of(context).textTheme.headline5,
+                      ),
+                      SizedBox(height: 8.0),
+                      Text(package.description),
+                      SizedBox(height: 8.0),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          if (package.pubDevUrl.isNotEmpty)
+                            ClickableImage(
+                              WebsiteContent.packages.dartAssetpath,
+                              width: 24,
+                              height: 24,
+                              onPressed: () => launch(package.pubDevUrl),
+                            ),
+                          ClickableImage(
+                            WebsiteContent.packages.gitHubAssetpath,
+                            width: 24,
+                            height: 24,
+                            onPressed: () => launch(package.gitHubUrl),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            )
+        ],
+      ),
+    );
+  }
+}
