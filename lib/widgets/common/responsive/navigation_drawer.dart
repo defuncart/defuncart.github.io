@@ -28,6 +28,15 @@ class NavigationDrawer extends StatelessWidget {
               ],
             ),
             SizedBox(height: 16),
+            NavBarItem(
+              title: WebsiteContent.userName,
+              // TODO doesn't seem to work correctly when webpage opened from drawer
+              onPressed: () async {
+                await Navigator.pop(context);
+                await RoutePageManager.of(context).resetToHome();
+              },
+            ),
+            SizedBox(height: 16),
             Expanded(
               child: ListView.builder(
                 itemCount: WebsiteContent.navBarItems.length,
