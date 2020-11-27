@@ -112,8 +112,6 @@ class Tagline extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // return Text(
-    // 'At DeFuncArt I build innovative language learning apps, publish dart and flutter packages and release experimental music.');
     return RichText(
       text: TextSpan(
         children: [
