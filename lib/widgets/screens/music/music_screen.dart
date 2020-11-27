@@ -1,4 +1,5 @@
 import 'package:defuncart_github_io/configs/website_content.dart';
+import 'package:defuncart_github_io/widgets/common/images/clickable_image.dart';
 import 'package:defuncart_github_io/widgets/common/responsive/webpage.dart';
 import 'package:defuncart_github_io/widgets/routing/routing.dart';
 import 'package:flutter/material.dart';
@@ -25,11 +26,12 @@ class MusicScreen extends StatelessWidget {
               for (final act in WebsiteContent.music.acts)
                 Column(
                   children: [
-                    ClickableImageAsset(
-                      assetpath: act.artworkPath,
+                    ClickableImage(
+                      act.artworkPath,
                       width: 350,
                       height: 350,
                       onPressed: () => RoutePageManager.of(context).setNewRoutePath(act.relativeUrl),
+                      type: ClickableImageType.network,
                     ),
                     SizedBox(height: 8.0),
                     Text(act.title),
@@ -38,36 +40,6 @@ class MusicScreen extends StatelessWidget {
             ],
           ),
         ],
-      ),
-    );
-  }
-}
-
-class ClickableImageAsset extends StatelessWidget {
-  const ClickableImageAsset({
-    Key key,
-    @required this.assetpath,
-    @required this.width,
-    @required this.height,
-    @required this.onPressed,
-  }) : super(key: key);
-
-  final String assetpath;
-  final double width;
-  final double height;
-  final VoidCallback onPressed;
-
-  @override
-  Widget build(BuildContext context) {
-    return MouseRegion(
-      cursor: SystemMouseCursors.click,
-      child: GestureDetector(
-        child: Image.asset(
-          assetpath,
-          width: width,
-          height: height,
-        ),
-        onTap: onPressed,
       ),
     );
   }

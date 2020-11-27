@@ -1,6 +1,8 @@
 import 'package:defuncart_github_io/models/music_act_model.dart';
 import 'package:defuncart_github_io/models/music_album_model.dart';
 import 'package:defuncart_github_io/models/nav_bar_item_model.dart';
+import 'package:defuncart_github_io/models/package_model.dart';
+import 'package:defuncart_github_io/models/social_link_model.dart';
 import 'package:defuncart_github_io/widgets/screens/about/about_screen.dart';
 import 'package:defuncart_github_io/widgets/screens/screens.dart';
 
@@ -13,14 +15,28 @@ abstract class WebsiteContent {
       url: MusicScreen.relativeUrl,
     ),
     NavBarItemModel(
-      title: 'About',
+      title: _Packages.title,
+      url: PackagesScreen.relativeUrl,
+    ),
+    NavBarItemModel(
+      title: _About.title,
       url: AboutScreen.relativeUrl,
     ),
   ];
 
-  static const footer = 'Designed by James Leahy. Made with Flutter. Hosted on GitHub Pages.';
+  static const home = _Home();
 
   static const music = _Music();
+
+  static const packages = _Packages();
+
+  static const about = _About();
+}
+
+class _Home {
+  const _Home();
+
+  final profileAsset = 'assets/home/profile.png';
 }
 
 class _Music {
@@ -34,12 +50,12 @@ class _Music {
     MusicActModel(
       title: _GrayDawn.title,
       relativeUrl: GrayDawnScreen.relativeUrl,
-      artworkPath: 'music/graydawn.png',
+      artworkPath: 'assets/music/graydawn.png',
     ),
     MusicActModel(
       title: _StrawberryComplexity.title,
       relativeUrl: StrawberryComplexityScreen.relativeUrl,
-      artworkPath: 'music/strawberrycomplexity.png',
+      artworkPath: 'assets/music/strawberrycomplexity.png',
     ),
   ];
 
@@ -133,7 +149,7 @@ class _GrayDawn {
 }
 
 class _StrawberryComplexity {
-  static const title = 'Strawberry Complexity ';
+  static const title = 'Strawberry Complexity';
 
   const _StrawberryComplexity();
 
@@ -163,4 +179,99 @@ class _StrawberryComplexity {
     '13-10-01',
     '13-03-02',
   ];
+}
+
+class _Packages {
+  static const title = 'Packages';
+
+  const _Packages();
+
+  final dartAssetpath = 'assets/common/social_links/dart.png';
+  final gitHubAssetpath = 'assets/common/social_links/github.png';
+
+  final packages = const [
+    PackageModel(
+      title: 'flutter_pseudolocalizor',
+      description:
+          'A Pseudolocalization tool for Flutter and Dart which generates pseudo, nonsensical translations for multiple languages from a given English source.',
+      pubDevUrl: 'https://pub.dev/packages/flutter_pseudolocalizor',
+      gitHubUrl: 'https://github.com/defuncart/flutter_pseudolocalizor',
+    ),
+    PackageModel(
+      title: 'shogi',
+      description:
+          'A simple shogi engine for Dart and Flutter. This engine can be combined with flutter_shogi_board to render static game board positions, tsume problems or shogi castles.',
+      pubDevUrl: 'https://pub.dev/packages/shogi',
+      gitHubUrl: 'https://github.com/defuncart/shogi',
+    ),
+    PackageModel(
+      title: 'flutter_shogi_board',
+      description:
+          'A shogi board widget for Flutter. This widget can be used to render static game board positions, tsume problems or shogi castles.',
+      pubDevUrl: 'https://pub.dev/packages/flutter_shogi_board',
+      gitHubUrl: 'https://github.com/defuncart/flutter_shogi_board',
+    ),
+    PackageModel(
+      title: 'flappy_translator',
+      description: 'A tool which automatically generates Flutter localization resources from CSV and Excel files.',
+      pubDevUrl: 'https://pub.dev/packages/flappy_translator',
+      gitHubUrl: 'https://github.com/smartnsoft/FlappyTranslator',
+    ),
+    PackageModel(
+      title: 'dart_dependencies_report',
+      description: "A package which generates a report of all a project's dependencies.",
+      pubDevUrl: '',
+      gitHubUrl: 'https://github.com/defuncart/dart_dependencies_report',
+    ),
+    PackageModel(
+      title: 'dart_code_coverage',
+      description: 'A package with helpers for generating and editing code coverage reports in dart.',
+      pubDevUrl: '',
+      gitHubUrl: 'https://github.com/defuncart/dart_code_coverage',
+    ),
+  ];
+}
+
+class _About {
+  static const title = 'About';
+
+  const _About();
+
+  final content1 =
+      'James Leahy is a Mobile App and Game Developer who has shipped successful titles to the App Store. He is specialized in Flutter, previously worked as Unity Game Developer and iOS App Developer and has a background in digital art and music composition.';
+
+  final content2 =
+      'An advent of open source and active member of the Flutter community, James has released five packages on pub.dev, contributing to numerous others and has shared countless projects online.';
+
+  final content3 =
+      'James is passionate about language learning and creative coding, having previously created custom applications for live audiovisual performance and language learning. In his spare time, he develops innovative language learning games.';
+
+  final content4 =
+      'As an audiovisual artist, James has performed internationally in Ireland, Germany, Italy, Poland, the United Kingdom and Ukraine. His artwork has been exhibited in Ireland and the United Kingdom.';
+
+  final content5 =
+      'James is an active educator who often conducts workshops within the Creative Coding sphere, especially Programming for Artists, while giving talks at Software Development Conferences when possible.';
+
+  final footer = 'Designed by James Leahy. Made with Flutter. Hosted on GitHub Pages.';
+
+  final socialMediaLinks = const [
+    SocialLinkModel(
+      assetpath: 'assets/common/social_links/email.png',
+      url: 'mailto:defuncart@gmail.com',
+    ),
+    SocialLinkModel(
+      assetpath: 'assets/common/social_links/github.png',
+      url: 'https://github.com/defuncart/',
+    ),
+    SocialLinkModel(
+      assetpath: 'assets/common/social_links/linkedin.png',
+      url: 'https://www.linkedin.com/in/jamesjleahy/',
+    ),
+    SocialLinkModel(
+      assetpath: 'assets/common/social_links/twitter.png',
+      url: 'https://twitter.com/defuncart',
+    ),
+  ];
+
+  final resumeAssetpath = 'assets/common/social_links/resume.png';
 }
