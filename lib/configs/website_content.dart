@@ -1,6 +1,7 @@
 import 'package:defuncart_github_io/models/music_act_model.dart';
 import 'package:defuncart_github_io/models/music_album_model.dart';
 import 'package:defuncart_github_io/models/nav_bar_item_model.dart';
+import 'package:defuncart_github_io/models/package_model.dart';
 import 'package:defuncart_github_io/models/social_link_model.dart';
 import 'package:defuncart_github_io/widgets/screens/about/about_screen.dart';
 import 'package:defuncart_github_io/widgets/screens/screens.dart';
@@ -14,6 +15,10 @@ abstract class WebsiteContent {
       url: MusicScreen.relativeUrl,
     ),
     NavBarItemModel(
+      title: _Packages.title,
+      url: PackagesScreen.relativeUrl,
+    ),
+    NavBarItemModel(
       title: _About.title,
       url: AboutScreen.relativeUrl,
     ),
@@ -22,6 +27,8 @@ abstract class WebsiteContent {
   static const home = _Home();
 
   static const music = _Music();
+
+  static const packages = _Packages();
 
   static const about = _About();
 }
@@ -171,6 +178,57 @@ class _StrawberryComplexity {
     '13-10-06',
     '13-10-01',
     '13-03-02',
+  ];
+}
+
+class _Packages {
+  static const title = 'Packages';
+
+  const _Packages();
+
+  final dartAssetpath = 'assets/common/social_links/dart.png';
+  final gitHubAssetpath = 'assets/common/social_links/github.png';
+
+  final packages = const [
+    PackageModel(
+      title: 'flutter_pseudolocalizor',
+      description:
+          'A Pseudolocalization tool for Flutter and Dart which generates pseudo, nonsensical translations for multiple languages from a given English source.',
+      pubDevUrl: 'https://pub.dev/packages/flutter_pseudolocalizor',
+      gitHubUrl: 'https://github.com/defuncart/flutter_pseudolocalizor',
+    ),
+    PackageModel(
+      title: 'shogi',
+      description:
+          'A simple shogi engine for Dart and Flutter. This engine can be combined with flutter_shogi_board to render static game board positions, tsume problems or shogi castles.',
+      pubDevUrl: 'https://pub.dev/packages/shogi',
+      gitHubUrl: 'https://github.com/defuncart/shogi',
+    ),
+    PackageModel(
+      title: 'flutter_shogi_board',
+      description:
+          'A shogi board widget for Flutter. This widget can be used to render static game board positions, tsume problems or shogi castles.',
+      pubDevUrl: 'https://pub.dev/packages/flutter_shogi_board',
+      gitHubUrl: 'https://github.com/defuncart/flutter_shogi_board',
+    ),
+    PackageModel(
+      title: 'flappy_translator',
+      description: 'A tool which automatically generates Flutter localization resources from CSV and Excel files.',
+      pubDevUrl: 'https://pub.dev/packages/flappy_translator',
+      gitHubUrl: 'https://github.com/smartnsoft/FlappyTranslator',
+    ),
+    PackageModel(
+      title: 'dart_dependencies_report',
+      description: "A package which generates a report of all a project's dependencies.",
+      pubDevUrl: '',
+      gitHubUrl: 'https://github.com/defuncart/dart_dependencies_report',
+    ),
+    PackageModel(
+      title: 'dart_code_coverage',
+      description: 'A package with helpers for generating and editing code coverage reports in dart.',
+      pubDevUrl: '',
+      gitHubUrl: 'https://github.com/defuncart/dart_code_coverage',
+    ),
   ];
 }
 
