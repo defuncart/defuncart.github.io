@@ -64,6 +64,7 @@ class RoutePageManager extends ChangeNotifier {
   final _mapRelativeUrlScreen = {
     AppsScreen.relativeUrl: () => AppsScreen(),
     CaogaCaogaScreen.relativeUrl: () => CaogaCaogaScreen(),
+    CreditsCaogaCaogaScreen.relativeUrl: () => CreditsCaogaCaogaScreen(),
     DerDieDasScreen.relativeUrl: () => DerDieDasScreen(),
     MusicScreen.relativeUrl: () => MusicScreen(),
     GrayDawnScreen.relativeUrl: () => GrayDawnScreen(),
@@ -120,7 +121,10 @@ class RoutePageManager extends ChangeNotifier {
       );
     } else if (_mapRelativeUrlRedirect.containsKey(relativeUrl)) {
       _isLaunchingUrl = true;
-      await launch(_mapRelativeUrlRedirect[relativeUrl]);
+      await launch(
+        _mapRelativeUrlRedirect[relativeUrl],
+        // webOnlyWindowName: '_self',
+      );
       _isLaunchingUrl = false;
       return;
     } else {
