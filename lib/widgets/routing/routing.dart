@@ -75,6 +75,15 @@ class RoutePageManager extends ChangeNotifier {
     ResumeScreen.relativeUrl: () => ResumeScreen(),
   };
 
+  // to be removed at a later date (if binaries updated on store)
+  final _mapOldRelativeUrlNewRedirect = {
+    '/games': AppsScreen.relativeUrl,
+    '/games/caogacaoga': CaogaCaogaScreen.relativeUrl,
+    '/games/caogacaoga/credits': CreditsCaogaCaogaScreen.relativeUrl,
+    '/games/derdiedas': DerDieDasScreen.relativeUrl,
+    '/games/derdiedas/credits': CreditsDerDieDasScreen.relativeUrl,
+  };
+
   final Map<String, String> _mapRelativeUrlRedirect = {
     for (final album in WebsiteContent.music.grayDawn.albums) album.relativeUrl: album.redirectUrl,
     for (final album in WebsiteContent.music.strawberryComplexity.albums) album.relativeUrl: album.redirectUrl,
@@ -112,30 +121,46 @@ class RoutePageManager extends ChangeNotifier {
       _pages.removeWhere(
         (element) => element.key != const Key(_homeScreenKey),
       );
-    } else if (_mapRelativeUrlScreen.containsKey(relativeUrl)) {
-      _pages.add(
-        MaterialPage(
-          child: _mapRelativeUrlScreen[relativeUrl](),
-          key: UniqueKey(),
-          name: relativeUrl,
-        ),
-      );
-    } else if (_mapRelativeUrlRedirect.containsKey(relativeUrl)) {
-      _isLaunchingUrl = true;
-      await launch(
-        _mapRelativeUrlRedirect[relativeUrl],
-        // webOnlyWindowName: '_self',
-      );
-      _isLaunchingUrl = false;
-      return;
     } else {
-      _pages.add(
-        MaterialPage(
-          child: FourZeroFourScreen(),
-          key: UniqueKey(),
-          name: FourZeroFourScreen.relativeUrl,
-        ),
-      );
+      // remove unnessary /
+      if (relativeUrl.endsWith('/')) {
+        relativeUrl = relativeUrl.substring(0, relativeUrl.length - 1);
+      }
+
+      if (_mapRelativeUrlScreen.containsKey(relativeUrl)) {
+        _pages.add(
+          MaterialPage(
+            child: _mapRelativeUrlScreen[relativeUrl](),
+            key: UniqueKey(),
+            name: relativeUrl,
+          ),
+        );
+      } else if (_mapOldRelativeUrlNewRedirect.containsKey(relativeUrl)) {
+        final newRelative = _mapOldRelativeUrlNewRedirect[relativeUrl];
+        _pages.add(
+          MaterialPage(
+            child: _mapRelativeUrlScreen[newRelative](),
+            key: UniqueKey(),
+            name: newRelative,
+          ),
+        );
+      } else if (_mapRelativeUrlRedirect.containsKey(relativeUrl)) {
+        _isLaunchingUrl = true;
+        await launch(
+          _mapRelativeUrlRedirect[relativeUrl],
+          // webOnlyWindowName: '_self',
+        );
+        _isLaunchingUrl = false;
+        return;
+      } else {
+        _pages.add(
+          MaterialPage(
+            child: FourZeroFourScreen(),
+            key: UniqueKey(),
+            name: FourZeroFourScreen.relativeUrl,
+          ),
+        );
+      }
     }
 
     notifyListeners();
