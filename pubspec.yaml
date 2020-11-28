@@ -23,6 +23,7 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
+    - assets/common/icons/
     - assets/common/social_links/
     - assets/home/
     - assets/music/

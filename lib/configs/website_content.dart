@@ -186,7 +186,7 @@ class _Packages {
 
   const _Packages();
 
-  final dartAssetpath = 'assets/common/social_links/dart.png';
+  final dartAssetpath = 'assets/common/icons/dart.png';
   final gitHubAssetpath = 'assets/common/social_links/github.png';
 
   final packages = const [
