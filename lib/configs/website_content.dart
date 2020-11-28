@@ -51,9 +51,6 @@ class _Apps {
 
   const _Apps();
 
-  final iosIcon = 'assets/common/icons/ios.png';
-  final androidIcon = 'assets/common/icons/android.png';
-
   final apps = const {
     CaogaCaogaScreen.relativeUrl: AppModel(
       title: 'Caoga caoga',
