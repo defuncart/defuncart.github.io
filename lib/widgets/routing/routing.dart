@@ -62,6 +62,9 @@ class RoutePageManager extends ChangeNotifier {
   final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 
   final _mapRelativeUrlScreen = {
+    AppsScreen.relativeUrl: () => AppsScreen(),
+    CaogaCaogaScreen.relativeUrl: () => CaogaCaogaScreen(),
+    DerDieDasScreen.relativeUrl: () => DerDieDasScreen(),
     MusicScreen.relativeUrl: () => MusicScreen(),
     GrayDawnScreen.relativeUrl: () => GrayDawnScreen(),
     StrawberryComplexityScreen.relativeUrl: () => StrawberryComplexityScreen(),
