@@ -13,7 +13,7 @@ class DownloadAppStores extends StatelessWidget {
   final String googlePlayLink;
 
   bool get _hasAppStore => appStoreLink != null;
-  bool get _hasGooglePlay => appStoreLink != null;
+  bool get _hasGooglePlay => googlePlayLink != null;
 
   @override
   Widget build(BuildContext context) {
