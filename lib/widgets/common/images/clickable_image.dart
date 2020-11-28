@@ -1,5 +1,5 @@
+import 'package:defuncart_github_io/widgets/common/gesture_detector/mouse_gesture_detector.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 
 enum ClickableImageType {
   asset,
@@ -40,12 +40,9 @@ class ClickableImage extends StatelessWidget {
             height: height,
           );
 
-    return MouseRegion(
-      cursor: SystemMouseCursors.click,
-      child: GestureDetector(
-        child: image,
-        onTap: onPressed,
-      ),
+    return MouseGestureDetector(
+      child: image,
+      onTap: onPressed,
     );
   }
 }
