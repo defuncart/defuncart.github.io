@@ -8,28 +8,42 @@ void main() {
       description: 'Description',
       icon: 'Icon',
       relativeUrl: 'RelativeUrl',
+      platforms: PlatformsModel(
+        appStoreLink: '',
+        googlePlayLink: '',
+      ),
     );
     expect(musicAlbumModel.title, 'Title');
     expect(musicAlbumModel.description, 'Description');
     expect(musicAlbumModel.icon, 'Icon');
     expect(musicAlbumModel.relativeUrl, 'RelativeUrl');
+    expect(musicAlbumModel.platforms, isNotNull);
   });
 
-  test('PlatformsModel.all() constructor', () {
-    final platformsModel = PlatformsModel.all();
+  test('PlatformsModel constructor', () {
+    final platformsModel = PlatformsModel(
+      appStoreLink: 'App Store',
+      googlePlayLink: 'Google Play',
+    );
+    expect(platformsModel.appStoreLink, 'App Store');
     expect(platformsModel.ios, isTrue);
+    expect(platformsModel.googlePlayLink, 'Google Play');
     expect(platformsModel.android, isTrue);
   });
 
-  test('PlatformsModel.ios() constructor', () {
-    final platformsModel = PlatformsModel.ios();
+  test('PlatformsModel.appStore() constructor', () {
+    final platformsModel = PlatformsModel.appStore('App Store');
+    expect(platformsModel.appStoreLink, 'App Store');
     expect(platformsModel.ios, isTrue);
+    expect(platformsModel.googlePlayLink, isNull);
     expect(platformsModel.android, isFalse);
   });
 
-  test('PlatformsModel.android() constructor', () {
-    final platformsModel = PlatformsModel.android();
+  test('PlatformsModel constructor', () {
+    final platformsModel = PlatformsModel.googlePlay('Google Play');
+    expect(platformsModel.appStoreLink, isNull);
     expect(platformsModel.ios, isFalse);
+    expect(platformsModel.googlePlayLink, 'Google Play');
     expect(platformsModel.android, isTrue);
   });
 }

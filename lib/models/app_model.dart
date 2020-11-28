@@ -6,7 +6,7 @@ class AppModel {
     @required this.description,
     @required this.icon,
     @required this.relativeUrl,
-    this.platforms = const PlatformsModel.all(),
+    @required this.platforms,
   });
 
   final String title;
@@ -17,18 +17,19 @@ class AppModel {
 }
 
 class PlatformsModel {
-  const PlatformsModel.all()
-      : ios = true,
-        android = true;
+  const PlatformsModel({
+    @required this.appStoreLink,
+    @required this.googlePlayLink,
+  });
 
-  const PlatformsModel.ios()
-      : ios = true,
-        android = false;
+  const PlatformsModel.appStore(this.appStoreLink) : googlePlayLink = null;
 
-  const PlatformsModel.android()
-      : ios = false,
-        android = true;
+  const PlatformsModel.googlePlay(this.googlePlayLink) : appStoreLink = null;
 
-  final bool ios;
-  final bool android;
+  final String appStoreLink;
+  final String googlePlayLink;
+
+  bool get ios => appStoreLink != null;
+
+  bool get android => googlePlayLink != null;
 }
