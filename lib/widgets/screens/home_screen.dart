@@ -125,7 +125,7 @@ class Tagline extends StatelessWidget {
                   color: Theme.of(context).accentColor,
                   fontWeight: FontWeight.bold,
                 ),
-            onPressed: () => RoutePageManager.of(context).setNewRoutePath(MusicScreen.relativeUrl), //TODO
+            onPressed: () => RoutePageManager.of(context).setNewRoutePath(AppsScreen.relativeUrl),
           ),
           TextSpan(
             text: ', publish dart and flutter ',
@@ -137,7 +137,7 @@ class Tagline extends StatelessWidget {
                   color: Theme.of(context).accentColor,
                   fontWeight: FontWeight.bold,
                 ),
-            onPressed: () => RoutePageManager.of(context).setNewRoutePath(MusicScreen.relativeUrl), //TODO
+            onPressed: () => RoutePageManager.of(context).setNewRoutePath(PackagesScreen.relativeUrl),
           ),
           TextSpan(
             text: ' and release experimental ',
