@@ -25,5 +25,8 @@ flutter:
   assets:
     - assets/common/icons/
     - assets/common/social_links/
+    - assets/apps/caogacaoga/
+    - assets/apps/derdiedas/
+    - assets/apps/common/
     - assets/home/
     - assets/music/
