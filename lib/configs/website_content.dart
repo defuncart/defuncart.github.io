@@ -70,7 +70,11 @@ class _Apps {
       description: 'A fun German articles quiz game.',
       icon: 'assets/apps/derdiedas/icon.png',
       relativeUrl: DerDieDasScreen.relativeUrl,
-      platforms: PlatformsModel.googlePlay('https://play.google.com/store/apps/details?id=com.defuncart.derdiedas'),
+      platforms: PlatformsModel(
+        // appStoreLink: 'https://testflight.apple.com/join/GCX1tFIU',
+        appStoreLink: null,
+        googlePlayLink: 'https://play.google.com/store/apps/details?id=com.defuncart.derdiedas',
+      ),
     ),
   };
 }

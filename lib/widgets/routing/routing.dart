@@ -66,6 +66,7 @@ class RoutePageManager extends ChangeNotifier {
     CaogaCaogaScreen.relativeUrl: () => CaogaCaogaScreen(),
     CreditsCaogaCaogaScreen.relativeUrl: () => CreditsCaogaCaogaScreen(),
     DerDieDasScreen.relativeUrl: () => DerDieDasScreen(),
+    CreditsDerDieDasScreen.relativeUrl: () => CreditsDerDieDasScreen(),
     MusicScreen.relativeUrl: () => MusicScreen(),
     GrayDawnScreen.relativeUrl: () => GrayDawnScreen(),
     StrawberryComplexityScreen.relativeUrl: () => StrawberryComplexityScreen(),

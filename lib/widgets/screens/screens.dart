@@ -4,6 +4,7 @@ export 'about/resume/resume_screen.dart';
 export 'apps/apps_screen.dart';
 export 'apps/caogacaoga/caogacaoga_screen.dart';
 export 'apps/caogacaoga/credits/caogacaoga_credits_screen.dart';
+export 'apps/derdiedas/credits/derdiedas_credits_screen.dart';
 export 'apps/derdiedas/derdiedas_screen.dart';
 export 'home_screen.dart';
 export 'music/graydawn/graydawn_screen.dart';
