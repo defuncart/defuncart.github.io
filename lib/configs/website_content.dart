@@ -1,3 +1,4 @@
+import 'package:defuncart_github_io/models/app_model.dart';
 import 'package:defuncart_github_io/models/music_act_model.dart';
 import 'package:defuncart_github_io/models/music_album_model.dart';
 import 'package:defuncart_github_io/models/nav_bar_item_model.dart';
@@ -10,6 +11,10 @@ abstract class WebsiteContent {
   static const userName = 'James\nLeahy';
 
   static const navBarItems = [
+    NavBarItemModel(
+      title: _Apps.title,
+      url: AppsScreen.relativeUrl,
+    ),
     NavBarItemModel(
       title: _Music.title,
       url: MusicScreen.relativeUrl,
@@ -26,6 +31,8 @@ abstract class WebsiteContent {
 
   static const home = _Home();
 
+  static const apps = _Apps();
+
   static const music = _Music();
 
   static const packages = _Packages();
@@ -37,6 +44,35 @@ class _Home {
   const _Home();
 
   final profileAsset = 'assets/home/profile.png';
+}
+
+class _Apps {
+  static const title = 'Apps';
+
+  const _Apps();
+
+  final iosIcon = 'assets/common/icons/ios.png';
+  final androidIcon = 'assets/common/icons/android.png';
+
+  final apps = const {
+    CaogaCaogaScreen.relativeUrl: AppModel(
+      title: 'Caoga caoga',
+      description: 'A fun Irish vocabulary learning game.',
+      icon: 'assets/apps/caogacaoga/icon.png',
+      relativeUrl: CaogaCaogaScreen.relativeUrl,
+      platforms: PlatformsModel(
+        appStoreLink: 'https://itunes.apple.com/ie/app/id1336431902?mt=8',
+        googlePlayLink: 'https://play.google.com/store/apps/details?id=com.defuncart.caogacaoga',
+      ),
+    ),
+    DerDieDasScreen.relativeUrl: AppModel(
+      title: 'Der Die Das',
+      description: 'A fun German articles quiz game.',
+      icon: 'assets/apps/derdiedas/icon.png',
+      relativeUrl: DerDieDasScreen.relativeUrl,
+      platforms: PlatformsModel.googlePlay('https://play.google.com/store/apps/details?id=com.defuncart.derdiedas'),
+    ),
+  };
 }
 
 class _Music {
