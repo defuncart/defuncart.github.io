@@ -1,5 +1,5 @@
+import 'package:defuncart_github_io/widgets/common/gesture_detector/mouse_gesture_detector.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 
 class SimpleIconButton extends StatelessWidget {
   const SimpleIconButton({
@@ -13,14 +13,11 @@ class SimpleIconButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MouseRegion(
-      cursor: SystemMouseCursors.click,
-      child: GestureDetector(
-        child: Icon(
-          icon,
-        ),
-        onTap: onPressed,
+    return MouseGestureDetector(
+      child: Icon(
+        icon,
       ),
+      onTap: onPressed,
     );
   }
 }
