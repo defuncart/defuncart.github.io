@@ -17,19 +17,19 @@ abstract class AppThemes {
     disabledColor: _AppColors.light,
   );
 
-  static final dark = ThemeData.dark().copyWith(
-    accentColor: _DFAColors.pink,
-    // scaffoldBackgroundColor: _AppColors.regular,
-    iconTheme: IconThemeData(
-      color: _AppColors.light,
-    ),
-    textTheme: ThemeData.light().textTheme.apply(
-          fontFamily: 'OpenSans',
-          bodyColor: _AppColors.light,
-          displayColor: _AppColors.light,
-        ),
-    // cardColor: Colors.white,
-  );
+  // static final dark = ThemeData.dark().copyWith(
+  //   accentColor: _DFAColors.pink,
+  //   // scaffoldBackgroundColor: _AppColors.regular,
+  //   iconTheme: IconThemeData(
+  //     color: _AppColors.light,
+  //   ),
+  //   textTheme: ThemeData.light().textTheme.apply(
+  //         fontFamily: 'OpenSans',
+  //         bodyColor: _AppColors.light,
+  //         displayColor: _AppColors.light,
+  //       ),
+  //   // cardColor: Colors.white,
+  // );
 }
 
 abstract class _AppColors {

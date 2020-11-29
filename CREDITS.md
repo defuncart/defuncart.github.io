@@ -1,3 +1,7 @@
+# Credits
+
+## Images
+
 *Email* icon made by James Leahy
 
 *GitHub* logo courtesy of https://github.com/logos
@@ -9,3 +13,7 @@
 *Resume* icon made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
 
 *Dart* icon courtesy of https://github.com/dart-lang.
+
+## Fonts
+
+Font *OpenSans* by Steve Matteson. https://fonts.google.com/specimen/Open+Sans

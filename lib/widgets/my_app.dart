@@ -9,8 +9,6 @@ class MyApp extends StatelessWidget {
       routerDelegate: MyAppRouterDelegate(),
       routeInformationParser: MyAppRouteInformationParser(),
       theme: AppThemes.light,
-      // darkTheme: AppThemes.dark,
-      // themeMode: ThemeMode.dark,
     );
   }
 }
