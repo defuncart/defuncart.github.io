@@ -96,7 +96,15 @@ class Intro extends StatelessWidget {
         ),
         Text(
           'JAMES LEAHY',
-          style: Theme.of(context).textTheme.headline3,
+          style: Theme.of(context)
+              .textTheme
+              .headline3
+              .copyWith(
+                fontWeight: FontWeight.bold,
+              )
+              .apply(
+                color: Theme.of(context).accentColor,
+              ),
         ),
         Text(
           'Flutter Developer',
