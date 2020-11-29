@@ -44,6 +44,8 @@ class _Home {
   const _Home();
 
   final profileAsset = 'assets/home/profile.png';
+
+  final logoAsset = 'assets/home/logo.png';
 }
 
 class _Apps {
