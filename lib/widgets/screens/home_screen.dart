@@ -29,7 +29,7 @@ class Landscape extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Avatar(),
-            SizedBox(width: 32.0),
+            SizedBox(width: 64.0),
             Intro(),
           ],
         ),
