@@ -14,6 +14,7 @@ abstract class AppThemes {
           displayColor: _AppColors.regular,
         ),
     cardColor: Colors.white,
+    disabledColor: _AppColors.light,
   );
 
   static final dark = ThemeData.dark().copyWith(
