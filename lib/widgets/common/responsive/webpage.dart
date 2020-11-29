@@ -16,29 +16,44 @@ class Webpage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CustomOrientationBuilder(builder: (_, orientation) {
-      return Scaffold(
-        drawer: orientation == Orientation.portrait ? NavigationDrawer() : null,
-        body: SafeArea(
-          child: SingleChildScrollView(
-            child: Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: <Widget>[
-                  NavigationBar(orientation: orientation),
-                  SizedBox(height: 8.0),
-                  Flexible(
-                    child: Center(
-                      child: content ?? builder(context, orientation),
+    return LayoutBuilder(
+      builder: (_, constraints) => CustomOrientationBuilder(
+        builder: (_, orientation) => Scaffold(
+          drawer: orientation == Orientation.portrait ? NavigationDrawer() : null,
+          body: SafeArea(
+            child: SingleChildScrollView(
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: <Widget>[
+                    NavigationBar(orientation: orientation),
+                    SizedBox(height: 16.0),
+                    Center(
+                      child: SizedBox(
+                        width: _constrainWidth(constraints.maxWidth),
+                        child: content ?? builder(context, orientation),
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
           ),
         ),
-      );
-    });
+      ),
+    );
+  }
+
+  double _constrainWidth(double maxWidth) {
+    if (maxWidth > 1200) {
+      return maxWidth * 0.65;
+    } else if (maxWidth > 800) {
+      return maxWidth * 0.75;
+    } else if (maxWidth > 640) {
+      return maxWidth * 0.85;
+    }
+
+    return double.infinity;
   }
 }
