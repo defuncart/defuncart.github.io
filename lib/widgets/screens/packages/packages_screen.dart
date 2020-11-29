@@ -15,6 +15,9 @@ class PackagesScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Webpage(
       content: Wrap(
+        alignment: WrapAlignment.center,
+        spacing: 16.0,
+        runSpacing: 16.0,
         children: [
           for (final package in WebsiteContent.packages.packages) Package(package: package),
         ],
