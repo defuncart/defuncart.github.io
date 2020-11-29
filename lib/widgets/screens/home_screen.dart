@@ -91,11 +91,11 @@ class Intro extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       children: [
         Text(
-          'Welcome! I\'m',
+          WebsiteContent.home.greeting,
           style: Theme.of(context).textTheme.headline5,
         ),
         Text(
-          'JAMES LEAHY',
+          WebsiteContent.home.name.toUpperCase(),
           style: Theme.of(context)
               .textTheme
               .headline3
@@ -107,8 +107,10 @@ class Intro extends StatelessWidget {
               ),
         ),
         Text(
-          'Flutter Developer',
-          style: Theme.of(context).textTheme.headline5,
+          WebsiteContent.home.tagline,
+          style: Theme.of(context).textTheme.headline6.apply(
+                color: Theme.of(context).disabledColor,
+              ),
         ),
       ],
     );
@@ -148,7 +150,7 @@ class Tagline extends StatelessWidget {
             onPressed: () => RoutePageManager.of(context).setNewRoutePath(PackagesScreen.relativeUrl),
           ),
           TextSpan(
-            text: ' and release experimental ',
+            text: ' and release electronic ',
             style: Theme.of(context).textTheme.bodyText2,
           ),
           ClickableTextSpan(

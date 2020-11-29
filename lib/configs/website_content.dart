@@ -8,8 +8,6 @@ import 'package:defuncart_github_io/widgets/screens/about/about_screen.dart';
 import 'package:defuncart_github_io/widgets/screens/screens.dart';
 
 abstract class WebsiteContent {
-  static const userName = 'James\nLeahy';
-
   static const navBarItems = [
     NavBarItemModel(
       title: _Apps.title,
@@ -46,6 +44,12 @@ class _Home {
   final profileAsset = 'assets/home/profile.png';
 
   final logoAsset = 'assets/home/logo.png';
+
+  final greeting = "👋 Hi, I'm";
+
+  final name = 'James Leahy';
+
+  final tagline = 'Flutter Developer';
 }
 
 class _Apps {
@@ -249,8 +253,7 @@ class _Packages {
     ),
     PackageModel(
       title: 'shogi',
-      description:
-          'A simple shogi engine for Dart and Flutter. This engine can be combined with flutter_shogi_board to render static game board positions, tsume problems or shogi castles.',
+      description: 'A simple shogi engine for Dart and Flutter.',
       pubDevUrl: 'https://pub.dev/packages/shogi',
       gitHubUrl: 'https://github.com/defuncart/shogi',
     ),
