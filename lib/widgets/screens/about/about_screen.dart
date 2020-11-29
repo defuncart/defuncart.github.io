@@ -15,6 +15,7 @@ class AboutScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Webpage(
       content: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(WebsiteContent.about.content1),
           SizedBox(height: 16.0),
@@ -25,28 +26,32 @@ class AboutScreen extends StatelessWidget {
           Text(WebsiteContent.about.content4),
           SizedBox(height: 16.0),
           Text(WebsiteContent.about.content5),
-          SizedBox(height: 16.0),
-          Wrap(
-            spacing: 16.0,
-            runSpacing: 16.0,
-            children: [
-              for (final socialLink in WebsiteContent.about.socialMediaLinks)
+          SizedBox(height: 32.0),
+          Center(
+            child: Wrap(
+              spacing: 16.0,
+              runSpacing: 16.0,
+              children: [
+                for (final socialLink in WebsiteContent.about.socialMediaLinks)
+                  ClickableImage(
+                    socialLink.assetpath,
+                    width: 64.0,
+                    height: 64.0,
+                    onPressed: () => launch(socialLink.url),
+                  ),
                 ClickableImage(
-                  socialLink.assetpath,
+                  WebsiteContent.about.resumeAssetpath,
                   width: 64.0,
                   height: 64.0,
-                  onPressed: () => launch(socialLink.url),
+                  onPressed: () => RoutePageManager.of(context).setNewRoutePath(ResumeScreen.relativeUrl),
                 ),
-              ClickableImage(
-                WebsiteContent.about.resumeAssetpath,
-                width: 64.0,
-                height: 64.0,
-                onPressed: () => RoutePageManager.of(context).setNewRoutePath(ResumeScreen.relativeUrl),
-              ),
-            ],
+              ],
+            ),
           ),
-          SizedBox(height: 16.0),
-          Text(WebsiteContent.about.footer),
+          SizedBox(height: 32.0),
+          Center(
+            child: Text(WebsiteContent.about.footer),
+          ),
         ],
       ),
     );
