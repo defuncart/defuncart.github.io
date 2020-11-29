@@ -1,3 +1,4 @@
+import 'package:defuncart_github_io/configs/styling.dart';
 import 'package:defuncart_github_io/configs/website_content.dart';
 import 'package:defuncart_github_io/models/app_model.dart';
 import 'package:defuncart_github_io/widgets/common/gesture_detector/mouse_gesture_detector.dart';
@@ -36,6 +37,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MouseGestureDetector(
       child: Card(
+        elevation: Styling.cardElevation,
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: SizedBox(
