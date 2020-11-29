@@ -1,3 +1,4 @@
+import 'package:defuncart_github_io/configs/styling.dart';
 import 'package:defuncart_github_io/configs/website_content.dart';
 import 'package:defuncart_github_io/widgets/common/images/clickable_image.dart';
 import 'package:defuncart_github_io/widgets/common/responsive/webpage.dart';
@@ -13,20 +14,43 @@ class AboutScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final colors = [
+      Theme.of(context).accentColor,
+      Theme.of(context).disabledColor,
+      Theme.of(context).textTheme.bodyText2.color,
+    ];
+
     return Webpage(
       content: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(WebsiteContent.about.content1),
-          SizedBox(height: 16.0),
-          Text(WebsiteContent.about.content2),
-          SizedBox(height: 16.0),
-          Text(WebsiteContent.about.content3),
-          SizedBox(height: 16.0),
-          Text(WebsiteContent.about.content4),
-          SizedBox(height: 16.0),
-          Text(WebsiteContent.about.content5),
-          SizedBox(height: 32.0),
+          Wrap(
+            spacing: 16.0,
+            runSpacing: 16.0,
+            alignment: WrapAlignment.spaceAround,
+            children: [
+              for (var i = 0; i < WebsiteContent.about.traits.length; i++)
+                Card(
+                  elevation: Styling.cardElevation,
+                  color: colors[i % colors.length],
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(16.0),
+                    ),
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Text(
+                      WebsiteContent.about.traits[i],
+                      style: Theme.of(context).textTheme.bodyText2.apply(
+                            color: Theme.of(context).scaffoldBackgroundColor,
+                          ),
+                    ),
+                  ),
+                ),
+            ],
+          ),
+          SizedBox(height: 64.0),
           Center(
             child: Wrap(
               spacing: 16.0,
@@ -48,7 +72,7 @@ class AboutScreen extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(height: 32.0),
+          SizedBox(height: 64.0),
           Center(
             child: Text(WebsiteContent.about.footer),
           ),

@@ -290,20 +290,28 @@ class _About {
 
   const _About();
 
-  final content1 =
-      'James Leahy is a Mobile App and Game Developer who has shipped successful titles to the App Store. He is specialized in Flutter, previously worked as Unity Game Developer and iOS App Developer and has a background in digital art and music composition.';
-
-  final content2 =
-      'An advent of open source and active member of the Flutter community, James has released five packages on pub.dev, contributing to numerous others and has shared countless projects online.';
-
-  final content3 =
-      'James is passionate about language learning and creative coding, having previously created custom applications for live audiovisual performance and language learning. In his spare time, he develops innovative language learning games.';
-
-  final content4 =
-      'As an audiovisual artist, James has performed internationally in Ireland, Germany, Italy, Poland, the United Kingdom and Ukraine. His artwork has been exhibited in Ireland and the United Kingdom.';
-
-  final content5 =
-      'James is an active educator who often conducts workshops within the Creative Coding sphere, especially Programming for Artists, while giving talks at Software Development Conferences when possible.';
+  final traits = const [
+    'App developer',
+    'Flutter specialist',
+    'Ex-Unity',
+    'Ex-iOS',
+    'Multi-media artist',
+    'Music composer',
+    'Open source advocate',
+    'Creative coder',
+    'Backpacker',
+    'DJ',
+    'Hobby photographer',
+    'Multi-instrumentalist',
+    'Video editor',
+    'Educator',
+    'Gamer',
+    'Skateboarder',
+    'Shogi enthusiast',
+    'Backgammon strategist',
+    'Stout appreciator',
+    'Berliner',
+  ];
 
   final footer = 'Designed by James Leahy. Made with Flutter. Hosted on GitHub Pages.';
 
