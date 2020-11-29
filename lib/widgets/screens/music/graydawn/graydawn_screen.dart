@@ -14,10 +14,10 @@ class GrayDawnScreen extends StatelessWidget {
       content: Column(
         children: [
           Text(WebsiteContent.music.grayDawn.content),
-          SizedBox(height: 8.0),
+          SizedBox(height: 16.0),
           Wrap(
-            spacing: 8.0,
-            runSpacing: 8.0,
+            spacing: 16.0,
+            runSpacing: 16.0,
             children: [
               for (final album in WebsiteContent.music.grayDawn.albums) MusicAlbum(album: album),
             ],

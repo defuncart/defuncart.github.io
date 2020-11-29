@@ -8,8 +8,6 @@ import 'package:defuncart_github_io/widgets/screens/about/about_screen.dart';
 import 'package:defuncart_github_io/widgets/screens/screens.dart';
 
 abstract class WebsiteContent {
-  static const userName = 'James\nLeahy';
-
   static const navBarItems = [
     NavBarItemModel(
       title: _Apps.title,
@@ -44,6 +42,14 @@ class _Home {
   const _Home();
 
   final profileAsset = 'assets/home/profile.png';
+
+  final logoAsset = 'assets/home/logo.png';
+
+  final greeting = "👋 Hi, I'm";
+
+  final name = 'James Leahy';
+
+  final tagline = 'Flutter Developer';
 }
 
 class _Apps {
@@ -81,18 +87,29 @@ class _Music {
 
   const _Music();
 
-  final content = 'James Leahy is an Irish-born, Berlin-based multimedia artist, performer and composer.';
+  final content =
+      'James Leahy is an Irish-born, Berlin-based multimedia artist, performer and composer. As an audiovisual artist, James has performed internationally in Ireland, Germany, Italy, Poland, the United Kingdom and Ukraine. His artwork has been exhibited in Ireland and the United Kingdom.';
 
   final acts = const [
     MusicActModel(
       title: _GrayDawn.title,
       relativeUrl: GrayDawnScreen.relativeUrl,
       artworkPath: 'assets/music/graydawn.png',
+      genres: [
+        'Electronic',
+        'Orchestral',
+        'Soundtrack',
+      ],
     ),
     MusicActModel(
       title: _StrawberryComplexity.title,
       relativeUrl: StrawberryComplexityScreen.relativeUrl,
       artworkPath: 'assets/music/strawberrycomplexity.png',
+      genres: [
+        'DJ',
+        'Electronic',
+        'Noise',
+      ],
     ),
   ];
 
@@ -107,7 +124,7 @@ class _GrayDawn {
   const _GrayDawn();
 
   final content =
-      'Gray Dawn is the main musical output of James Leahy, an Irish-born, Berlin-based multimedia artist, performer and composer. James  graduated with Distinction in Master of Fine Art from Goldsmiths College, University of London, where his medium was live audiovisual performance, while he also holds a background in Electroacoustic Composition from the University of Limerick.';
+      'Gray Dawn is the main musical output of James Leahy, an Irish-born, Berlin-based multimedia artist, performer and composer. James graduated with Distinction in Master of Fine Art from Goldsmiths College, University of London, where his medium was live audiovisual performance, while he also holds a background in Electroacoustic Composition from the University of Limerick.';
 
   final albums = const [
     MusicAlbumModel(
@@ -236,8 +253,7 @@ class _Packages {
     ),
     PackageModel(
       title: 'shogi',
-      description:
-          'A simple shogi engine for Dart and Flutter. This engine can be combined with flutter_shogi_board to render static game board positions, tsume problems or shogi castles.',
+      description: 'A simple shogi engine for Dart and Flutter.',
       pubDevUrl: 'https://pub.dev/packages/shogi',
       gitHubUrl: 'https://github.com/defuncart/shogi',
     ),
@@ -274,20 +290,28 @@ class _About {
 
   const _About();
 
-  final content1 =
-      'James Leahy is a Mobile App and Game Developer who has shipped successful titles to the App Store. He is specialized in Flutter, previously worked as Unity Game Developer and iOS App Developer and has a background in digital art and music composition.';
-
-  final content2 =
-      'An advent of open source and active member of the Flutter community, James has released five packages on pub.dev, contributing to numerous others and has shared countless projects online.';
-
-  final content3 =
-      'James is passionate about language learning and creative coding, having previously created custom applications for live audiovisual performance and language learning. In his spare time, he develops innovative language learning games.';
-
-  final content4 =
-      'As an audiovisual artist, James has performed internationally in Ireland, Germany, Italy, Poland, the United Kingdom and Ukraine. His artwork has been exhibited in Ireland and the United Kingdom.';
-
-  final content5 =
-      'James is an active educator who often conducts workshops within the Creative Coding sphere, especially Programming for Artists, while giving talks at Software Development Conferences when possible.';
+  final traits = const [
+    'App developer',
+    'Flutter specialist',
+    'Ex-Unity',
+    'Ex-iOS',
+    'Multi-media artist',
+    'Music composer',
+    'Open source advocate',
+    'Creative coder',
+    'Backpacker',
+    'DJ',
+    'Hobby photographer',
+    'Multi-instrumentalist',
+    'Video editor',
+    'Educator',
+    'Gamer',
+    'Skateboarder',
+    'Shogi enthusiast',
+    'Backgammon strategist',
+    'Stout appreciator',
+    'Berliner',
+  ];
 
   final footer = 'Designed by James Leahy. Made with Flutter. Hosted on GitHub Pages.';
 

@@ -20,17 +20,19 @@ class StrawberryComplexityScreen extends StatelessWidget {
 
           return Column(
             children: [
-              Text(WebsiteContent.music.strawberryComplexity.content),
-              SizedBox(height: 8.0),
-              Text('Releases'),
-              MusicAlbum(
-                album: WebsiteContent.music.strawberryComplexity.albums.first,
+              Align(
+                alignment: Alignment.centerLeft,
+                child: Text(WebsiteContent.music.strawberryComplexity.content),
               ),
-              Text('DJ Sets'),
-              SizedBox(height: 8.0),
+              SizedBox(height: 16.0),
+              Text(
+                'DJ Sets',
+                style: Theme.of(context).textTheme.headline5,
+              ),
+              SizedBox(height: 16.0),
               Wrap(
-                spacing: 8.0,
-                runSpacing: 8.0,
+                spacing: 0.0,
+                runSpacing: 0.0,
                 children: [
                   for (final id in WebsiteContent.music.strawberryComplexity.mixcloudMixIds)
                     MixcloudWidget(
@@ -38,6 +40,15 @@ class StrawberryComplexityScreen extends StatelessWidget {
                       width: width,
                     ),
                 ],
+              ),
+              SizedBox(height: 16.0),
+              Text(
+                'Releases',
+                style: Theme.of(context).textTheme.headline5,
+              ),
+              SizedBox(height: 8.0),
+              MusicAlbum(
+                album: WebsiteContent.music.strawberryComplexity.albums.first,
               ),
             ],
           );

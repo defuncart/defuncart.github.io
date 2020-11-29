@@ -3,7 +3,7 @@ import 'package:flutter/widgets.dart';
 import 'i_frame_widget.dart';
 
 class MixcloudWidget extends StatelessWidget {
-  static const minWidth = 375;
+  static const minWidth = 325;
 
   final String id;
   final double width;

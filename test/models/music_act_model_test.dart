@@ -7,9 +7,11 @@ void main() {
       title: 'Title',
       relativeUrl: 'RelativeUrl',
       artworkPath: 'ArtworkPath',
+      genres: ['A', 'B'],
     );
     expect(musicActModel.title, 'Title');
     expect(musicActModel.relativeUrl, 'RelativeUrl');
     expect(musicActModel.artworkPath, 'ArtworkPath');
+    expect(musicActModel.genres, ['A', 'B']);
   });
 }

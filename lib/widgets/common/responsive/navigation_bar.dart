@@ -1,5 +1,6 @@
 import 'package:defuncart_github_io/configs/website_content.dart';
 import 'package:defuncart_github_io/widgets/common/buttons/simple_icon_button.dart';
+import 'package:defuncart_github_io/widgets/common/responsive/blog_nav_bar_item.dart';
 import 'package:defuncart_github_io/widgets/common/responsive/home_nav_bar_item.dart';
 import 'package:defuncart_github_io/widgets/common/responsive/nav_bar_item.dart';
 import 'package:defuncart_github_io/widgets/routing/routing.dart';
@@ -58,6 +59,10 @@ class _NavBarLandscape extends StatelessWidget {
                   onPressed: () => RoutePageManager.of(context).setNewRoutePath(navItem.url),
                 ),
               ),
+            Padding(
+              padding: const EdgeInsets.only(left: 24.0),
+              child: BlogNavBarItem(),
+            ),
           ],
         ),
       ],
