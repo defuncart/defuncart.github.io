@@ -5,10 +5,11 @@ class MusicActModel {
     @required this.title,
     @required this.relativeUrl,
     @required this.artworkPath,
-    String url,
+    @required this.genres,
   });
 
   final String title;
   final String relativeUrl;
   final String artworkPath;
+  final List<String> genres;
 }

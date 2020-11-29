@@ -83,18 +83,29 @@ class _Music {
 
   const _Music();
 
-  final content = 'James Leahy is an Irish-born, Berlin-based multimedia artist, performer and composer.';
+  final content =
+      'James Leahy is an Irish-born, Berlin-based multimedia artist, performer and composer. As an audiovisual artist, James has performed internationally in Ireland, Germany, Italy, Poland, the United Kingdom and Ukraine. His artwork has been exhibited in Ireland and the United Kingdom.';
 
   final acts = const [
     MusicActModel(
       title: _GrayDawn.title,
       relativeUrl: GrayDawnScreen.relativeUrl,
       artworkPath: 'assets/music/graydawn.png',
+      genres: [
+        'Electronic',
+        'Orchestral',
+        'Soundtrack',
+      ],
     ),
     MusicActModel(
       title: _StrawberryComplexity.title,
       relativeUrl: StrawberryComplexityScreen.relativeUrl,
       artworkPath: 'assets/music/strawberrycomplexity.png',
+      genres: [
+        'DJ',
+        'Electronic',
+        'Noise',
+      ],
     ),
   ];
 
@@ -109,7 +120,7 @@ class _GrayDawn {
   const _GrayDawn();
 
   final content =
-      'Gray Dawn is the main musical output of James Leahy, an Irish-born, Berlin-based multimedia artist, performer and composer. James  graduated with Distinction in Master of Fine Art from Goldsmiths College, University of London, where his medium was live audiovisual performance, while he also holds a background in Electroacoustic Composition from the University of Limerick.';
+      'Gray Dawn is the main musical output of James Leahy, an Irish-born, Berlin-based multimedia artist, performer and composer. James graduated with Distinction in Master of Fine Art from Goldsmiths College, University of London, where his medium was live audiovisual performance, while he also holds a background in Electroacoustic Composition from the University of Limerick.';
 
   final albums = const [
     MusicAlbumModel(
