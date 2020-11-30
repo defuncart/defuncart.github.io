@@ -12,7 +12,7 @@ class Webpage extends StatelessWidget {
         super(key: key);
 
   final Widget content;
-  final OrientationWidgetBuilder builder;
+  final Widget Function(BuildContext context, Orientation orientation, Size availableSize) builder;
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +32,7 @@ class Webpage extends StatelessWidget {
                     Center(
                       child: SizedBox(
                         width: _constrainWidth(constraints.maxWidth),
-                        child: content ?? builder(context, orientation),
+                        child: content ?? builder(context, orientation, _calculateAvailableSize(constraints)),
                       ),
                     ),
                   ],
@@ -56,4 +56,9 @@ class Webpage extends StatelessWidget {
 
     return double.infinity;
   }
+
+  Size _calculateAvailableSize(BoxConstraints constraints) => Size(
+        constraints.maxWidth - 2 * 16,
+        constraints.maxHeight - NavigationBar.height - 2 * 16 - 16,
+      );
 }
