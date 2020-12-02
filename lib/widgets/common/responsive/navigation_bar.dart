@@ -7,6 +7,8 @@ import 'package:defuncart_github_io/widgets/routing/routing.dart';
 import 'package:flutter/material.dart';
 
 class NavigationBar extends StatelessWidget {
+  static const height = 36.0;
+
   const NavigationBar({
     Key key,
     @required this.orientation,
@@ -17,6 +19,7 @@ class NavigationBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: height,
       child: orientation == Orientation.landscape ? _NavBarLandscape() : _NavBarPortrait(),
     );
   }

@@ -13,7 +13,8 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Webpage(
-      builder: (_, orientation) => orientation == Orientation.landscape ? Landscape() : Portrait(),
+      builder: (_, orientation, availableSize) =>
+          orientation == Orientation.landscape && availableSize.width > 700 ? Landscape() : Portrait(),
     );
   }
 }
