@@ -16,6 +16,8 @@ dependencies:
     path: modules/iframes
   flutter_html: ^1.1.1
   markdown: ^3.0.0
+  resume:
+    path: modules/resume
 
 dev_dependencies:
   flutter_test:
