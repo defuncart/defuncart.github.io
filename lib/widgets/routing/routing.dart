@@ -71,6 +71,7 @@ class RoutePageManager extends ChangeNotifier {
     CreditsFunfzigFunfzigScreen.relativeUrl: () => CreditsFunfzigFunfzigScreen(),
     PolnaPolScreen.relativeUrl: () => PolnaPolScreen(),
     CreditsPolnaPolScreen.relativeUrl: () => CreditsPolnaPolScreen(),
+    GamesPrivacyPolicyScreen.relativeUrl: () => GamesPrivacyPolicyScreen(),
     MusicScreen.relativeUrl: () => MusicScreen(),
     GrayDawnScreen.relativeUrl: () => GrayDawnScreen(),
     StrawberryComplexityScreen.relativeUrl: () => StrawberryComplexityScreen(),
