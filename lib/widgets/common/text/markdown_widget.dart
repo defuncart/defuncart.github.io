@@ -21,6 +21,10 @@ class MarkdownWidget extends StatelessWidget {
         'body': Style(
           margin: const EdgeInsets.all(0),
         ),
+        'a': Style(
+          color: Theme.of(context).accentColor,
+          textDecoration: TextDecoration.none,
+        ),
       },
     );
   }
