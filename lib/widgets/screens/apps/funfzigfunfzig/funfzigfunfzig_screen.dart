@@ -48,32 +48,7 @@ final _data = '''
   </tr>
 </table>
 
-*Fünfzig-Fünfzig* isn't under active development anymore, however a testing version of the game is still available on <a href="https://play.google.com/store/apps/details?id=com.defuncart.funfzigfunfzig">Android</a>.
+*Fünfzig-Fünfzig* isn't under active development anymore, however a testing version of the game is still available for <a href="https://play.google.com/store/apps/details?id=com.defuncart.funfzigfunfzig">Android</a>.
 
 Special thanks to ResponsiveVoice's speech synthesis.
 ''';
-
-// <table style="width:100%" height="100%" cellspacing="5" cellpadding="0">
-//   <tr>
-//     <td align="center"><img src="{{site.url}}/assets/images/games/funfzigfunfzig/screenshot1.png"></td>
-//     <td align="center"><img src="{{site.url}}/assets/images/games/funfzigfunfzig/screenshot2.png"></td>
-//     <td align="center"><img src="{{site.url}}/assets/images/games/funfzigfunfzig/screenshot3.png"></td>
-//     <td align="center"><img src="{{site.url}}/assets/images/games/funfzigfunfzig/screenshot4.png"></td>
-//   </tr>
-// </table>
-// <table>
-//   <tr>
-//     <td align="center"><img src="{{site.url}}/assets/images/games/funfzigfunfzig/screenshot5.png"></td>
-//     <td align="center"><img src="{{site.url}}/assets/images/games/funfzigfunfzig/screenshot6.png"></td>
-//     <td align="center"><img src="{{site.url}}/assets/images/games/funfzigfunfzig/screenshot7.png"></td>
-//     <td align="center"><img src="{{site.url}}/assets/images/games/funfzigfunfzig/screenshot8.png"></td>
-//     <td align="center"><img src="{{site.url}}/assets/images/games/funfzigfunfzig/screenshot9.png"></td>
-//   </tr>
-// </table>
-
-// <table style="width:100%" height="100%" cellspacing="25" cellpadding="0">
-//   <tr>
-//     <th align="center"><a href="https://testflight.apple.com/join/0ock7GkK">iOS</a></th>
-//     <th align="center"><a href="https://play.google.com/store/apps/details?id=com.defuncart.funfzigfunfzig">Android</a></th>
-//   </tr>
-// </table>
