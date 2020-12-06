@@ -16,7 +16,14 @@ class PolnaPolScreen extends StatelessWidget {
       content: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          MarkdownWidget(data: _data),
+          MarkdownWidget(
+            data: _data,
+            style: {
+              'td': Style(
+                padding: const EdgeInsets.all(4),
+              ),
+            },
+          ),
           SimpleTextButton(
             text: 'Full credits',
             onPressed: () => RoutePageManager.of(context).setNewRoutePath(CreditsPolnaPolScreen.relativeUrl),
@@ -37,7 +44,7 @@ final _data = '''
 - Bite-sized lessons which can be completed on the go or fitted into a busy schedule.
 - 100% free, no ads and works offline.
 
-<table style="width:100%" cellspacing="5" cellpadding="0">
+<table style="width:100%">
   <tr>
     <td align="center"><img src="https://play-lh.googleusercontent.com/0E1fVgyfetK1LLUcLNT51KGFHZ0EqLj0WTA7XmZgMppklH2aEaBKX4x6ck8nlN9cJf-6=w1159-h934-rw"></td>
     <td align="center"><img src="https://play-lh.googleusercontent.com/UOXsxUa1nM0TB9_VTIwSaqtQpjJ9pvsyIoZCGHSJAcDi5PcmWbN8oBzlMDw5QrXiARL-=w1159-h934-rw"></td>

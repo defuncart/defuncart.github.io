@@ -16,7 +16,14 @@ class FunfzigFunfzigScreen extends StatelessWidget {
       content: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          MarkdownWidget(data: _data),
+          MarkdownWidget(
+            data: _data,
+            style: {
+              'td': Style(
+                padding: const EdgeInsets.all(4),
+              ),
+            },
+          ),
           SimpleTextButton(
             text: 'Full credits',
             onPressed: () => RoutePageManager.of(context).setNewRoutePath(CreditsFunfzigFunfzigScreen.relativeUrl),
@@ -37,7 +44,7 @@ final _data = '''
 - Bite-sized lessons which can be completed on the go or fitted into a busy schedule.
 - 100% free, no ads and works offline.
 
-<table style="width:100%" cellspacing="5" cellpadding="0">
+<table style="width:100%">
   <tr>
     <td align="center"><img src="https://play-lh.googleusercontent.com/danGGlnKrt4dn9e0rHrix82aeaLYLIRfVmA8ulz_FRN54WPXww8MUjeCNbSvi4GE-NY=w1200-h934-rw"></td>
     <td align="center"><img src="https://play-lh.googleusercontent.com/HdmIUGF8SEzFA03Dk8EaSsBKJGfyc1TeYyVujS1oxZy9DqajjVtm69djm2yDqxG1vYtL=w1200-h934-rw"></td>
