@@ -16,14 +16,7 @@ class FunfzigFunfzigScreen extends StatelessWidget {
       content: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          MarkdownWidget(
-            data: _data,
-            style: {
-              'td': Style(
-                padding: const EdgeInsets.all(4),
-              ),
-            },
-          ),
+          MarkdownWidget(data: _data),
           SimpleTextButton(
             text: 'Full credits',
             onPressed: () => RoutePageManager.of(context).setNewRoutePath(CreditsFunfzigFunfzigScreen.relativeUrl),
