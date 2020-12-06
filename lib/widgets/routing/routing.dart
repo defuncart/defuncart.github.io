@@ -67,6 +67,8 @@ class RoutePageManager extends ChangeNotifier {
     CreditsCaogaCaogaScreen.relativeUrl: () => CreditsCaogaCaogaScreen(),
     DerDieDasScreen.relativeUrl: () => DerDieDasScreen(),
     CreditsDerDieDasScreen.relativeUrl: () => CreditsDerDieDasScreen(),
+    FunfzigFunfzigScreen.relativeUrl: () => FunfzigFunfzigScreen(),
+    CreditsFunfzigFunfzigScreen.relativeUrl: () => CreditsFunfzigFunfzigScreen(),
     MusicScreen.relativeUrl: () => MusicScreen(),
     GrayDawnScreen.relativeUrl: () => GrayDawnScreen(),
     StrawberryComplexityScreen.relativeUrl: () => StrawberryComplexityScreen(),
@@ -82,6 +84,8 @@ class RoutePageManager extends ChangeNotifier {
     '/games/caogacaoga/credits': CreditsCaogaCaogaScreen.relativeUrl,
     '/games/derdiedas': DerDieDasScreen.relativeUrl,
     '/games/derdiedas/credits': CreditsDerDieDasScreen.relativeUrl,
+    '/games/funfzigfunfzig': FunfzigFunfzigScreen.relativeUrl,
+    '/games/funfzigfunfzig/credits': CreditsFunfzigFunfzigScreen.relativeUrl,
   };
 
   final Map<String, String> _mapRelativeUrlRedirect = {
