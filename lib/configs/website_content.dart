@@ -25,6 +25,10 @@ abstract class WebsiteContent {
       title: _About.title,
       url: AboutScreen.relativeUrl,
     ),
+    NavBarItemModel(
+      title: 'Blog',
+      url: BlogScreen.relativeUrl,
+    ),
   ];
 
   static const home = _Home();

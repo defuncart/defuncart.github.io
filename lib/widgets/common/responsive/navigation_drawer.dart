@@ -1,6 +1,5 @@
 import 'package:defuncart_github_io/configs/website_content.dart';
 import 'package:defuncart_github_io/widgets/common/buttons/simple_icon_button.dart';
-import 'package:defuncart_github_io/widgets/common/responsive/blog_nav_bar_item.dart';
 import 'package:defuncart_github_io/widgets/common/responsive/nav_bar_item.dart';
 import 'package:defuncart_github_io/widgets/routing/routing.dart';
 import 'package:flutter/foundation.dart';
@@ -47,8 +46,8 @@ class NavigationDrawer extends StatelessWidget {
                   onPressed: () => RoutePageManager.of(context).setNewRoutePath(item.url),
                 ),
               ),
-            SizedBox(height: 16.0),
-            BlogNavBarItem(),
+            // SizedBox(height: 16.0),
+            // BlogNavBarItem(),
           ],
         ),
       ),

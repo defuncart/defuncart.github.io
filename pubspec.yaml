@@ -18,6 +18,8 @@ dependencies:
   markdown: ^3.0.0
   resume:
     path: modules/resume
+  blog:
+    path: modules/blog
 
 dev_dependencies:
   flutter_test:

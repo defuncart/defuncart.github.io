@@ -1,4 +1,5 @@
 import 'package:defuncart_github_io/configs/website_content.dart';
+import 'package:defuncart_github_io/widgets/screens/blog/blog_screen.dart';
 import 'package:defuncart_github_io/widgets/screens/screens.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -73,6 +74,7 @@ class RoutePageManager extends ChangeNotifier {
     PackagesScreen.relativeUrl: () => PackagesScreen(),
     AboutScreen.relativeUrl: () => AboutScreen(),
     ResumeScreen.relativeUrl: () => ResumeScreen(),
+    BlogScreen.relativeUrl: () => BlogScreen(),
   };
 
   // to be removed at a later date (if binaries updated on store)
