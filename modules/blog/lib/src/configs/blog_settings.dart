@@ -34,12 +34,30 @@ final filmPosts = [
   ),
   FilmPost(
     title: 'Забути тебе – це як дихати водою',
-    date: '2013-09-06', //TODO
+    date: '2013-09-12',
     tags: [
       'GrayDawn',
     ],
     id: '83915200',
     previewUrl: 'https://i.vimeocdn.com/video/460981623_1920x1080.webp',
+  ),
+  FilmPost(
+    title: 'Батьківщина',
+    date: '2012-09-06',
+    tags: [
+      'GrayDawn',
+    ],
+    id: '50823302',
+    previewUrl: 'https://i.vimeocdn.com/video/350247937_1920x1080.webp',
+  ),
+  FilmPost(
+    title: 'Вавилон',
+    date: '2012-06-05',
+    tags: [
+      'GrayDawn',
+    ],
+    id: '43460162',
+    previewUrl: 'https://i.vimeocdn.com/video/301784351_1920x1080.webp',
   ),
   FilmPost(
     title: 'La Forêt Blanche',

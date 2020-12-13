@@ -1,8 +1,7 @@
+import 'package:blog/src/widgets/post_widget.dart';
 import 'package:flutter/material.dart';
 
 import '../models/post.dart';
-import 'post_content.dart';
-import 'post_title.dart';
 
 class PostsGrid extends StatelessWidget {
   const PostsGrid({
@@ -14,17 +13,17 @@ class PostsGrid extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Wrap(
-      spacing: 8.0,
-      runSpacing: 8.0,
-      children: [
-        for (final post in posts)
-          PostTile(
-            title: post.title,
-            content: PostContent(post: post),
-            tags: post.tags,
-          ),
-      ],
+    return LayoutBuilder(
+      builder: (_, constraints) {
+        print(constraints);
+        return Wrap(
+          spacing: 8.0,
+          runSpacing: 8.0,
+          children: [
+            for (final post in posts) PostWidget(post: post),
+          ],
+        );
+      },
     );
   }
 }
