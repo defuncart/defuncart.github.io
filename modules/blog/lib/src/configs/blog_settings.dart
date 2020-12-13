@@ -1,7 +1,8 @@
 import '../enums/category.dart';
 import '../models/film_post.dart';
+import '../models/music_post.dart';
 import '../models/photography_post.dart';
-import '../models/post.dart';
+import '../models/tech_post.dart';
 
 final tagsForCategories = {
   Category.music: [
@@ -29,7 +30,17 @@ final allPosts = [
   ...photographyPosts,
 ];
 
-final musicPosts = <Post>[];
+final musicPosts = [
+  MusicPost(
+    title: 'Post-Hardcore 2020',
+    date: '2020-11-30',
+    tags: [
+      'StrawberryComplexity',
+    ],
+    description: 'A Post-Hardcore mix comprising of tracks from 2020.',
+    id: 'post-hardcore-2020',
+  ),
+];
 
 final filmPosts = [
   FilmPost(
@@ -94,7 +105,18 @@ final filmPosts = [
   ),
 ];
 
-final techPosts = <Post>[];
+final techPosts = [
+  TechPost(
+    title: 'flutter_shogi_board package',
+    date: '2019-10-07',
+    tags: [
+      'Flutter',
+      'flutter_shogi_board',
+    ],
+    content:
+        'Yesterday I released my first package on pub.dev, flutter_shogi_board, a shogi board widget for Flutter which can be used to render static game board positions, tsume problems or shogi castles.',
+  ),
+];
 
 final photographyPosts = [
   PhotographyPost(
