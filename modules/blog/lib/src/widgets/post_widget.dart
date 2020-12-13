@@ -6,8 +6,8 @@ import '../models/photography_post.dart';
 import '../models/post.dart';
 import '../models/tech_post.dart';
 
-class PostWidget extends StatelessWidget {
-  const PostWidget({
+class PostTile extends StatelessWidget {
+  const PostTile({
     Key key,
     @required this.post,
   }) : super(key: key);
@@ -16,22 +16,30 @@ class PostWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    if (post is MusicPost) {
-      return MusicPostWidget(post: post);
-    } else if (post is FilmPost) {
-      return FilmPostWidget(post: post);
-    } else if (post is TechPost) {
-      return TechPostWidget(post: post);
-    } else if (post is PhotographyPost) {
-      return PhotographyPostWidget(post: post);
-    }
+    return SizedBox(
+      width: 300,
+      height: 300,
+      child: Builder(
+        builder: (_) {
+          if (post is MusicPost) {
+            return MusicPostTile(post: post);
+          } else if (post is FilmPost) {
+            return FilmPostTile(post: post);
+          } else if (post is TechPost) {
+            return TechPostTile(post: post);
+          } else if (post is PhotographyPost) {
+            return PhotographyPostTile(post: post);
+          }
 
-    return Container();
+          return Container();
+        },
+      ),
+    );
   }
 }
 
-class MusicPostWidget extends StatelessWidget {
-  const MusicPostWidget({
+class MusicPostTile extends StatelessWidget {
+  const MusicPostTile({
     Key key,
     @required this.post,
   }) : super(key: key);
@@ -40,25 +48,6 @@ class MusicPostWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // return Container(
-    //   width: 300,
-    //   height: 300,
-    //   color: Color(0xffE8337E),
-    //   padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 32.0),
-    //   child: Column(
-    //     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-    //     children: [
-    //       Icon(
-    //         Icons.music_note,
-    //         size: 48.0,
-    //       ),
-    //       SizedBox(height: 4),
-    //       Text(post.title),
-    //       SizedBox(height: 4),
-    //       Text('DJ Set'),
-    //     ],
-    //   ),
-    // );
     return CustomTile(
       color: Color(0xffE8337E),
       icon: Icons.music_note,
@@ -85,8 +74,6 @@ class CustomTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 300,
-      height: 300,
       color: color,
       padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 32.0),
       child: Column(
@@ -113,8 +100,8 @@ class CustomTile extends StatelessWidget {
   }
 }
 
-class FilmPostWidget extends StatelessWidget {
-  const FilmPostWidget({
+class FilmPostTile extends StatelessWidget {
+  const FilmPostTile({
     Key key,
     @required this.post,
   }) : super(key: key);
@@ -123,18 +110,15 @@ class FilmPostWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return DisplayImage(
-      // width: 400,
-      // height: 225,
-      width: 300,
-      height: 300,
-      url: post.previewUrl,
+    return Image.network(
+      post.previewUrl,
+      fit: BoxFit.cover,
     );
   }
 }
 
-class TechPostWidget extends StatelessWidget {
-  const TechPostWidget({
+class TechPostTile extends StatelessWidget {
+  const TechPostTile({
     Key key,
     @required this.post,
   }) : super(key: key);
@@ -143,32 +127,6 @@ class TechPostWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // return Container(
-    //   width: 300,
-    //   height: 300,
-    //   color: Color(0xff337EE8),
-    //   padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 32.0),
-    //   child: Column(
-    //     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-    //     children: [
-    //       Icon(
-    //         Icons.code,
-    //         size: 48.0,
-    //       ),
-    //       SizedBox(height: 4),
-    //       Text(
-    //         post.title,
-    //         style: Theme.of(context).textTheme.bodyText1,
-    //       ),
-    //       SizedBox(height: 4),
-    //       Text(
-    //         post.content,
-    //         maxLines: 4,
-    //         overflow: TextOverflow.ellipsis,
-    //       ),
-    //     ],
-    //   ),
-    // );
     return CustomTile(
       color: Color(0xff337EE8),
       icon: Icons.code,
@@ -178,8 +136,8 @@ class TechPostWidget extends StatelessWidget {
   }
 }
 
-class PhotographyPostWidget extends StatelessWidget {
-  const PhotographyPostWidget({
+class PhotographyPostTile extends StatelessWidget {
+  const PhotographyPostTile({
     Key key,
     @required this.post,
   }) : super(key: key);
@@ -188,35 +146,9 @@ class PhotographyPostWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return DisplayImage(
-      width: 300,
-      height: 300,
-      url: post.url,
-    );
-  }
-}
-
-class DisplayImage extends StatelessWidget {
-  const DisplayImage({
-    Key key,
-    @required this.url,
-    @required this.width,
-    @required this.height,
-  }) : super(key: key);
-
-  final String url;
-  final double width;
-  final double height;
-
-  @override
-  Widget build(BuildContext context) {
-    return SizedBox(
-      width: width,
-      height: height,
-      child: Image.network(
-        url,
-        fit: BoxFit.cover,
-      ),
+    return Image.network(
+      post.url,
+      fit: BoxFit.cover,
     );
   }
 }

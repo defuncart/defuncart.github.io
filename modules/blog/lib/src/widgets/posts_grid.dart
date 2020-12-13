@@ -20,7 +20,7 @@ class PostsGrid extends StatelessWidget {
           spacing: 8.0,
           runSpacing: 8.0,
           children: [
-            for (final post in posts) PostWidget(post: post),
+            for (final post in posts) PostTile(post: post),
           ],
         );
       },
