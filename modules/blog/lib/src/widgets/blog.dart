@@ -1,11 +1,11 @@
-import 'package:blog/src/widgets/tags_bar.dart';
 import 'package:flutter/material.dart';
 
 import '../configs/blog_settings.dart';
 import '../enums/category.dart';
 import '../models/post.dart';
-import 'category_bar.dart';
+// import 'category_bar.dart';
 import 'posts_grid.dart';
+// import 'tags_bar.dart';
 
 class Blog extends StatefulWidget {
   const Blog({Key key}) : super(key: key);
@@ -41,20 +41,21 @@ class _BlogState extends State<Blog> {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        CategoryBar(
-          onCategorySelected: (category) => setState(() {
-            _selectedCategory = category;
-            _selectedTag = null;
-          }),
-        ),
-        SizedBox(height: 8.0),
-        TagsBar(
-          category: _selectedCategory,
-          selectedTag: _selectedTag,
-          onTagSelected: (tag) => setState(() => _selectedTag = tag),
-        ),
-        SizedBox(height: 8.0),
+        // CategoryBar(
+        //   onCategorySelected: (category) => setState(() {
+        //     _selectedCategory = category;
+        //     _selectedTag = null;
+        //   }),
+        // ),
+        // SizedBox(height: 8.0),
+        // TagsBar(
+        //   category: _selectedCategory,
+        //   selectedTag: _selectedTag,
+        //   onTagSelected: (tag) => setState(() => _selectedTag = tag),
+        // ),
+        // SizedBox(height: 8.0),
         PostsGrid(
           posts: _postsToDisplay,
         ),

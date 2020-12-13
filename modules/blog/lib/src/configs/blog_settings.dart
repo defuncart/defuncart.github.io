@@ -40,6 +40,46 @@ final musicPosts = [
     description: 'A Post-Hardcore mix comprising of tracks from 2020.',
     id: 'post-hardcore-2020',
   ),
+  MusicPost(
+    title: 'Digital Hardcore 1994-1995',
+    date: '2020-03-30', //TODO
+    tags: [
+      'StrawberryComplexity',
+    ],
+    description:
+        'Digital hardcore is genre fusing hardcore punk and diverse electronic genres such as breakbeat, jungle and techno, while also drawing on heavy metal and noise music. ',
+    id: 'digital-hardcore-1994-1995',
+  ),
+  MusicPost(
+    title: 'Rise of Brostep',
+    date: '2020-02-29',
+    tags: [
+      'StrawberryComplexity',
+    ],
+    description:
+        "Brostep is a post-dubstep genre which received major commercial success between 2011 and 2014, especially in the US. Compared to dubstep's sub-bass wobbles and dub/garage UK beginnings, brostep is generally much more aggressive, focuses on the mid-range with tons and wobble and features heavy drops.",
+    id: 'rise-of-brostep',
+  ),
+  MusicPost(
+    title: 'Early Grime 2002 - 2007',
+    date: '2019-02-13',
+    tags: [
+      'StrawberryComplexity',
+    ],
+    description:
+        'Grime is a subgenre of electronic music which draws from a wide variety of influences, for instance UK Garage, Dancehall and Hip Hop.',
+    id: 'early-grime-2002-2007',
+  ),
+  MusicPost(
+    title: '16-03-03 Electro',
+    date: '2016-03-03',
+    tags: [
+      'StrawberryComplexity',
+    ],
+    description:
+        'Short and sweet electro mix featuring tracks from Arp Aubert, KiNK, Stardust, Throwing Snow, Percussions and more!',
+    id: '16-03-03-electro',
+  ),
 ];
 
 final filmPosts = [
@@ -105,17 +145,17 @@ final filmPosts = [
   ),
 ];
 
-final techPosts = [
-  TechPost(
-    title: 'flutter_shogi_board package',
-    date: '2019-10-07',
-    tags: [
-      'Flutter',
-      'flutter_shogi_board',
-    ],
-    content:
-        'Yesterday I released my first package on pub.dev, flutter_shogi_board, a shogi board widget for Flutter which can be used to render static game board positions, tsume problems or shogi castles.',
-  ),
+final techPosts = <TechPost>[
+  // TechPost(
+  //   title: 'flutter_shogi_board package',
+  //   date: '2019-10-07',
+  //   tags: [
+  //     'Flutter',
+  //     'flutter_shogi_board',
+  //   ],
+  //   content:
+  //       'Yesterday I released my first package on pub.dev, flutter_shogi_board, a shogi board widget for Flutter which can be used to render static game board positions, tsume problems or shogi castles.',
+  // ),
 ];
 
 final photographyPosts = [

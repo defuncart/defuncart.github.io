@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
+import '../enums/category.dart';
 import '../models/film_post.dart';
 import '../models/music_post.dart';
 import '../models/photography_post.dart';
@@ -14,26 +16,52 @@ class PostTile extends StatelessWidget {
 
   final Post post;
 
+  static const _mapCategoryIcon = {
+    // Category.music: MdiIcons.musicClefTreble,
+    // Category.music: Icons.music_note,
+    Category.music: MdiIcons.headphones,
+    Category.film: MdiIcons.filmstrip,
+    Category.tech: Icons.code,
+    Category.photography: MdiIcons.camera,
+  };
+
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      width: 300,
-      height: 300,
-      child: Builder(
-        builder: (_) {
-          if (post is MusicPost) {
-            return MusicPostTile(post: post);
-          } else if (post is FilmPost) {
-            return FilmPostTile(post: post);
-          } else if (post is TechPost) {
-            return TechPostTile(post: post);
-          } else if (post is PhotographyPost) {
-            return PhotographyPostTile(post: post);
-          }
+    return Stack(
+      children: [
+        SizedBox(
+          width: 250,
+          height: 250,
+          child: GestureDetector(
+            onTap: () => print('Post ${post.runtimeType}'),
+            child: Builder(
+              builder: (_) {
+                if (post is MusicPost) {
+                  return MusicPostTile(post: post);
+                } else if (post is FilmPost) {
+                  return FilmPostTile(post: post);
+                } else if (post is TechPost) {
+                  return TechPostTile(post: post);
+                } else if (post is PhotographyPost) {
+                  return PhotographyPostTile(post: post);
+                }
 
-          return Container();
-        },
-      ),
+                return Container();
+              },
+            ),
+          ),
+        ),
+        Positioned(
+          right: 0,
+          child: Padding(
+            padding: const EdgeInsets.only(top: 8.0, right: 8.0),
+            child: Icon(
+              _mapCategoryIcon[post.category],
+              color: Theme.of(context).scaffoldBackgroundColor,
+            ),
+          ),
+        ),
+      ],
     );
   }
 }
@@ -49,8 +77,6 @@ class MusicPostTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomTile(
-      color: Color(0xffE8337E),
-      icon: Icons.music_note,
       title: post.title,
       description: post.description,
     );
@@ -60,36 +86,34 @@ class MusicPostTile extends StatelessWidget {
 class CustomTile extends StatelessWidget {
   const CustomTile({
     Key key,
-    @required this.color,
-    @required this.icon,
     @required this.title,
     @required this.description,
   }) : super(key: key);
 
-  final Color color;
-  final IconData icon;
   final String title;
   final String description;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: color,
+      // color: color,
+      color: const Color(0xff337EE8),
       padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 32.0),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          Icon(
-            icon,
-            size: 48.0,
-          ),
           Text(
             title,
-            style: Theme.of(context).textTheme.headline5,
+            style: Theme.of(context).textTheme.headline6.apply(
+                  color: Theme.of(context).scaffoldBackgroundColor,
+                ),
             textAlign: TextAlign.center,
           ),
           Text(
             description,
+            style: Theme.of(context).textTheme.bodyText2.apply(
+                  color: Theme.of(context).scaffoldBackgroundColor,
+                ),
             maxLines: 4,
             overflow: TextOverflow.ellipsis,
             textAlign: TextAlign.center,
@@ -128,8 +152,6 @@ class TechPostTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomTile(
-      color: Color(0xff337EE8),
-      icon: Icons.code,
       title: post.title,
       description: post.content,
     );
