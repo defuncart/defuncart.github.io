@@ -15,7 +15,7 @@ class CategoryBar extends StatefulWidget {
 }
 
 class _CategoryBarState extends State<CategoryBar> {
-  var _selectedIndex = 0;
+  int _selectedIndex;
 
   @override
   Widget build(BuildContext context) {

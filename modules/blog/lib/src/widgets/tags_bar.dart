@@ -36,6 +36,13 @@ class _TagBarState extends State<TagsBar> {
 
   @override
   Widget build(BuildContext context) {
+    if (widget.category == null) {
+      return Container(
+        height: 50,
+        width: double.infinity,
+      );
+    }
+
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [

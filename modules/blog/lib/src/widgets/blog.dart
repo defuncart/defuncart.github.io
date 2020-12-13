@@ -15,19 +15,28 @@ class Blog extends StatefulWidget {
 }
 
 class _BlogState extends State<Blog> {
-  var _selectedCategory = Category.music;
+  Category _selectedCategory;
   String _selectedTag;
 
   final Map<Category, List<Post>> _mapPostsToCategory = {
-    Category.music: <Post>[],
+    Category.music: musicPosts,
     Category.film: filmPosts,
-    Category.tech: <Post>[],
+    Category.tech: techPosts,
     Category.photography: photographyPosts,
   };
 
-  List<Post> get _postsToDisplay => _selectedTag != null
-      ? _mapPostsToCategory[_selectedCategory].where((post) => post.tags.contains(_selectedTag)).toList()
-      : _mapPostsToCategory[_selectedCategory];
+  List<Post> get _postsToDisplay {
+    if (_selectedCategory == null) {
+      allPosts.sort((a, b) => DateTime.parse(b.date).compareTo(DateTime.parse(a.date)));
+      return allPosts;
+    } else {
+      if (_selectedTag == null) {
+        return _mapPostsToCategory[_selectedCategory];
+      } else {
+        return _mapPostsToCategory[_selectedCategory].where((post) => post.tags.contains(_selectedTag)).toList();
+      }
+    }
+  }
 
   @override
   Widget build(BuildContext context) {

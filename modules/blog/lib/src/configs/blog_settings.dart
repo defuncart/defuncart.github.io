@@ -1,6 +1,7 @@
 import '../enums/category.dart';
 import '../models/film_post.dart';
 import '../models/photography_post.dart';
+import '../models/post.dart';
 
 final tagsForCategories = {
   Category.music: [
@@ -20,6 +21,15 @@ final tagsForCategories = {
     'Berlin',
   ],
 };
+
+final allPosts = [
+  ...musicPosts,
+  ...filmPosts,
+  ...techPosts,
+  ...photographyPosts,
+];
+
+final musicPosts = <Post>[];
 
 final filmPosts = [
   FilmPost(
@@ -83,6 +93,8 @@ final filmPosts = [
     previewUrl: 'https://i.vimeocdn.com/video/489543438_1920x1080.webp',
   ),
 ];
+
+final techPosts = <Post>[];
 
 final photographyPosts = [
   PhotographyPost(
