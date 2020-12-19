@@ -30,7 +30,7 @@ class PostTile extends StatelessWidget {
           width: 250,
           height: 250,
           child: GestureDetector(
-            onTap: () => print('Post ${post.runtimeType}'),
+            onTap: () => showDetailPopup(context, post),
             child: Builder(
               builder: (_) {
                 if (post is MusicPost) {
@@ -149,6 +149,43 @@ class PhotographyPostTile extends StatelessWidget {
     return Image.network(
       post.url,
       fit: BoxFit.cover,
+    );
+  }
+}
+
+void showDetailPopup(BuildContext context, Post post) => showDialog(
+      context: context,
+      builder: (_) => AlertDialog(
+        content: DetailContent(post: post),
+        contentPadding: const EdgeInsets.all(8.0),
+      ),
+    );
+
+class DetailContent extends StatelessWidget {
+  const DetailContent({
+    Key key,
+    @required this.post,
+  }) : super(key: key);
+
+  final Post post;
+
+  @override
+  Widget build(BuildContext context) {
+    return Builder(
+      builder: (_) {
+        if (post is MusicPost) {
+          return MusicPostTile(post: post);
+        } else if (post is FilmPost) {
+          return FilmPostTile(post: post);
+        } else if (post is PhotographyPost) {
+          return Image.network(
+            (post as PhotographyPost).url,
+            fit: BoxFit.contain,
+          );
+        }
+
+        return Container();
+      },
     );
   }
 }
