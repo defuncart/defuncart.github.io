@@ -1,5 +1,4 @@
 import 'package:defuncart_github_io/models/app_model.dart';
-import 'package:defuncart_github_io/models/music_act_model.dart';
 import 'package:defuncart_github_io/models/music_album_model.dart';
 import 'package:defuncart_github_io/models/nav_bar_item_model.dart';
 import 'package:defuncart_github_io/models/package_model.dart';
@@ -87,46 +86,20 @@ class _Music {
 
   const _Music();
 
-  final content =
-      'James Leahy is an Irish-born, Berlin-based multimedia artist, performer and composer. As an audiovisual artist, James has performed internationally in Ireland, Germany, Italy, Poland, the United Kingdom and Ukraine. His artwork has been exhibited in Ireland and the United Kingdom.';
+  // final content =
+  // 'James Leahy is an Irish-born, Berlin-based multimedia artist, performer and composer. As an audiovisual artist, James has performed internationally in Ireland, Germany, Italy, Poland, the United Kingdom and Ukraine. His artwork has been exhibited in Ireland and the United Kingdom.';
 
-  final acts = const [
-    MusicActModel(
-      title: _GrayDawn.title,
-      relativeUrl: GrayDawnScreen.relativeUrl,
-      artworkPath: 'assets/music/graydawn.png',
-      genres: [
-        'Electronic',
-        'Orchestral',
-        'Soundtrack',
-      ],
-    ),
-    MusicActModel(
-      title: _StrawberryComplexity.title,
-      relativeUrl: StrawberryComplexityScreen.relativeUrl,
-      artworkPath: 'assets/music/strawberrycomplexity.png',
-      genres: [
-        'DJ',
-        'Electronic',
-        'Noise',
-      ],
-    ),
+  final albums = const [
+    ..._GrayDawn.albums,
+    ..._StrawberryComplexity.albums,
   ];
-
-  final grayDawn = const _GrayDawn();
-
-  final strawberryComplexity = const _StrawberryComplexity();
 }
 
 class _GrayDawn {
-  static const title = 'Gray Dawn';
+  // final content =
+  // 'Gray Dawn is the main musical output of James Leahy, an Irish-born, Berlin-based multimedia artist, performer and composer. James graduated with Distinction in Master of Fine Art from Goldsmiths College, University of London, where his medium was live audiovisual performance, while he also holds a background in Electroacoustic Composition from the University of Limerick.';
 
-  const _GrayDawn();
-
-  final content =
-      'Gray Dawn is the main musical output of James Leahy, an Irish-born, Berlin-based multimedia artist, performer and composer. James graduated with Distinction in Master of Fine Art from Goldsmiths College, University of London, where his medium was live audiovisual performance, while he also holds a background in Electroacoustic Composition from the University of Limerick.';
-
-  final albums = const [
+  static const albums = [
     MusicAlbumModel(
       title: 'Die Neumayer',
       description:
@@ -203,13 +176,9 @@ class _GrayDawn {
 }
 
 class _StrawberryComplexity {
-  static const title = 'Strawberry Complexity';
+  // final content = 'Strawberry Complexity is an orchestral pop noise music project and the DJ alias of James Leahy.';
 
-  const _StrawberryComplexity();
-
-  final content = 'Strawberry Complexity is an orchestral pop noise music project and the DJ alias of James Leahy.';
-
-  final albums = const [
+  static const albums = [
     MusicAlbumModel(
       title: 'This is Pop Music',
       description: '',
@@ -217,21 +186,6 @@ class _StrawberryComplexity {
       redirectUrl: 'https://strawberrycomplexity.bandcamp.com/',
       artworkUrl: 'https://f4.bcbits.com/img/a2144420344_16.jpg',
     ),
-  ];
-
-  final mixcloudMixIds = const [
-    'digital-hardcore-1994-1995',
-    'rise-of-brostep',
-    'early-grime-2002-2007',
-    '16-03-03-electro',
-    'techstep-1995-1999',
-    '15-07-09-post-dubstepfuture-garage',
-    '15-03-29',
-    '14-08-27',
-    '14-04-21',
-    '13-10-06',
-    '13-10-01',
-    '13-03-02',
   ];
 }
 

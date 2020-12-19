@@ -12,7 +12,5 @@ export 'apps/polnapol/credits/polnapol_credits_screen.dart';
 export 'apps/polnapol/polnapol_screen.dart';
 export 'games/privacypolicy_screen.dart';
 export 'home_screen.dart';
-export 'music/graydawn/graydawn_screen.dart';
 export 'music/music_screen.dart';
-export 'music/strawberrycomplexity/strawberrycomplexity_screen.dart';
 export 'packages/packages_screen.dart';
