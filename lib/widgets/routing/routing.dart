@@ -1,3 +1,4 @@
+import 'package:defuncart_github_io/configs/website_content.dart';
 import 'package:defuncart_github_io/widgets/screens/screens.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -88,11 +89,12 @@ class RoutePageManager extends ChangeNotifier {
     '/games/funfzigfunfzig/credits': CreditsFunfzigFunfzigScreen.relativeUrl,
     '/games/polnapol': PolnaPolScreen.relativeUrl,
     '/games/polnapol/credits': CreditsPolnaPolScreen.relativeUrl,
+    '/music/graydawn': MusicScreen.relativeUrl,
+    '/music/strawberrycomplexity': MusicScreen.relativeUrl,
   };
 
   final Map<String, String> _mapRelativeUrlRedirect = {
-    // for (final album in WebsiteContent.music.grayDawn.albums) album.relativeUrl: album.redirectUrl,
-    // for (final album in WebsiteContent.music.strawberryComplexity.albums) album.relativeUrl: album.redirectUrl,
+    for (final album in WebsiteContent.music.albums) album.relativeUrl: album.redirectUrl,
   };
 
   static const _homeScreenKey = 'HomeScreen';
