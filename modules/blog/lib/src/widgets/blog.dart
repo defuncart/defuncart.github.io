@@ -21,7 +21,6 @@ class _BlogState extends State<Blog> {
   final Map<Category, List<Post>> _mapPostsToCategory = {
     Category.music: musicPosts,
     Category.film: filmPosts,
-    Category.tech: techPosts,
     Category.photography: photographyPosts,
   };
 

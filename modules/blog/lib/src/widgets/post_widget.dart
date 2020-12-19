@@ -6,7 +6,6 @@ import '../models/film_post.dart';
 import '../models/music_post.dart';
 import '../models/photography_post.dart';
 import '../models/post.dart';
-import '../models/tech_post.dart';
 
 class PostTile extends StatelessWidget {
   const PostTile({
@@ -17,8 +16,6 @@ class PostTile extends StatelessWidget {
   final Post post;
 
   static const _mapCategoryIcon = {
-    // Category.music: MdiIcons.musicClefTreble,
-    // Category.music: Icons.music_note,
     Category.music: MdiIcons.headphones,
     Category.film: MdiIcons.filmstrip,
     Category.tech: Icons.code,
@@ -40,8 +37,6 @@ class PostTile extends StatelessWidget {
                   return MusicPostTile(post: post);
                 } else if (post is FilmPost) {
                   return FilmPostTile(post: post);
-                } else if (post is TechPost) {
-                  return TechPostTile(post: post);
                 } else if (post is PhotographyPost) {
                   return PhotographyPostTile(post: post);
                 }
@@ -137,23 +132,6 @@ class FilmPostTile extends StatelessWidget {
     return Image.network(
       post.previewUrl,
       fit: BoxFit.cover,
-    );
-  }
-}
-
-class TechPostTile extends StatelessWidget {
-  const TechPostTile({
-    Key key,
-    @required this.post,
-  }) : super(key: key);
-
-  final TechPost post;
-
-  @override
-  Widget build(BuildContext context) {
-    return CustomTile(
-      title: post.title,
-      description: post.content,
     );
   }
 }

@@ -2,7 +2,6 @@ import '../enums/category.dart';
 import '../models/film_post.dart';
 import '../models/music_post.dart';
 import '../models/photography_post.dart';
-import '../models/tech_post.dart';
 
 final tagsForCategories = {
   Category.music: [
@@ -26,7 +25,6 @@ final tagsForCategories = {
 final allPosts = [
   ...musicPosts,
   ...filmPosts,
-  ...techPosts,
   ...photographyPosts,
 ];
 
@@ -217,19 +215,6 @@ final filmPosts = [
     id: '106413427',
     previewUrl: 'https://i.vimeocdn.com/video/489543438_1920x1080.webp',
   ),
-];
-
-final techPosts = <TechPost>[
-  // TechPost(
-  //   title: 'flutter_shogi_board package',
-  //   date: '2019-10-07',
-  //   tags: [
-  //     'Flutter',
-  //     'flutter_shogi_board',
-  //   ],
-  //   content:
-  //       'Yesterday I released my first package on pub.dev, flutter_shogi_board, a shogi board widget for Flutter which can be used to render static game board positions, tsume problems or shogi castles.',
-  // ),
 ];
 
 final photographyPosts = [
