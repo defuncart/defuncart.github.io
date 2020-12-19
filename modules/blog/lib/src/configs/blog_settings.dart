@@ -80,6 +80,80 @@ final musicPosts = [
         'Short and sweet electro mix featuring tracks from Arp Aubert, KiNK, Stardust, Throwing Snow, Percussions and more!',
     id: '16-03-03-electro',
   ),
+  MusicPost(
+    title: 'Techstep 1995 - 1998',
+    date: '2015-10-08',
+    tags: [
+      'StrawberryComplexity',
+    ],
+    description:
+        "Techstep was a subgenre of drum and bass popular in the late 90s. Characterized by dark synths and sci-fi tones, in its hay-day, Techstep was in fact the leading sound of DnB. The subgenre started to loose traction around the start of the new millennium and later matured into Neofunk. Here is a mix comprising of my favorite tracks over the subgenre's first four and most influential years.",
+    id: 'techstep-1995-1999',
+  ),
+  MusicPost(
+    title: '15-07-09 Post Dubstep/Future Garage',
+    date: '2015-07-09',
+    tags: [
+      'StrawberryComplexity',
+    ],
+    description:
+        'From 2009 to 2012 some dubstep producers tried to escape the increasingly brostep defined scene by utilizing house or techno influences, or even returning to that garage sound which originally influenced dubstep. Here is a post dubstep/future garage set featuring tracks of that period. Fond memories of living in SE London then :)',
+    id: '15-07-09-post-dubstepfuture-garage',
+  ),
+  MusicPost(
+    title: 'Dubstep 2006 - 2008',
+    date: '2015-03-29',
+    tags: [
+      'StrawberryComplexity',
+    ],
+    description: 'An old school dubstep set comprising of tracks from 2006 to 2008. Not for fans of Brostep :p',
+    id: '15-03-29',
+  ),
+  MusicPost(
+    title: '14-08-27 Dark Techno',
+    date: '2014-08-27',
+    tags: [
+      'StrawberryComplexity',
+    ],
+    description: 'Dark Techno set.',
+    id: '14-08-27',
+  ),
+  MusicPost(
+    title: '14-04-21 Trap',
+    date: '2014-04-21',
+    tags: [
+      'StrawberryComplexity',
+    ],
+    description: 'Short Trap mix!',
+    id: '14-04-21',
+  ),
+  MusicPost(
+    title: '13-10-06 Glitch Hop',
+    date: '2013-10-06',
+    tags: [
+      'StrawberryComplexity',
+    ],
+    description: 'A Glitch Hop set.',
+    id: '13-10-06',
+  ),
+  MusicPost(
+    title: "13-10-01 Drum'n'Bass",
+    date: '2013-10-01',
+    tags: [
+      'StrawberryComplexity',
+    ],
+    description: "Short impromptu drum'n'bass set.",
+    id: '13-10-01',
+  ),
+  MusicPost(
+    title: '13-03-02',
+    date: '2013-03-02',
+    tags: [
+      'StrawberryComplexity',
+    ],
+    description: "Drum'n'bass/Dubstep set for the coronation of the new gypsy king at the Kingdom of Tressillian!",
+    id: '13-03-02',
+  ),
 ];
 
 final filmPosts = [
