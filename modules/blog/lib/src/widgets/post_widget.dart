@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:iframes/iframes.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 import '../enums/category.dart';
@@ -174,18 +175,70 @@ class DetailContent extends StatelessWidget {
     return Builder(
       builder: (_) {
         if (post is MusicPost) {
-          return MusicPostTile(post: post);
+          return MusicDetailContent(post: post);
         } else if (post is FilmPost) {
-          return FilmPostTile(post: post);
+          return FilmDetailContent(post: post);
         } else if (post is PhotographyPost) {
-          return Image.network(
-            (post as PhotographyPost).url,
-            fit: BoxFit.contain,
-          );
+          return PhotographyDetailContent(post: post);
         }
 
         return Container();
       },
+    );
+  }
+}
+
+class MusicDetailContent extends StatelessWidget {
+  const MusicDetailContent({
+    Key key,
+    @required this.post,
+  }) : super(key: key);
+
+  final MusicPost post;
+
+  @override
+  Widget build(BuildContext context) {
+    final width = MediaQuery.of(context).size.width * 0.85;
+    return MixcloudWidget(
+      id: post.id,
+      width: width,
+    );
+  }
+}
+
+class FilmDetailContent extends StatelessWidget {
+  const FilmDetailContent({
+    Key key,
+    @required this.post,
+  }) : super(key: key);
+
+  final FilmPost post;
+
+  @override
+  Widget build(BuildContext context) {
+    final width = MediaQuery.of(context).size.width * 0.85;
+    final height = width / 16.0 * 9.0;
+    return VimeoWidget(
+      id: post.id,
+      width: width,
+      height: height,
+    );
+  }
+}
+
+class PhotographyDetailContent extends StatelessWidget {
+  const PhotographyDetailContent({
+    Key key,
+    @required this.post,
+  }) : super(key: key);
+
+  final PhotographyPost post;
+
+  @override
+  Widget build(BuildContext context) {
+    return Image.network(
+      post.url,
+      fit: BoxFit.contain,
     );
   }
 }

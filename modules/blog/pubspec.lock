@@ -60,6 +60,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  iframes:
+    dependency: "direct main"
+    description:
+      path: "../iframes"
+      relative: true
+    source: path
+    version: "0.0.1"
   matcher:
     dependency: transitive
     description:
