@@ -29,7 +29,6 @@ class _BlogState extends State<Blog> {
 
   List<Post> get _postsToDisplay {
     if (_selectedCategory == null) {
-      allPosts.sort((a, b) => DateTime.parse(b.date).compareTo(DateTime.parse(a.date)));
       return allPosts;
     } else {
       if (_selectedTag == null) {
@@ -43,6 +42,8 @@ class _BlogState extends State<Blog> {
   @override
   void initState() {
     super.initState();
+
+    allPosts.sort((a, b) => DateTime.parse(b.date).compareTo(DateTime.parse(a.date)));
 
     _categoryController = StreamController<Category>();
     _categoryController.stream.listen((category) {
