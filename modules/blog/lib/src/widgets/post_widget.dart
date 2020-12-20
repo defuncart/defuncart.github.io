@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:iframes/iframes.dart';
-import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 import '../enums/category.dart';
 import '../models/film_post.dart';
@@ -15,12 +14,6 @@ class PostTile extends StatelessWidget {
   }) : super(key: key);
 
   final Post post;
-
-  static const _mapCategoryIcon = {
-    Category.music: MdiIcons.headphones,
-    Category.film: MdiIcons.filmstrip,
-    Category.photography: MdiIcons.camera,
-  };
 
   @override
   Widget build(BuildContext context) {
@@ -51,7 +44,7 @@ class PostTile extends StatelessWidget {
           child: Padding(
             padding: const EdgeInsets.only(top: 8.0, right: 8.0),
             child: Icon(
-              _mapCategoryIcon[post.category],
+              post.category.icon,
               color: Theme.of(context).scaffoldBackgroundColor,
             ),
           ),
