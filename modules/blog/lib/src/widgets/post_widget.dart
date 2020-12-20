@@ -19,7 +19,6 @@ class PostTile extends StatelessWidget {
   static const _mapCategoryIcon = {
     Category.music: MdiIcons.headphones,
     Category.film: MdiIcons.filmstrip,
-    Category.tech: Icons.code,
     Category.photography: MdiIcons.camera,
   };
 

@@ -12,9 +12,6 @@ final tagsForCategories = {
     'GrayDawn',
     'StrawberryComplexity',
   ],
-  Category.tech: [
-    'Flutter',
-  ],
   Category.photography: [
     'StreetArt',
     'Travel',
