@@ -8,11 +8,13 @@ class Webpage extends StatelessWidget {
     Key key,
     this.content,
     this.builder,
+    this.floatingActionButton,
   })  : assert(content != null || builder != null),
         super(key: key);
 
   final Widget content;
   final Widget Function(BuildContext context, Orientation orientation, Size availableSize) builder;
+  final Widget floatingActionButton;
 
   @override
   Widget build(BuildContext context) {
@@ -40,6 +42,7 @@ class Webpage extends StatelessWidget {
               ),
             ),
           ),
+          floatingActionButton: floatingActionButton,
         ),
       ),
     );
