@@ -64,47 +64,28 @@ class MusicPostTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CustomTile(
-      title: post.title,
-      description: post.description,
-    );
-  }
-}
-
-class CustomTile extends StatelessWidget {
-  const CustomTile({
-    Key key,
-    @required this.title,
-    @required this.description,
-  }) : super(key: key);
-
-  final String title;
-  final String description;
-
-  @override
-  Widget build(BuildContext context) {
     return Container(
-      // color: color,
       color: const Color(0xff337EE8),
       padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 32.0),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Text(
-            title,
+            post.title,
             style: Theme.of(context).textTheme.headline6.apply(
                   color: Theme.of(context).scaffoldBackgroundColor,
                 ),
             textAlign: TextAlign.center,
           ),
           Text(
-            description,
+            post.description,
             style: Theme.of(context).textTheme.bodyText2.apply(
                   color: Theme.of(context).scaffoldBackgroundColor,
                 ),
-            maxLines: 4,
+            maxLines: 3,
             overflow: TextOverflow.ellipsis,
             textAlign: TextAlign.center,
+            softWrap: false,
           ),
         ],
       ),
