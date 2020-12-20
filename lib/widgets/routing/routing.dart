@@ -67,9 +67,12 @@ class RoutePageManager extends ChangeNotifier {
     CreditsCaogaCaogaScreen.relativeUrl: () => CreditsCaogaCaogaScreen(),
     DerDieDasScreen.relativeUrl: () => DerDieDasScreen(),
     CreditsDerDieDasScreen.relativeUrl: () => CreditsDerDieDasScreen(),
+    FunfzigFunfzigScreen.relativeUrl: () => FunfzigFunfzigScreen(),
+    CreditsFunfzigFunfzigScreen.relativeUrl: () => CreditsFunfzigFunfzigScreen(),
+    PolnaPolScreen.relativeUrl: () => PolnaPolScreen(),
+    CreditsPolnaPolScreen.relativeUrl: () => CreditsPolnaPolScreen(),
+    GamesPrivacyPolicyScreen.relativeUrl: () => GamesPrivacyPolicyScreen(),
     MusicScreen.relativeUrl: () => MusicScreen(),
-    GrayDawnScreen.relativeUrl: () => GrayDawnScreen(),
-    StrawberryComplexityScreen.relativeUrl: () => StrawberryComplexityScreen(),
     PackagesScreen.relativeUrl: () => PackagesScreen(),
     AboutScreen.relativeUrl: () => AboutScreen(),
     ResumeScreen.relativeUrl: () => ResumeScreen(),
@@ -83,11 +86,16 @@ class RoutePageManager extends ChangeNotifier {
     '/games/caogacaoga/credits': CreditsCaogaCaogaScreen.relativeUrl,
     '/games/derdiedas': DerDieDasScreen.relativeUrl,
     '/games/derdiedas/credits': CreditsDerDieDasScreen.relativeUrl,
+    '/games/funfzigfunfzig': FunfzigFunfzigScreen.relativeUrl,
+    '/games/funfzigfunfzig/credits': CreditsFunfzigFunfzigScreen.relativeUrl,
+    '/games/polnapol': PolnaPolScreen.relativeUrl,
+    '/games/polnapol/credits': CreditsPolnaPolScreen.relativeUrl,
+    '/music/graydawn': MusicScreen.relativeUrl,
+    '/music/strawberrycomplexity': MusicScreen.relativeUrl,
   };
 
   final Map<String, String> _mapRelativeUrlRedirect = {
-    for (final album in WebsiteContent.music.grayDawn.albums) album.relativeUrl: album.redirectUrl,
-    for (final album in WebsiteContent.music.strawberryComplexity.albums) album.relativeUrl: album.redirectUrl,
+    for (final album in WebsiteContent.music.albums) album.relativeUrl: album.redirectUrl,
   };
 
   static const _homeScreenKey = 'HomeScreen';

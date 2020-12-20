@@ -4,13 +4,17 @@ import 'package:flutter_html/style.dart';
 import 'package:markdown/markdown.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+export 'package:flutter_html/style.dart';
+
 class MarkdownWidget extends StatelessWidget {
   const MarkdownWidget({
     Key key,
-    this.data,
+    @required this.data,
+    this.style = const {},
   }) : super(key: key);
 
   final String data;
+  final Map<String, Style> style;
 
   @override
   Widget build(BuildContext context) {
@@ -21,6 +25,14 @@ class MarkdownWidget extends StatelessWidget {
         'body': Style(
           margin: const EdgeInsets.all(0),
         ),
+        'a': Style(
+          color: Theme.of(context).accentColor,
+          textDecoration: TextDecoration.none,
+        ),
+        'td': Style(
+          padding: const EdgeInsets.all(4),
+        ),
+        if (style.isNotEmpty) ...style,
       },
     );
   }
