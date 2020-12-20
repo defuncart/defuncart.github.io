@@ -26,8 +26,8 @@ abstract class WebsiteContent {
       url: AboutScreen.relativeUrl,
     ),
     NavBarItemModel(
-      title: 'Blog',
-      url: BlogScreen.relativeUrl,
+      title: 'New',
+      url: NewScreen.relativeUrl,
     ),
   ];
 
