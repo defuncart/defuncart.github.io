@@ -11,6 +11,7 @@ class NewScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Webpage(
       content: Blog(),
+      floatingActionButton: BlogFAB(),
     );
   }
 }
