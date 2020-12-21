@@ -25,8 +25,8 @@ abstract class WebsiteContent {
       url: AboutScreen.relativeUrl,
     ),
     NavBarItemModel(
-      title: 'New',
-      url: NewScreen.relativeUrl,
+      title: 'Journal',
+      url: JournalScreen.relativeUrl,
     ),
   ];
 

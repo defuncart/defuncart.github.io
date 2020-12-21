@@ -1,7 +1,7 @@
-import 'package:blog/src/widgets/post_widget.dart';
 import 'package:flutter/material.dart';
 
 import '../models/post.dart';
+import 'post_widget.dart';
 
 class PostsGrid extends StatelessWidget {
   const PostsGrid({

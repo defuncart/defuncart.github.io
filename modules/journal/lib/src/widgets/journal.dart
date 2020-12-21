@@ -10,14 +10,14 @@ import 'posts_grid.dart';
 
 StreamController<Category> _categoryController;
 
-class Blog extends StatefulWidget {
-  const Blog({Key key}) : super(key: key);
+class Journal extends StatefulWidget {
+  const Journal({Key key}) : super(key: key);
 
   @override
   _BlogState createState() => _BlogState();
 }
 
-class _BlogState extends State<Blog> {
+class _BlogState extends State<Journal> {
   Category _selectedCategory;
   String _selectedTag;
 
@@ -76,14 +76,14 @@ final _mapCategoryFABButtonColor = {
   Category.photography: Color(0xffE8E833)
 };
 
-class BlogFAB extends StatefulWidget {
-  const BlogFAB({Key key}) : super(key: key);
+class JournalFAB extends StatefulWidget {
+  const JournalFAB({Key key}) : super(key: key);
 
   @override
   _BlogFABState createState() => _BlogFABState();
 }
 
-class _BlogFABState extends State<BlogFAB> {
+class _BlogFABState extends State<JournalFAB> {
   var _expanded = false;
 
   @override

@@ -76,7 +76,7 @@ class RoutePageManager extends ChangeNotifier {
     PackagesScreen.relativeUrl: () => PackagesScreen(),
     AboutScreen.relativeUrl: () => AboutScreen(),
     ResumeScreen.relativeUrl: () => ResumeScreen(),
-    NewScreen.relativeUrl: () => NewScreen(),
+    JournalScreen.relativeUrl: () => JournalScreen(),
   };
 
   // to be removed at a later date (if binaries updated on store)

@@ -1,5 +1,5 @@
-name: blog
-description: A multi-category blog built using Flutter.
+name: journal
+description: A multi-category blog journal built using Flutter.
 publish_to: 'none'
 version: 0.0.1
 
