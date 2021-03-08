@@ -40,7 +40,8 @@ flutter:
     - assets/apps/derdiedas/
     - assets/apps/common/
     - assets/home/
-    - assets/music/
+    - assets/music/gray_dawn/
+    - assets/music/strawberry_complexity/
   fonts:
     - family: OpenSans
       fonts:

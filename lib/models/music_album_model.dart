@@ -4,12 +4,12 @@ class MusicAlbumModel {
     required this.description,
     required this.relativeUrl,
     required this.redirectUrl,
-    required this.artworkUrl,
+    required this.artworkPath,
   });
 
   final String title;
   final String description;
   final String relativeUrl;
   final String redirectUrl;
-  final String artworkUrl;
+  final String artworkPath;
 }

@@ -16,11 +16,11 @@ class MusicAlbum extends StatelessWidget {
     return Column(
       children: [
         ClickableImage(
-          album.artworkUrl,
+          album.artworkPath,
           width: 250,
           height: 250,
           onPressed: () => launch(album.redirectUrl),
-          type: ClickableImageType.network,
+          type: ClickableImageType.asset,
         ),
         SizedBox(height: 4.0),
         Text(
