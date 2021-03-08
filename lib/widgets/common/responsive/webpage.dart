@@ -5,14 +5,14 @@ import 'package:flutter/material.dart';
 
 class Webpage extends StatelessWidget {
   const Webpage({
-    Key key,
+    Key? key,
     this.content,
     this.builder,
   })  : assert(content != null || builder != null),
         super(key: key);
 
-  final Widget content;
-  final Widget Function(BuildContext context, Orientation orientation, Size availableSize) builder;
+  final Widget? content;
+  final Widget Function(BuildContext context, Orientation orientation, Size availableSize)? builder;
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +32,7 @@ class Webpage extends StatelessWidget {
                     Center(
                       child: SizedBox(
                         width: _constrainWidth(constraints.maxWidth),
-                        child: content ?? builder(context, orientation, _calculateAvailableSize(constraints)),
+                        child: content ?? builder!(context, orientation, _calculateAvailableSize(constraints)),
                       ),
                     ),
                   ],

@@ -11,11 +11,11 @@ import 'package:url_launcher/url_launcher.dart';
 class DerDieDasScreen extends StatelessWidget {
   static const relativeUrl = '/apps/derdiedas';
 
-  const DerDieDasScreen({Key key}) : super(key: key);
+  const DerDieDasScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    final appModel = WebsiteContent.apps.apps[relativeUrl];
+    final appModel = WebsiteContent.apps.apps[relativeUrl]!;
 
     return Webpage(
       content: Column(
@@ -55,7 +55,7 @@ class DerDieDasScreen extends StatelessWidget {
             child: SimpleTextButton(
               text: 'Full credits',
               onPressed: () => RoutePageManager.of(context).setNewRoutePath(CreditsDerDieDasScreen.relativeUrl),
-              textStyle: Theme.of(context).textTheme.bodyText2.copyWith(color: Theme.of(context).accentColor),
+              textStyle: Theme.of(context).textTheme.bodyText2!.copyWith(color: Theme.of(context).accentColor),
             ),
           ),
           SizedBox(height: 16.0),
@@ -66,7 +66,7 @@ class DerDieDasScreen extends StatelessWidget {
                 onPressed: () => launch(
                   'https://docs.google.com/document/d/1cfavvTwtuMD4Z7UarFtNbQB9UCGdID_K2rMJsmWAeN8/edit?usp=sharing',
                 ),
-                textStyle: Theme.of(context).textTheme.bodyText2.copyWith(color: Theme.of(context).accentColor),
+                textStyle: Theme.of(context).textTheme.bodyText2!.copyWith(color: Theme.of(context).accentColor),
               ),
               SizedBox(width: 4.0),
               SimpleTextButton(
@@ -74,7 +74,7 @@ class DerDieDasScreen extends StatelessWidget {
                 onPressed: () => launch(
                   'https://drive.google.com/open?id=1TM3vD_TuFHSMrH1yiB_FbCmF6anQM3HW',
                 ),
-                textStyle: Theme.of(context).textTheme.bodyText2.copyWith(color: Theme.of(context).accentColor),
+                textStyle: Theme.of(context).textTheme.bodyText2!.copyWith(color: Theme.of(context).accentColor),
               ),
             ],
           )

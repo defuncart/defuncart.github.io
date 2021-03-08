@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 
 class MarkdownScreen extends StatelessWidget {
   const MarkdownScreen({
-    Key key,
-    this.data,
+    Key? key,
+    required this.data,
   }) : super(key: key);
 
   final String data;

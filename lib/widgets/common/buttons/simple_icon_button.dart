@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 
 class SimpleIconButton extends StatelessWidget {
   const SimpleIconButton({
-    Key key,
-    @required this.icon,
-    @required this.onPressed,
+    Key? key,
+    required this.icon,
+    required this.onPressed,
   }) : super(key: key);
 
   final IconData icon;

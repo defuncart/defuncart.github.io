@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class CreditsCaogaCaogaScreen extends StatelessWidget {
   static const relativeUrl = '/apps/caogacaoga/credits';
 
-  const CreditsCaogaCaogaScreen({Key key}) : super(key: key);
+  const CreditsCaogaCaogaScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

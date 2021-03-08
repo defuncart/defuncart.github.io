@@ -3,9 +3,9 @@ import 'package:flutter/rendering.dart';
 
 class MouseGestureDetector extends StatelessWidget {
   const MouseGestureDetector({
-    Key key,
-    @required this.child,
-    @required this.onTap,
+    Key? key,
+    required this.child,
+    required this.onTap,
   }) : super(key: key);
 
   final Widget child;

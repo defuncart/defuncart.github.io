@@ -8,9 +8,9 @@ class ClickableTextSpan extends TextSpan {
   /// [text] and [onPressed] are required.
   /// [style] is optional. If not given, default from theme will be used.
   ClickableTextSpan({
-    @required String text,
-    TextStyle style,
-    @required VoidCallback onPressed,
+    required String text,
+    TextStyle? style,
+    required VoidCallback onPressed,
   }) : super(
           text: text,
           style: style,

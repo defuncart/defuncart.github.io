@@ -4,18 +4,18 @@ publish_to: 'none'
 version: 0.0.1+1
 
 environment:
-  sdk: ">=2.10.0 <3.0.0"
-  flutter: ">=1.22.0 <2.0.0"
+  sdk: '>=2.12.0 <3.0.0'
+  flutter: '>=2.0.0 <3.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
-  provider: ^4.3.2+2
-  url_launcher: ^5.7.10
+  provider: ^5.0.0
+  url_launcher:
   iframes:
     path: modules/iframes
-  flutter_html: ^1.1.1
-  markdown: ^3.0.0
+  # flutter_html:
+  markdown: ^4.0.0
   resume:
     path: modules/resume
 
@@ -23,6 +23,13 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   pedantic: ^1.9.0
+
+# dependency_overrides:
+  # chewie_audio: ^1.2.0
+  # # flutter_html: ^1.3.0
+  flutter_html:
+    git:
+      url: https://github.com/Sub6Resources/flutter_html
 
 flutter:
   uses-material-design: true

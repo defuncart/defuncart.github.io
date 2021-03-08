@@ -9,7 +9,7 @@ import 'package:flutter/material.dart';
 class AppsScreen extends StatelessWidget {
   static const relativeUrl = '/apps';
 
-  const AppsScreen({Key key}) : super(key: key);
+  const AppsScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -28,8 +28,8 @@ class AppsScreen extends StatelessWidget {
 
 class App extends StatelessWidget {
   const App({
-    Key key,
-    @required this.app,
+    Key? key,
+    required this.app,
   }) : super(key: key);
 
   final AppModel app;
@@ -47,7 +47,7 @@ class App extends StatelessWidget {
               children: [
                 Text(
                   app.title,
-                  style: Theme.of(context).textTheme.headline5.copyWith(fontWeight: FontWeight.bold),
+                  style: Theme.of(context).textTheme.headline5!.copyWith(fontWeight: FontWeight.bold),
                 ),
                 SizedBox(height: 16.0),
                 Image.asset(
@@ -76,13 +76,13 @@ class App extends StatelessWidget {
 }
 
 class IOSLogo extends StatelessWidget {
-  const IOSLogo({Key key}) : super(key: key);
+  const IOSLogo({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Text(
       'iOS',
-      style: Theme.of(context).textTheme.bodyText2.copyWith(
+      style: Theme.of(context).textTheme.bodyText2!.copyWith(
             fontWeight: FontWeight.bold,
             letterSpacing: -0.5,
           ),
@@ -91,7 +91,7 @@ class IOSLogo extends StatelessWidget {
 }
 
 class AndroidLogo extends StatelessWidget {
-  const AndroidLogo({Key key}) : super(key: key);
+  const AndroidLogo({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

@@ -1,12 +1,10 @@
-import 'package:meta/meta.dart';
-
 class AppModel {
   const AppModel({
-    @required this.title,
-    @required this.description,
-    @required this.icon,
-    @required this.relativeUrl,
-    @required this.platforms,
+    required this.title,
+    required this.description,
+    required this.icon,
+    required this.relativeUrl,
+    required this.platforms,
   });
 
   final String title;
@@ -18,16 +16,16 @@ class AppModel {
 
 class PlatformsModel {
   const PlatformsModel({
-    @required this.appStoreLink,
-    @required this.googlePlayLink,
+    this.appStoreLink,
+    this.googlePlayLink,
   });
 
   const PlatformsModel.appStore(this.appStoreLink) : googlePlayLink = null;
 
   const PlatformsModel.googlePlay(this.googlePlayLink) : appStoreLink = null;
 
-  final String appStoreLink;
-  final String googlePlayLink;
+  final String? appStoreLink;
+  final String? googlePlayLink;
 
   bool get ios => appStoreLink != null;
 

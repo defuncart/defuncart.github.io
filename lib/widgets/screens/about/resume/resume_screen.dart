@@ -6,7 +6,7 @@ import 'package:resume/resume.dart';
 class ResumeScreen extends StatelessWidget {
   static const relativeUrl = '/about/resume';
 
-  const ResumeScreen({Key key}) : super(key: key);
+  const ResumeScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

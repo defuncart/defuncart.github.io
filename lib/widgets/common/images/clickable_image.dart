@@ -13,10 +13,10 @@ extension ClickableImageTypeExtensions on ClickableImageType {
 class ClickableImage extends StatelessWidget {
   const ClickableImage(
     this.src, {
-    Key key,
-    @required this.width,
-    @required this.height,
-    @required this.onPressed,
+    Key? key,
+    required this.width,
+    required this.height,
+    required this.onPressed,
     this.type = ClickableImageType.asset,
   }) : super(key: key);
 

@@ -10,14 +10,14 @@ import 'package:url_launcher/url_launcher.dart';
 class AboutScreen extends StatelessWidget {
   static const relativeUrl = '/about';
 
-  const AboutScreen({Key key}) : super(key: key);
+  const AboutScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     final colors = [
       Theme.of(context).accentColor,
       Theme.of(context).disabledColor,
-      Theme.of(context).textTheme.bodyText2.color,
+      Theme.of(context).textTheme.bodyText2!.color,
     ];
 
     return Webpage(
@@ -42,7 +42,7 @@ class AboutScreen extends StatelessWidget {
                     padding: const EdgeInsets.all(16.0),
                     child: Text(
                       WebsiteContent.about.traits[i],
-                      style: Theme.of(context).textTheme.bodyText2.apply(
+                      style: Theme.of(context).textTheme.bodyText2!.apply(
                             color: Theme.of(context).scaffoldBackgroundColor,
                           ),
                     ),

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class FourZeroFourScreen extends StatelessWidget {
   static const relativeUrl = '/404';
 
-  const FourZeroFourScreen({Key key}) : super(key: key);
+  const FourZeroFourScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

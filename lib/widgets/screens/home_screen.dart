@@ -8,7 +8,7 @@ import 'package:flutter/material.dart';
 class HomeScreen extends StatelessWidget {
   static const relativeUrl = '/';
 
-  const HomeScreen({Key key}) : super(key: key);
+  const HomeScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class HomeScreen extends StatelessWidget {
 }
 
 class Landscape extends StatelessWidget {
-  const Landscape({Key key}) : super(key: key);
+  const Landscape({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -42,7 +42,7 @@ class Landscape extends StatelessWidget {
 }
 
 class Portrait extends StatelessWidget {
-  const Portrait({Key key}) : super(key: key);
+  const Portrait({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -60,7 +60,7 @@ class Portrait extends StatelessWidget {
 
 class Avatar extends StatelessWidget {
   const Avatar({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
@@ -83,7 +83,7 @@ class Avatar extends StatelessWidget {
 
 class Intro extends StatelessWidget {
   const Intro({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
@@ -99,7 +99,7 @@ class Intro extends StatelessWidget {
           WebsiteContent.home.name.toUpperCase(),
           style: Theme.of(context)
               .textTheme
-              .headline3
+              .headline3!
               .copyWith(
                 fontWeight: FontWeight.bold,
               )
@@ -109,7 +109,7 @@ class Intro extends StatelessWidget {
         ),
         Text(
           WebsiteContent.home.tagline,
-          style: Theme.of(context).textTheme.headline6.apply(
+          style: Theme.of(context).textTheme.headline6!.apply(
                 color: Theme.of(context).disabledColor,
               ),
         ),
@@ -119,7 +119,7 @@ class Intro extends StatelessWidget {
 }
 
 class Tagline extends StatelessWidget {
-  const Tagline({Key key}) : super(key: key);
+  const Tagline({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -132,7 +132,7 @@ class Tagline extends StatelessWidget {
           ),
           ClickableTextSpan(
             text: 'apps',
-            style: Theme.of(context).textTheme.bodyText2.copyWith(
+            style: Theme.of(context).textTheme.bodyText2!.copyWith(
                   color: Theme.of(context).accentColor,
                   fontWeight: FontWeight.bold,
                 ),
@@ -144,7 +144,7 @@ class Tagline extends StatelessWidget {
           ),
           ClickableTextSpan(
             text: 'packages',
-            style: Theme.of(context).textTheme.bodyText2.copyWith(
+            style: Theme.of(context).textTheme.bodyText2!.copyWith(
                   color: Theme.of(context).accentColor,
                   fontWeight: FontWeight.bold,
                 ),
@@ -156,7 +156,7 @@ class Tagline extends StatelessWidget {
           ),
           ClickableTextSpan(
             text: 'music',
-            style: Theme.of(context).textTheme.bodyText2.copyWith(
+            style: Theme.of(context).textTheme.bodyText2!.copyWith(
                   color: Theme.of(context).accentColor,
                   fontWeight: FontWeight.bold,
                 ),
