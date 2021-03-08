@@ -20,7 +20,6 @@ class MusicAlbum extends StatelessWidget {
           width: 250,
           height: 250,
           onPressed: () => launch(album.redirectUrl),
-          type: ClickableImageType.asset,
         ),
         SizedBox(height: 4.0),
         Text(
