@@ -8,10 +8,10 @@ class YoutubeWidget extends StatelessWidget {
   final double height;
 
   const YoutubeWidget({
-    Key key,
-    @required this.id,
-    @required this.width,
-    @required this.height,
+    Key? key,
+    required this.id,
+    required this.width,
+    required this.height,
   }) : super(key: key);
 
   @override
