@@ -24,12 +24,13 @@ Future<Uint8List> generateResume(PdfPageFormat format, ResumeSettings settings) 
 
   final doc = pw.Document(title: 'Résumé', author: 'James Leahy');
 
-  final profileImage = PdfImage.file(
-    doc.document,
+  final profileImage = pw.RawImage(
     bytes: (await settings.profileAsset).buffer.asUint8List(),
+    width: 150,
+    height: 150,
   );
 
-  final pageTheme = await pw.PageTheme(
+  final pageTheme = pw.PageTheme(
     pageFormat: format,
     theme: pw.ThemeData.withFont(
       base: pw.Font.ttf(await settings.baseFontAsset),

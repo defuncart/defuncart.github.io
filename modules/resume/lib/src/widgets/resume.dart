@@ -7,8 +7,8 @@ import 'resume_builder.dart';
 
 class Resume extends StatelessWidget {
   const Resume({
-    Key key,
-    @required this.settings,
+    Key? key,
+    required this.settings,
     this.showActions = false,
   }) : super(key: key);
 

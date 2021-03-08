@@ -1,4 +1,3 @@
-import 'package:meta/meta.dart';
 import 'package:pdf/widgets.dart' as pw;
 
 import '../../configs/content.dart';
@@ -6,7 +5,7 @@ import 'skill_widget.dart';
 
 class SkillsGroup extends pw.StatelessWidget {
   SkillsGroup({
-    @required this.skills,
+    required this.skills,
   });
 
   final List<Skill> skills;

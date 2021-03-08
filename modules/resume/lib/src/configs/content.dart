@@ -1,5 +1,3 @@
-import 'package:meta/meta.dart';
-
 const name = 'James Leahy';
 
 const location = 'Berlin, DE';
@@ -146,9 +144,9 @@ final developerSkillsContent3 = [
 
 class Entry {
   const Entry({
-    @required this.title,
-    @required this.subtitle,
-    @required this.date,
+    required this.title,
+    required this.subtitle,
+    required this.date,
   });
 
   final String title;
@@ -158,8 +156,8 @@ class Entry {
 
 class Skill {
   const Skill({
-    @required this.title,
-    @required this.value,
+    required this.title,
+    required this.value,
   });
 
   final String title;
