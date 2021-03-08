@@ -14,5 +14,5 @@ extension CategoryExtension on Category {
     Category.photography: MdiIcons.camera,
   };
 
-  IconData get icon => _mapCategoryIcon[this];
+  IconData get icon => _mapCategoryIcon[this]!;
 }

@@ -9,8 +9,8 @@ import '../models/post.dart';
 
 class PostTile extends StatelessWidget {
   const PostTile({
-    Key key,
-    @required this.post,
+    Key? key,
+    required this.post,
   }) : super(key: key);
 
   final Post post;
@@ -27,11 +27,11 @@ class PostTile extends StatelessWidget {
             child: Builder(
               builder: (_) {
                 if (post is MusicPost) {
-                  return MusicPostTile(post: post);
+                  return MusicPostTile(post: post as MusicPost);
                 } else if (post is FilmPost) {
-                  return FilmPostTile(post: post);
+                  return FilmPostTile(post: post as FilmPost);
                 } else if (post is PhotographyPost) {
-                  return PhotographyPostTile(post: post);
+                  return PhotographyPostTile(post: post as PhotographyPost);
                 }
 
                 return Container();
@@ -56,8 +56,8 @@ class PostTile extends StatelessWidget {
 
 class MusicPostTile extends StatelessWidget {
   const MusicPostTile({
-    Key key,
-    @required this.post,
+    Key? key,
+    required this.post,
   }) : super(key: key);
 
   final MusicPost post;
@@ -71,15 +71,15 @@ class MusicPostTile extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Text(
-            post.title,
-            style: Theme.of(context).textTheme.headline6.apply(
+            post.title!,
+            style: Theme.of(context).textTheme.headline6!.apply(
                   color: Theme.of(context).scaffoldBackgroundColor,
                 ),
             textAlign: TextAlign.center,
           ),
           Text(
             post.description,
-            style: Theme.of(context).textTheme.bodyText2.apply(
+            style: Theme.of(context).textTheme.bodyText2!.apply(
                   color: Theme.of(context).scaffoldBackgroundColor,
                 ),
             maxLines: 3,
@@ -95,8 +95,8 @@ class MusicPostTile extends StatelessWidget {
 
 class FilmPostTile extends StatelessWidget {
   const FilmPostTile({
-    Key key,
-    @required this.post,
+    Key? key,
+    required this.post,
   }) : super(key: key);
 
   final FilmPost post;
@@ -112,8 +112,8 @@ class FilmPostTile extends StatelessWidget {
 
 class PhotographyPostTile extends StatelessWidget {
   const PhotographyPostTile({
-    Key key,
-    @required this.post,
+    Key? key,
+    required this.post,
   }) : super(key: key);
 
   final PhotographyPost post;
@@ -137,8 +137,8 @@ void showDetailPopup(BuildContext context, Post post) => showDialog(
 
 class DetailContent extends StatelessWidget {
   const DetailContent({
-    Key key,
-    @required this.post,
+    Key? key,
+    required this.post,
   }) : super(key: key);
 
   final Post post;
@@ -148,11 +148,11 @@ class DetailContent extends StatelessWidget {
     return Builder(
       builder: (_) {
         if (post is MusicPost) {
-          return MusicDetailContent(post: post);
+          return MusicDetailContent(post: post as MusicPost);
         } else if (post is FilmPost) {
-          return FilmDetailContent(post: post);
+          return FilmDetailContent(post: post as FilmPost);
         } else if (post is PhotographyPost) {
-          return PhotographyDetailContent(post: post);
+          return PhotographyDetailContent(post: post as PhotographyPost);
         }
 
         return Container();
@@ -163,8 +163,8 @@ class DetailContent extends StatelessWidget {
 
 class MusicDetailContent extends StatelessWidget {
   const MusicDetailContent({
-    Key key,
-    @required this.post,
+    Key? key,
+    required this.post,
   }) : super(key: key);
 
   final MusicPost post;
@@ -181,8 +181,8 @@ class MusicDetailContent extends StatelessWidget {
 
 class FilmDetailContent extends StatelessWidget {
   const FilmDetailContent({
-    Key key,
-    @required this.post,
+    Key? key,
+    required this.post,
   }) : super(key: key);
 
   final FilmPost post;
@@ -201,8 +201,8 @@ class FilmDetailContent extends StatelessWidget {
 
 class PhotographyDetailContent extends StatelessWidget {
   const PhotographyDetailContent({
-    Key key,
-    @required this.post,
+    Key? key,
+    required this.post,
   }) : super(key: key);
 
   final PhotographyPost post;

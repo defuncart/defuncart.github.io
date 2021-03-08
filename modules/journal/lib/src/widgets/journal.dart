@@ -1,25 +1,27 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:unicorndial/unicorndial.dart';
+import 'package:journal/src/widgets/unicorndial.dart';
+
+// import 'package:unicorndial/unicorndial.dart';
 
 import '../configs/blog_settings.dart';
 import '../enums/category.dart';
 import '../models/post.dart';
 import 'posts_grid.dart';
 
-StreamController<Category> _categoryController;
+late StreamController<Category?> _categoryController;
 
 class Journal extends StatefulWidget {
-  const Journal({Key key}) : super(key: key);
+  const Journal({Key? key}) : super(key: key);
 
   @override
   _BlogState createState() => _BlogState();
 }
 
 class _BlogState extends State<Journal> {
-  Category _selectedCategory;
-  String _selectedTag;
+  Category? _selectedCategory;
+  String? _selectedTag;
 
   final Map<Category, List<Post>> _mapPostsToCategory = {
     Category.music: musicPosts,
@@ -32,9 +34,9 @@ class _BlogState extends State<Journal> {
       return allPosts;
     } else {
       if (_selectedTag == null) {
-        return _mapPostsToCategory[_selectedCategory];
+        return _mapPostsToCategory[_selectedCategory]!;
       } else {
-        return _mapPostsToCategory[_selectedCategory].where((post) => post.tags.contains(_selectedTag)).toList();
+        return _mapPostsToCategory[_selectedCategory]!.where((post) => post.tags.contains(_selectedTag)).toList();
       }
     }
   }
@@ -77,7 +79,7 @@ final _mapCategoryFABButtonColor = {
 };
 
 class JournalFAB extends StatefulWidget {
-  const JournalFAB({Key key}) : super(key: key);
+  const JournalFAB({Key? key}) : super(key: key);
 
   @override
   _BlogFABState createState() => _BlogFABState();
@@ -100,11 +102,11 @@ class _BlogFABState extends State<JournalFAB> {
               heroTag: category.toString(),
               backgroundColor: _mapCategoryFABButtonColor[category],
               mini: true,
-              child: Icon(category.icon),
               onPressed: () {
                 _expanded = false;
                 _categoryController.add(category);
               },
+              child: Icon(category.icon),
             ),
           ),
       ],

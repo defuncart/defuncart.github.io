@@ -5,8 +5,8 @@ import 'post_widget.dart';
 
 class PostsGrid extends StatelessWidget {
   const PostsGrid({
-    Key key,
-    @required this.posts,
+    Key? key,
+    required this.posts,
   }) : super(key: key);
 
   final List<Post> posts;
