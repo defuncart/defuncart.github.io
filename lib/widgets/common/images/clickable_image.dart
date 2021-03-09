@@ -18,12 +18,12 @@ class ClickableImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MouseGestureDetector(
+      onTap: onPressed,
       child: Image.asset(
         src,
         width: width,
         height: height,
       ),
-      onTap: onPressed,
     );
   }
 }

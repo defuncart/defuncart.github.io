@@ -16,11 +16,11 @@ class SimpleTextButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MouseGestureDetector(
+      onTap: onPressed,
       child: Text(
         text,
         style: textStyle ?? Theme.of(context).textTheme.bodyText2,
       ),
-      onTap: onPressed,
     );
   }
 }

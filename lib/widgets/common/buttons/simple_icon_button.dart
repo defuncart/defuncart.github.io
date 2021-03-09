@@ -14,10 +14,10 @@ class SimpleIconButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MouseGestureDetector(
+      onTap: onPressed,
       child: Icon(
         icon,
       ),
-      onTap: onPressed,
     );
   }
 }
