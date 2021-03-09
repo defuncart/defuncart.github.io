@@ -37,6 +37,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MouseGestureDetector(
+      onTap: () => RoutePageManager.of(context).setNewRoutePath(app.relativeUrl),
       child: Card(
         elevation: Styling.cardElevation,
         child: Padding(
@@ -70,7 +71,6 @@ class App extends StatelessWidget {
           ),
         ),
       ),
-      onTap: () => RoutePageManager.of(context).setNewRoutePath(app.relativeUrl),
     );
   }
 }
