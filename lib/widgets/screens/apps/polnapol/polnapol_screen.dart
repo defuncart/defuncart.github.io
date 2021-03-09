@@ -8,7 +8,7 @@ import 'package:flutter/material.dart';
 class PolnaPolScreen extends StatelessWidget {
   static const relativeUrl = '/apps/polnapol';
 
-  const PolnaPolScreen({Key key}) : super(key: key);
+  const PolnaPolScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class PolnaPolScreen extends StatelessWidget {
           SimpleTextButton(
             text: 'Full credits',
             onPressed: () => RoutePageManager.of(context).setNewRoutePath(CreditsPolnaPolScreen.relativeUrl),
-            textStyle: Theme.of(context).textTheme.bodyText2.copyWith(color: Theme.of(context).accentColor),
+            textStyle: Theme.of(context).textTheme.bodyText2!.copyWith(color: Theme.of(context).accentColor),
           ),
         ],
       ),

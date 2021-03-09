@@ -1,4 +1,3 @@
-import 'package:meta/meta.dart';
 import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart' as pw;
 
@@ -7,7 +6,7 @@ import '../../models/resume_style.dart';
 
 class SkillWidget extends pw.StatelessWidget {
   SkillWidget({
-    @required this.skill,
+    required this.skill,
   });
 
   final Skill skill;
@@ -43,8 +42,8 @@ class SkillWidget extends pw.StatelessWidget {
 
 class _Circle extends pw.StatelessWidget {
   _Circle({
-    @required this.color,
-    @required this.size,
+    required this.color,
+    required this.size,
   });
 
   final PdfColor color;

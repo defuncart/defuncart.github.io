@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class GamesPrivacyPolicyScreen extends StatelessWidget {
   static const relativeUrl = '/games/privacypolicy';
 
-  const GamesPrivacyPolicyScreen({Key key}) : super(key: key);
+  const GamesPrivacyPolicyScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

@@ -5,8 +5,8 @@ import 'package:url_launcher/url_launcher.dart';
 
 class MusicAlbum extends StatelessWidget {
   const MusicAlbum({
-    Key key,
-    @required this.album,
+    Key? key,
+    required this.album,
   }) : super(key: key);
 
   final MusicAlbumModel album;
@@ -16,11 +16,10 @@ class MusicAlbum extends StatelessWidget {
     return Column(
       children: [
         ClickableImage(
-          album.artworkUrl,
+          album.artworkPath,
           width: 250,
           height: 250,
           onPressed: () => launch(album.redirectUrl),
-          type: ClickableImageType.network,
         ),
         SizedBox(height: 4.0),
         Text(

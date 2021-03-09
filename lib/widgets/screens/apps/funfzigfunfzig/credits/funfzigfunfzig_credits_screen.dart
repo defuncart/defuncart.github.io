@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class CreditsFunfzigFunfzigScreen extends StatelessWidget {
   static const relativeUrl = '/apps/funfzigfunfzig/credits';
 
-  const CreditsFunfzigFunfzigScreen({Key key}) : super(key: key);
+  const CreditsFunfzigFunfzigScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

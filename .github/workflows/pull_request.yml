@@ -11,7 +11,7 @@ jobs:
           java-version: '12.x'
       - uses: subosito/flutter-action@v1.4.0
         with:
-          channel: 'beta'
+          channel: 'stable'
       - name: Install packages
         run:
           flutter pub get
@@ -31,10 +31,7 @@ jobs:
           java-version: '12.x'
       - uses: subosito/flutter-action@v1.4.0
         with:
-          channel: 'beta'
-      - name: Enable Web Support
-        run:
-          flutter config --enable-web
+          channel: 'stable'
       - name: Build web
         run:
           flutter build web --release

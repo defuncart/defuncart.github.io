@@ -12,11 +12,11 @@ import 'package:url_launcher/url_launcher.dart';
 class CaogaCaogaScreen extends StatelessWidget {
   static const relativeUrl = '/apps/caogacaoga';
 
-  const CaogaCaogaScreen({Key key}) : super(key: key);
+  const CaogaCaogaScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    final appModel = WebsiteContent.apps.apps[relativeUrl];
+    final appModel = WebsiteContent.apps.apps[relativeUrl]!;
 
     return Webpage(
       content: Column(
@@ -60,7 +60,7 @@ class CaogaCaogaScreen extends StatelessWidget {
             child: SimpleTextButton(
               text: 'Full credits',
               onPressed: () => RoutePageManager.of(context).setNewRoutePath(CreditsCaogaCaogaScreen.relativeUrl),
-              textStyle: Theme.of(context).textTheme.bodyText2.copyWith(color: Theme.of(context).accentColor),
+              textStyle: Theme.of(context).textTheme.bodyText2!.copyWith(color: Theme.of(context).accentColor),
             ),
           ),
           SizedBox(height: 16.0),
@@ -71,7 +71,7 @@ class CaogaCaogaScreen extends StatelessWidget {
                 onPressed: () => launch(
                   'https://docs.google.com/document/d/1ZGiSJ16ubQHUVeqa_OJ6SnR6OxMgpjAufbXifE2Eotw/edit?usp=sharing',
                 ),
-                textStyle: Theme.of(context).textTheme.bodyText2.copyWith(color: Theme.of(context).accentColor),
+                textStyle: Theme.of(context).textTheme.bodyText2!.copyWith(color: Theme.of(context).accentColor),
               ),
               SizedBox(width: 4.0),
               SimpleTextButton(
@@ -79,7 +79,7 @@ class CaogaCaogaScreen extends StatelessWidget {
                 onPressed: () => launch(
                   'https://drive.google.com/open?id=1pmhD4wX_5HNh9YVenqv4f4r_nN6b7vtM',
                 ),
-                textStyle: Theme.of(context).textTheme.bodyText2.copyWith(color: Theme.of(context).accentColor),
+                textStyle: Theme.of(context).textTheme.bodyText2!.copyWith(color: Theme.of(context).accentColor),
               ),
             ],
           )

@@ -8,9 +8,9 @@ class ResumeStyle {
   final double spacer;
 
   ResumeStyle({
-    FontSizes fontSizes,
-    Colors colors,
-    double spacer,
+    FontSizes? fontSizes,
+    Colors? colors,
+    double? spacer,
   })  : fontSizes = fontSizes ?? FontSizes(),
         colors = colors ?? Colors(),
         spacer = spacer ?? PdfPageFormat.cm;
@@ -26,13 +26,13 @@ class FontSizes {
   final double regular;
 
   const FontSizes({
-    double name,
-    double location,
-    double objective,
-    double links,
-    double header,
-    double subheader,
-    double regular,
+    double? name,
+    double? location,
+    double? objective,
+    double? links,
+    double? header,
+    double? subheader,
+    double? regular,
   })  : name = name ?? 30.0,
         location = location ?? 16.0,
         objective = objective ?? 12.4,
@@ -44,8 +44,8 @@ class FontSizes {
 
 class Colors {
   Colors({
-    PdfColor regular,
-    PdfColor light,
+    PdfColor? regular,
+    PdfColor? light,
   })  : regular = regular ?? PdfColor.fromHex('58595b'),
         light = light ?? PdfColor.fromHex('a7a9ac');
 
