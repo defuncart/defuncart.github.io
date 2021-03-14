@@ -10,14 +10,12 @@ class IFrameWidget extends StatefulWidget {
   final double height;
 
   IFrameWidget({
-    @required this.content,
-    @required this.viewId,
+    required this.content,
+    required this.viewId,
     this.width = double.infinity,
     this.height = double.infinity,
-    Key key,
-  })  : assert(content != null),
-        assert(viewId != null),
-        super(key: key);
+    Key? key,
+  }) : super(key: key);
 
   @override
   _IFrameWidgetState createState() => _IFrameWidgetState();

@@ -12,7 +12,7 @@ class MyAppRouterDelegate extends RouterDelegate<String> with ChangeNotifier, Po
     _pageManager.addListener(notifyListeners);
   }
 
-  final RoutePageManager _pageManager = RoutePageManager();
+  final _pageManager = RoutePageManager();
 
   /// In the build method we need to return Navigator using [navigatorKey]
   @override
@@ -38,7 +38,7 @@ class MyAppRouterDelegate extends RouterDelegate<String> with ChangeNotifier, Po
     }
 
     /// Notify the PageManager that page was popped
-    _pageManager.didPop(route.settings);
+    _pageManager.didPop(route.settings as Page);
 
     return true;
   }
@@ -98,17 +98,17 @@ class RoutePageManager extends ChangeNotifier {
     for (final album in WebsiteContent.music.albums) album.relativeUrl: album.redirectUrl,
   };
 
-  static const _homeScreenKey = 'HomeScreen';
+  static final _homeScreenKey = UniqueKey();
 
   final List<Page> _pages = [
     MaterialPage(
       child: HomeScreen(),
-      key: const Key(_homeScreenKey),
+      key: _homeScreenKey,
       name: HomeScreen.relativeUrl,
     ),
   ];
 
-  String get currentPath => _pages.last.name;
+  String get currentPath => _pages.last.name!;
 
   void didPop(Page page) {
     _pages.remove(page);
@@ -128,7 +128,7 @@ class RoutePageManager extends ChangeNotifier {
 
     if (relativeUrl == HomeScreen.relativeUrl) {
       _pages.removeWhere(
-        (element) => element.key != const Key(_homeScreenKey),
+        (element) => element.key != _homeScreenKey,
       );
     } else {
       // remove unnessary /
@@ -139,7 +139,7 @@ class RoutePageManager extends ChangeNotifier {
       if (_mapRelativeUrlScreen.containsKey(relativeUrl)) {
         _pages.add(
           MaterialPage(
-            child: _mapRelativeUrlScreen[relativeUrl](),
+            child: _mapRelativeUrlScreen[relativeUrl]!(),
             key: UniqueKey(),
             name: relativeUrl,
           ),
@@ -148,7 +148,7 @@ class RoutePageManager extends ChangeNotifier {
         final newRelative = _mapOldRelativeUrlNewRedirect[relativeUrl];
         _pages.add(
           MaterialPage(
-            child: _mapRelativeUrlScreen[newRelative](),
+            child: _mapRelativeUrlScreen[newRelative]!(),
             key: UniqueKey(),
             name: newRelative,
           ),
@@ -156,7 +156,7 @@ class RoutePageManager extends ChangeNotifier {
       } else if (_mapRelativeUrlRedirect.containsKey(relativeUrl)) {
         _isLaunchingUrl = true;
         await launch(
-          _mapRelativeUrlRedirect[relativeUrl],
+          _mapRelativeUrlRedirect[relativeUrl]!,
           // webOnlyWindowName: '_self',
         );
         _isLaunchingUrl = false;
@@ -180,7 +180,7 @@ class RoutePageManager extends ChangeNotifier {
 
 class MyAppRouteInformationParser extends RouteInformationParser<String> {
   @override
-  Future<String> parseRouteInformation(RouteInformation routeInformation) async => routeInformation.location;
+  Future<String> parseRouteInformation(RouteInformation routeInformation) async => routeInformation.location!;
 
   @override
   RouteInformation restoreRouteInformation(String path) => RouteInformation(location: path);

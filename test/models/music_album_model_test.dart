@@ -8,12 +8,12 @@ void main() {
       description: 'Description',
       relativeUrl: 'RelativeUrl',
       redirectUrl: 'RedirectUrl',
-      artworkUrl: 'ArtworkUrl',
+      artworkPath: 'ArtworkPath',
     );
     expect(musicAlbumModel.title, 'Title');
     expect(musicAlbumModel.description, 'Description');
     expect(musicAlbumModel.relativeUrl, 'RelativeUrl');
     expect(musicAlbumModel.redirectUrl, 'RedirectUrl');
-    expect(musicAlbumModel.artworkUrl, 'ArtworkUrl');
+    expect(musicAlbumModel.artworkPath, 'ArtworkPath');
   });
 }

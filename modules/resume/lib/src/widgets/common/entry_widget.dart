@@ -1,11 +1,12 @@
-import 'package:meta/meta.dart';
 import 'package:pdf/widgets.dart' as pw;
 
 import '../../configs/content.dart' as content;
 import '../../models/resume_style.dart';
 
 class EntryWidget extends pw.StatelessWidget {
-  EntryWidget({@required this.entry});
+  EntryWidget({
+    required this.entry,
+  });
 
   final content.Entry entry;
 

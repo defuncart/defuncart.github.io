@@ -10,8 +10,8 @@ class NavigationBar extends StatelessWidget {
   static const height = 36.0;
 
   const NavigationBar({
-    Key key,
-    @required this.orientation,
+    Key? key,
+    required this.orientation,
   }) : super(key: key);
 
   final Orientation orientation;
@@ -26,7 +26,7 @@ class NavigationBar extends StatelessWidget {
 }
 
 class _NavBarPortrait extends StatelessWidget {
-  const _NavBarPortrait({Key key}) : super(key: key);
+  const _NavBarPortrait({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -43,7 +43,7 @@ class _NavBarPortrait extends StatelessWidget {
 }
 
 class _NavBarLandscape extends StatelessWidget {
-  const _NavBarLandscape({Key key}) : super(key: key);
+  const _NavBarLandscape({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

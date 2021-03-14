@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 
 class NavBarItem extends StatelessWidget {
   const NavBarItem({
-    Key key,
-    @required this.title,
-    @required this.onPressed,
+    Key? key,
+    required this.title,
+    required this.onPressed,
   }) : super(key: key);
 
   final String title;

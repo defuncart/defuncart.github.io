@@ -7,7 +7,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class NavigationDrawer extends StatelessWidget {
-  const NavigationDrawer({Key key}) : super(key: key);
+  const NavigationDrawer({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -33,9 +33,9 @@ class NavigationDrawer extends StatelessWidget {
             NavBarItem(
               title: 'Home',
               // TODO doesn't seem to work correctly when webpage opened from drawer
-              onPressed: () async {
-                await Navigator.pop(context);
-                await RoutePageManager.of(context).resetToHome();
+              onPressed: () {
+                Navigator.of(context).pop();
+                RoutePageManager.of(context).resetToHome();
               },
             ),
             SizedBox(height: 16.0),

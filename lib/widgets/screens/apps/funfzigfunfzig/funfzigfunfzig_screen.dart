@@ -8,7 +8,7 @@ import 'package:flutter/material.dart';
 class FunfzigFunfzigScreen extends StatelessWidget {
   static const relativeUrl = '/apps/funfzigfunfzig';
 
-  const FunfzigFunfzigScreen({Key key}) : super(key: key);
+  const FunfzigFunfzigScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class FunfzigFunfzigScreen extends StatelessWidget {
           SimpleTextButton(
             text: 'Full credits',
             onPressed: () => RoutePageManager.of(context).setNewRoutePath(CreditsFunfzigFunfzigScreen.relativeUrl),
-            textStyle: Theme.of(context).textTheme.bodyText2.copyWith(color: Theme.of(context).accentColor),
+            textStyle: Theme.of(context).textTheme.bodyText2!.copyWith(color: Theme.of(context).accentColor),
           ),
         ],
       ),

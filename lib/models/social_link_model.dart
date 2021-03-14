@@ -1,9 +1,7 @@
-import 'package:meta/meta.dart';
-
 class SocialLinkModel {
   const SocialLinkModel({
-    @required this.assetpath,
-    @required this.url,
+    required this.assetpath,
+    required this.url,
   });
 
   final String assetpath;

@@ -5,7 +5,7 @@ import 'package:journal/journal.dart';
 class JournalScreen extends StatelessWidget {
   static const relativeUrl = '/journal';
 
-  const JournalScreen({Key key}) : super(key: key);
+  const JournalScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

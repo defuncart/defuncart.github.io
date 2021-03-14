@@ -1,5 +1,3 @@
-import 'package:meta/meta.dart';
-import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart' as pw;
 
 import '../../configs/content.dart' as content;
@@ -8,9 +6,11 @@ import '../common/default_spacer.dart';
 import '../common/url_text.dart';
 
 class PersonalInfo extends pw.StatelessWidget {
-  PersonalInfo({@required this.profileImage});
+  PersonalInfo({
+    required this.profileImage,
+  });
 
-  final PdfImage profileImage;
+  final pw.RawImage profileImage;
 
   @override
   pw.Widget build(pw.Context context) {

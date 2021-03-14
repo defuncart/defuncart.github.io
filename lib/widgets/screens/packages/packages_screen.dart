@@ -9,7 +9,7 @@ import 'package:url_launcher/url_launcher.dart';
 class PackagesScreen extends StatelessWidget {
   static const relativeUrl = '/packages';
 
-  const PackagesScreen({Key key}) : super(key: key);
+  const PackagesScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -28,8 +28,8 @@ class PackagesScreen extends StatelessWidget {
 
 class Package extends StatelessWidget {
   const Package({
-    Key key,
-    @required this.package,
+    Key? key,
+    required this.package,
   }) : super(key: key);
 
   final PackageModel package;

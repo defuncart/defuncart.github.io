@@ -4,8 +4,8 @@ class CustomOrientationBuilder extends StatelessWidget {
   static const _minWidthLandscape = 480;
 
   const CustomOrientationBuilder({
-    Key key,
-    @required this.builder,
+    Key? key,
+    required this.builder,
   }) : super(key: key);
 
   final OrientationWidgetBuilder builder;

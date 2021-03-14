@@ -1,4 +1,3 @@
-import 'package:meta/meta.dart';
 import 'package:pdf/widgets.dart' as pw;
 
 import '../../configs/content.dart' as content;
@@ -30,7 +29,9 @@ class Education extends pw.StatelessWidget {
 class _Entry2Widget extends pw.StatelessWidget {
   final content.Entry entry;
 
-  _Entry2Widget({@required this.entry});
+  _Entry2Widget({
+    required this.entry,
+  });
 
   @override
   pw.Widget build(pw.Context context) {
