@@ -29,6 +29,16 @@ final allPosts = [
 
 final musicPosts = [
   MusicPost(
+    title: 'Wi†çh H∅u\$3 2010',
+    date: '2021-03-15',
+    tags: [
+      'StrawberryComplexity',
+    ],
+    description:
+        'Witch house is a dark electronic micro-genre that emerged in late 2009 and enjoyed brief popularity through 2010.',
+    id: 'wiçh-hu3-2010',
+  ),
+  MusicPost(
     title: 'Post-Hardcore 2020',
     date: '2020-11-30',
     tags: [
@@ -44,7 +54,7 @@ final musicPosts = [
       'StrawberryComplexity',
     ],
     description:
-        'Digital hardcore is genre fusing hardcore punk and diverse electronic genres such as breakbeat, jungle and techno, while also drawing on heavy metal and noise music. ',
+        'Digital hardcore is genre fusing hardcore punk and diverse electronic genres such as breakbeat, jungle and techno, while also drawing on heavy metal and noise music.',
     id: 'digital-hardcore-1994-1995',
   ),
   MusicPost(
