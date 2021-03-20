@@ -3,6 +3,8 @@ import '../models/film_post.dart';
 import '../models/music_post.dart';
 import '../models/photography_post.dart';
 
+part 'blog_settings_photography.part.dart';
+
 final tagsForCategories = {
   Category.music: [
     'GrayDawn',
@@ -211,33 +213,5 @@ final filmPosts = [
     ],
     id: '106413427',
     previewUrl: 'https://i.vimeocdn.com/video/489543438_1920x1080.webp',
-  ),
-];
-
-final photographyPosts = [
-  PhotographyPost(
-    date: '2020-09-13',
-    tags: [
-      'StreetArt',
-      'Berlin',
-    ],
-    url:
-        'https://instagram.ftxl3-1.fna.fbcdn.net/v/t51.2885-15/e35/119465465_155530362894600_2565493723585497307_n.jpg?_nc_ht=instagram.ftxl3-1.fna.fbcdn.net&_nc_cat=100&_nc_ohc=QTOurC6qmdwAX_ips-u&tp=1&oh=a52db8ce195f5391e78cf4a887f7f81a&oe=5FFED5E1',
-  ),
-  PhotographyPost(
-    date: '2020-06-01',
-    tags: [
-      'Berlin',
-    ],
-    url:
-        'https://instagram.ftxl3-1.fna.fbcdn.net/v/t51.2885-15/e35/101648865_587439231903804_6465916985369765694_n.jpg?_nc_ht=instagram.ftxl3-1.fna.fbcdn.net&_nc_cat=100&_nc_ohc=IdIiI0rXn-wAX8mrbV1&tp=1&oh=15dea311dc9a7d7314be3d0084f958f7&oe=5FFEF00A',
-  ),
-  PhotographyPost(
-    date: '2019-08-12',
-    tags: [
-      'Travel',
-    ],
-    url:
-        'https://instagram.ftxl3-2.fna.fbcdn.net/v/t51.2885-15/e35/68742684_1080585942140343_6704894132077725629_n.jpg?_nc_ht=instagram.ftxl3-2.fna.fbcdn.net&_nc_cat=103&_nc_ohc=cr-Hv-iGBLUAX9EnnBN&tp=1&oh=fca66968a3db4ac9a80117c4e0101403&oe=5FFD99AE',
   ),
 ];

@@ -5,12 +5,12 @@ class PhotographyPost extends Post {
   const PhotographyPost({
     required String date,
     required List<String> tags,
-    required this.url,
+    required this.assetPath,
   }) : super(
           date: date,
           category: Category.photography,
           tags: tags,
         );
 
-  final String url;
+  final String assetPath;
 }
