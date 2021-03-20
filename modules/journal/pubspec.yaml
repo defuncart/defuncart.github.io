@@ -19,3 +19,18 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   pedantic: ^1.11.0
+
+flutter:
+  assets:
+    - packages/journal/assets/photography/2021-03-10.png
+    - packages/journal/assets/photography/2021-02-10.png
+    - packages/journal/assets/photography/2021-02-09.png
+    - packages/journal/assets/photography/2021-02-06.png
+    - packages/journal/assets/photography/2020-09-13.png
+    - packages/journal/assets/photography/2020-09-11.png
+    - packages/journal/assets/photography/2020-08-18.png
+    - packages/journal/assets/photography/2020-08-10.png
+    - packages/journal/assets/photography/2020-06-01.png
+    - packages/journal/assets/photography/2020-05-31.png
+    - packages/journal/assets/photography/2020-05-25.png
+    - packages/journal/assets/photography/2020-05-03.png
