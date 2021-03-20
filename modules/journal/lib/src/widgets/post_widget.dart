@@ -120,8 +120,9 @@ class PhotographyPostTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Image.network(
-      post.url,
+    return Image.asset(
+      post.assetPath,
+      package: 'journal',
       fit: BoxFit.cover,
     );
   }
@@ -209,8 +210,9 @@ class PhotographyDetailContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Image.network(
-      post.url,
+    return Image.asset(
+      post.assetPath,
+      package: 'journal',
       fit: BoxFit.contain,
     );
   }
