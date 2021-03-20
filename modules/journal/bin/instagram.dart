@@ -30,7 +30,6 @@ void main() async {
 
     sb.writeln('\tPhotographyPost(');
     sb.writeln('\t\tdate: \'$dateTime\',');
-    sb.writeln('\t\ttags: [],');
     sb.writeln('\t\assetPath: \'assets/photography/$dateTime.png\',');
     sb.writeln('\t),');
 

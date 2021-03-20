@@ -1,7 +1,6 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:journal/src/widgets/unicorndial.dart';
 
 // import 'package:unicorndial/unicorndial.dart';
 
@@ -9,6 +8,7 @@ import '../configs/blog_settings.dart';
 import '../enums/category.dart';
 import '../models/post.dart';
 import 'posts_grid.dart';
+import 'unicorndial.dart';
 
 late StreamController<Category?> _categoryController;
 
@@ -21,7 +21,6 @@ class Journal extends StatefulWidget {
 
 class _BlogState extends State<Journal> {
   Category? _selectedCategory;
-  String? _selectedTag;
 
   final Map<Category, List<Post>> _mapPostsToCategory = {
     Category.music: musicPosts,
@@ -33,11 +32,7 @@ class _BlogState extends State<Journal> {
     if (_selectedCategory == null) {
       return allPosts;
     } else {
-      if (_selectedTag == null) {
-        return _mapPostsToCategory[_selectedCategory]!;
-      } else {
-        return _mapPostsToCategory[_selectedCategory]!.where((post) => post.tags.contains(_selectedTag)).toList();
-      }
+      return _mapPostsToCategory[_selectedCategory]!;
     }
   }
 
@@ -47,7 +42,7 @@ class _BlogState extends State<Journal> {
 
     allPosts.sort((a, b) => DateTime.parse(b.date).compareTo(DateTime.parse(a.date)));
 
-    _categoryController = StreamController<Category>();
+    _categoryController = StreamController<Category?>();
     _categoryController.stream.listen((category) {
       if (_selectedCategory != category) {
         setState(() => _selectedCategory = category);

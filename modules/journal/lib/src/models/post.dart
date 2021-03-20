@@ -5,7 +5,6 @@ abstract class Post {
     this.title,
     required this.date,
     required this.category,
-    required this.tags,
   });
 
   final String? title;
@@ -13,6 +12,4 @@ abstract class Post {
   final String date;
 
   final Category category;
-
-  final List<String> tags;
 }
