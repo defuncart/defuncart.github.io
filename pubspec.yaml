@@ -18,15 +18,15 @@ dependencies:
   markdown: ^4.0.0
   resume:
     path: modules/resume
+  journal:
+    path: modules/journal
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   pedantic: ^1.11.0
 
-# dependency_overrides:
-  # chewie_audio: ^1.2.0
-  # # flutter_html: ^1.3.0
+dependency_overrides:
   flutter_html:
     git:
       url: https://github.com/Sub6Resources/flutter_html

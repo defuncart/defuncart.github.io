@@ -126,11 +126,11 @@ packages:
     source: sdk
     version: "0.0.0"
   flutter_html:
-    dependency: "direct dev"
+    dependency: "direct overridden"
     description:
       path: "."
       ref: HEAD
-      resolved-ref: "4688f1a91421a76ea5c27e29889fadce6b6b4102"
+      resolved-ref: d3187ba7237612d26c3a2c1e0c3e6e1004150358
       url: "https://github.com/Sub6Resources/flutter_html"
     source: git
     version: "2.0.0-nullsafety.0"
@@ -179,6 +179,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "3.0.1"
+  journal:
+    dependency: "direct main"
+    description:
+      path: "modules/journal"
+      relative: true
+    source: path
+    version: "0.0.1"
   js:
     dependency: transitive
     description:
@@ -200,6 +207,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.12.10"
+  material_design_icons_flutter:
+    dependency: transitive
+    description:
+      name: material_design_icons_flutter
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "5.0.5955-rc.1"
   meta:
     dependency: transitive
     description:
@@ -269,7 +283,7 @@ packages:
       name: printing
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "5.0.1"
+    version: "5.0.3"
   provider:
     dependency: "direct main"
     description:
@@ -407,7 +421,7 @@ packages:
       name: video_player
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.0.0"
+    version: "2.0.2"
   video_player_platform_interface:
     dependency: transitive
     description:
