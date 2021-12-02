@@ -68,9 +68,9 @@ class _BlogState extends State<Journal> {
 }
 
 final _mapCategoryFABButtonColor = {
-  Category.music: Color(0xff337EE8),
-  Category.film: Color(0xff33E87E),
-  Category.photography: Color(0xffE8E833)
+  Category.music: const Color(0xff337EE8),
+  Category.film: const Color(0xff33E87E),
+  Category.photography: const Color(0xffE8E833)
 };
 
 class JournalFAB extends StatefulWidget {
@@ -87,9 +87,9 @@ class _BlogFABState extends State<JournalFAB> {
   Widget build(BuildContext context) {
     return UnicornDialer(
       backgroundColor: Colors.transparent,
-      parentButtonBackground: Color(0xffE8337E),
+      parentButtonBackground: const Color(0xffE8337E),
       orientation: UnicornOrientation.VERTICAL,
-      parentButton: Icon(Icons.filter_alt),
+      parentButton: const Icon(Icons.filter_alt),
       childButtons: [
         for (final category in Category.values)
           UnicornButton(

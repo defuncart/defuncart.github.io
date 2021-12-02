@@ -8,11 +8,11 @@ class CreditsPolnaPolScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MarkdownScreen(data: _data);
+    return const MarkdownScreen(data: _data);
   }
 }
 
-final _data = '''
+const _data = '''
 # Pół na pół
 
 © DeFunc Art 2018. All rights reserved.

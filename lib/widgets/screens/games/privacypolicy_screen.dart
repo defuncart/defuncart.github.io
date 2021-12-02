@@ -8,11 +8,11 @@ class GamesPrivacyPolicyScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MarkdownScreen(data: _data);
+    return const MarkdownScreen(data: _data);
   }
 }
 
-final _data = '''
+const _data = '''
 # Privacy Policy
 
 Effective Date: May 25th, 2018

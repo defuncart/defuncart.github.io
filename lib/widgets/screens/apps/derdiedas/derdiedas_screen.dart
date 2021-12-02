@@ -24,8 +24,8 @@ class DerDieDasScreen extends StatelessWidget {
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              MarkdownWidget(data: _data),
-              SizedBox(height: 16.0),
+              const MarkdownWidget(data: _data),
+              const SizedBox(height: 16.0),
               Center(
                 child: Image.asset(
                   'assets/apps/derdiedas/derdiedas.gif',
@@ -33,32 +33,34 @@ class DerDieDasScreen extends StatelessWidget {
                   height: 472,
                 ),
               ),
-              SizedBox(height: 16.0),
-              Text(
+              const SizedBox(height: 16.0),
+              const Text(
                 'Der Die Das is now available for testing, simply click on a link below to join a testing program.',
               ),
-              SizedBox(height: 16.0),
+              const SizedBox(height: 16.0),
             ],
           ),
           DownloadAppStores(
             appStoreLink: appModel.platforms.appStoreLink,
             googlePlayLink: appModel.platforms.googlePlayLink,
           ),
-          SizedBox(height: 16.0),
-          Align(
+          const SizedBox(height: 16.0),
+          const Align(
             alignment: Alignment.centerLeft,
             child: Text("Special thanks to ResponsiveVoice's speech synthesis."),
           ),
-          SizedBox(height: 16.0),
+          const SizedBox(height: 16.0),
           Align(
             alignment: Alignment.centerLeft,
             child: SimpleTextButton(
               text: 'Full credits',
               onPressed: () => RoutePageManager.of(context).setNewRoutePath(CreditsDerDieDasScreen.relativeUrl),
-              textStyle: Theme.of(context).textTheme.bodyText2!.copyWith(color: Theme.of(context).accentColor),
+              textStyle: Theme.of(context).textTheme.bodyText2?.copyWith(
+                    color: Theme.of(context).colorScheme.secondary,
+                  ),
             ),
           ),
-          SizedBox(height: 16.0),
+          const SizedBox(height: 16.0),
           Row(
             children: [
               SimpleTextButton(
@@ -66,15 +68,19 @@ class DerDieDasScreen extends StatelessWidget {
                 onPressed: () => launch(
                   'https://docs.google.com/document/d/1cfavvTwtuMD4Z7UarFtNbQB9UCGdID_K2rMJsmWAeN8/edit?usp=sharing',
                 ),
-                textStyle: Theme.of(context).textTheme.bodyText2!.copyWith(color: Theme.of(context).accentColor),
+                textStyle: Theme.of(context).textTheme.bodyText2?.copyWith(
+                      color: Theme.of(context).colorScheme.secondary,
+                    ),
               ),
-              SizedBox(width: 4.0),
+              const SizedBox(width: 4.0),
               SimpleTextButton(
                 text: 'Press Kit',
                 onPressed: () => launch(
                   'https://drive.google.com/open?id=1TM3vD_TuFHSMrH1yiB_FbCmF6anQM3HW',
                 ),
-                textStyle: Theme.of(context).textTheme.bodyText2!.copyWith(color: Theme.of(context).accentColor),
+                textStyle: Theme.of(context).textTheme.bodyText2?.copyWith(
+                      color: Theme.of(context).colorScheme.secondary,
+                    ),
               ),
             ],
           )

@@ -11,7 +11,7 @@ const linkedin = 'https://linkedin.com/in/jamesjleahy';
 
 const educationHeader = 'Education';
 
-final educationContent = [
+const educationContent = [
   Entry(
     title: 'Goldsmiths College, London',
     subtitle: 'Master of Fine Art in Computational Studio Arts',
@@ -31,7 +31,7 @@ final educationContent = [
 
 const workExperienceHeader = 'Work Experience';
 
-final workExperienceContent = [
+const workExperienceContent = [
   Entry(
     title: 'Superlist, Berlin',
     subtitle: 'Senior Flutter Developer',
@@ -55,7 +55,7 @@ final workExperienceContent = [
 ];
 
 const languagesHeader = 'Languages';
-final languagesContent = [
+const languagesContent = [
   Skill(
     title: 'English',
     value: 5,
@@ -75,7 +75,7 @@ final languagesContent = [
 ];
 
 const otherSkillsHeader = 'Other Skills';
-final otherSkillsContent = [
+const otherSkillsContent = [
   Skill(
     title: 'Audio Engineering',
     value: 4,
@@ -91,7 +91,7 @@ final otherSkillsContent = [
 ];
 
 const developerSkillsHeader = 'Developer Skills';
-final developerSkillsContent1 = [
+const developerSkillsContent1 = [
   Skill(
     title: 'Flutter',
     value: 5,
@@ -109,7 +109,7 @@ final developerSkillsContent1 = [
     value: 2,
   ),
 ];
-final developerSkillsContent2 = [
+const developerSkillsContent2 = [
   Skill(
     title: 'Dart',
     value: 5,
@@ -127,7 +127,7 @@ final developerSkillsContent2 = [
     value: 2,
   ),
 ];
-final developerSkillsContent3 = [
+const developerSkillsContent3 = [
   Skill(
     title: 'Rapid Prototyping',
     value: 3,

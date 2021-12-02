@@ -56,7 +56,7 @@ class _Entry2Widget extends pw.StatelessWidget {
                   color: defaultResumeStyle.colors.regular,
                 ),
               ),
-              pw.TextSpan(text: '  '),
+              const pw.TextSpan(text: '  '),
               pw.TextSpan(
                 text: entry.date,
                 style: pw.TextStyle(

@@ -11,7 +11,7 @@ class ResumeStyle {
     FontSizes? fontSizes,
     Colors? colors,
     double? spacer,
-  })  : fontSizes = fontSizes ?? FontSizes(),
+  })  : fontSizes = fontSizes ?? const FontSizes(),
         colors = colors ?? Colors(),
         spacer = spacer ?? PdfPageFormat.cm;
 }

@@ -15,7 +15,6 @@ class PostsGrid extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (_, constraints) {
-        print(constraints);
         return Wrap(
           spacing: 8.0,
           runSpacing: 8.0,

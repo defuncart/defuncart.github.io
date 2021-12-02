@@ -62,21 +62,21 @@ class RoutePageManager extends ChangeNotifier {
   final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 
   final _mapRelativeUrlScreen = {
-    AppsScreen.relativeUrl: () => AppsScreen(),
-    CaogaCaogaScreen.relativeUrl: () => CaogaCaogaScreen(),
-    CreditsCaogaCaogaScreen.relativeUrl: () => CreditsCaogaCaogaScreen(),
-    DerDieDasScreen.relativeUrl: () => DerDieDasScreen(),
-    CreditsDerDieDasScreen.relativeUrl: () => CreditsDerDieDasScreen(),
-    FunfzigFunfzigScreen.relativeUrl: () => FunfzigFunfzigScreen(),
-    CreditsFunfzigFunfzigScreen.relativeUrl: () => CreditsFunfzigFunfzigScreen(),
-    PolnaPolScreen.relativeUrl: () => PolnaPolScreen(),
-    CreditsPolnaPolScreen.relativeUrl: () => CreditsPolnaPolScreen(),
-    GamesPrivacyPolicyScreen.relativeUrl: () => GamesPrivacyPolicyScreen(),
-    MusicScreen.relativeUrl: () => MusicScreen(),
-    PackagesScreen.relativeUrl: () => PackagesScreen(),
-    AboutScreen.relativeUrl: () => AboutScreen(),
-    ResumeScreen.relativeUrl: () => ResumeScreen(),
-    JournalScreen.relativeUrl: () => JournalScreen(),
+    AppsScreen.relativeUrl: () => const AppsScreen(),
+    CaogaCaogaScreen.relativeUrl: () => const CaogaCaogaScreen(),
+    CreditsCaogaCaogaScreen.relativeUrl: () => const CreditsCaogaCaogaScreen(),
+    DerDieDasScreen.relativeUrl: () => const DerDieDasScreen(),
+    CreditsDerDieDasScreen.relativeUrl: () => const CreditsDerDieDasScreen(),
+    FunfzigFunfzigScreen.relativeUrl: () => const FunfzigFunfzigScreen(),
+    CreditsFunfzigFunfzigScreen.relativeUrl: () => const CreditsFunfzigFunfzigScreen(),
+    PolnaPolScreen.relativeUrl: () => const PolnaPolScreen(),
+    CreditsPolnaPolScreen.relativeUrl: () => const CreditsPolnaPolScreen(),
+    GamesPrivacyPolicyScreen.relativeUrl: () => const GamesPrivacyPolicyScreen(),
+    MusicScreen.relativeUrl: () => const MusicScreen(),
+    PackagesScreen.relativeUrl: () => const PackagesScreen(),
+    AboutScreen.relativeUrl: () => const AboutScreen(),
+    ResumeScreen.relativeUrl: () => const ResumeScreen(),
+    JournalScreen.relativeUrl: () => const JournalScreen(),
   };
 
   // to be removed at a later date (if binaries updated on store)
@@ -102,7 +102,7 @@ class RoutePageManager extends ChangeNotifier {
 
   final List<Page> _pages = [
     MaterialPage(
-      child: HomeScreen(),
+      child: const HomeScreen(),
       key: _homeScreenKey,
       name: HomeScreen.relativeUrl,
     ),
@@ -164,7 +164,7 @@ class RoutePageManager extends ChangeNotifier {
       } else {
         _pages.add(
           MaterialPage(
-            child: FourZeroFourScreen(),
+            child: const FourZeroFourScreen(),
             key: UniqueKey(),
             name: FourZeroFourScreen.relativeUrl,
           ),
@@ -183,5 +183,5 @@ class MyAppRouteInformationParser extends RouteInformationParser<String> {
   Future<String> parseRouteInformation(RouteInformation routeInformation) async => routeInformation.location!;
 
   @override
-  RouteInformation restoreRouteInformation(String path) => RouteInformation(location: path);
+  RouteInformation restoreRouteInformation(String configuration) => RouteInformation(location: configuration);
 }

@@ -18,9 +18,9 @@ class NavigationBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: height,
-      child: orientation == Orientation.landscape ? _NavBarLandscape() : _NavBarPortrait(),
+      child: orientation == Orientation.landscape ? const _NavBarLandscape() : const _NavBarPortrait(),
     );
   }
 }
@@ -50,7 +50,7 @@ class _NavBarLandscape extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: <Widget>[
-        HomeNavBarItem(),
+        const HomeNavBarItem(),
         Row(
           mainAxisAlignment: MainAxisAlignment.end,
           children: <Widget>[
@@ -62,8 +62,8 @@ class _NavBarLandscape extends StatelessWidget {
                   onPressed: () => RoutePageManager.of(context).setNewRoutePath(navItem.url),
                 ),
               ),
-            Padding(
-              padding: const EdgeInsets.only(left: 24.0),
+            const Padding(
+              padding: EdgeInsets.only(left: 24.0),
               child: BlogNavBarItem(),
             ),
           ],

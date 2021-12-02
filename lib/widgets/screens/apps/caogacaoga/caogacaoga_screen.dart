@@ -24,7 +24,7 @@ class CaogaCaogaScreen extends StatelessWidget {
         children: [
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
+            children: const [
               MarkdownWidget(data: _data),
               SizedBox(height: 16.0),
               Center(
@@ -49,21 +49,23 @@ class CaogaCaogaScreen extends StatelessWidget {
             appStoreLink: appModel.platforms.appStoreLink,
             googlePlayLink: appModel.platforms.googlePlayLink,
           ),
-          SizedBox(height: 16.0),
-          Align(
+          const SizedBox(height: 16.0),
+          const Align(
             alignment: Alignment.centerLeft,
             child: Text("Special thanks to Teanglann's Pronunciation Database and Abair speech synthesis."),
           ),
-          SizedBox(height: 16.0),
+          const SizedBox(height: 16.0),
           Align(
             alignment: Alignment.centerLeft,
             child: SimpleTextButton(
               text: 'Full credits',
               onPressed: () => RoutePageManager.of(context).setNewRoutePath(CreditsCaogaCaogaScreen.relativeUrl),
-              textStyle: Theme.of(context).textTheme.bodyText2!.copyWith(color: Theme.of(context).accentColor),
+              textStyle: Theme.of(context).textTheme.bodyText2?.copyWith(
+                    color: Theme.of(context).colorScheme.secondary,
+                  ),
             ),
           ),
-          SizedBox(height: 16.0),
+          const SizedBox(height: 16.0),
           Row(
             children: [
               SimpleTextButton(
@@ -71,15 +73,19 @@ class CaogaCaogaScreen extends StatelessWidget {
                 onPressed: () => launch(
                   'https://docs.google.com/document/d/1ZGiSJ16ubQHUVeqa_OJ6SnR6OxMgpjAufbXifE2Eotw/edit?usp=sharing',
                 ),
-                textStyle: Theme.of(context).textTheme.bodyText2!.copyWith(color: Theme.of(context).accentColor),
+                textStyle: Theme.of(context).textTheme.bodyText2?.copyWith(
+                      color: Theme.of(context).colorScheme.secondary,
+                    ),
               ),
-              SizedBox(width: 4.0),
+              const SizedBox(width: 4.0),
               SimpleTextButton(
                 text: 'Press Kit',
                 onPressed: () => launch(
                   'https://drive.google.com/open?id=1pmhD4wX_5HNh9YVenqv4f4r_nN6b7vtM',
                 ),
-                textStyle: Theme.of(context).textTheme.bodyText2!.copyWith(color: Theme.of(context).accentColor),
+                textStyle: Theme.of(context).textTheme.bodyText2?.copyWith(
+                      color: Theme.of(context).colorScheme.secondary,
+                    ),
               ),
             ],
           )

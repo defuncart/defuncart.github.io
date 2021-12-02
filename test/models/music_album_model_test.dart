@@ -3,7 +3,7 @@ import 'package:flutter_test/flutter_test.dart';
 
 void main() {
   test('Ensure parameters correct', () {
-    final musicAlbumModel = MusicAlbumModel(
+    const musicAlbumModel = MusicAlbumModel(
       title: 'Title',
       description: 'Description',
       relativeUrl: 'RelativeUrl',

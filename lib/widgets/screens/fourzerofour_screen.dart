@@ -8,7 +8,7 @@ class FourZeroFourScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Webpage(
+    return const Webpage(
       content: Text('Nothing found!'),
     );
   }

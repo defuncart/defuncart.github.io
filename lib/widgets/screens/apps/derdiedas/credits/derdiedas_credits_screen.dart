@@ -8,11 +8,11 @@ class CreditsDerDieDasScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MarkdownScreen(data: _data);
+    return const MarkdownScreen(data: _data);
   }
 }
 
-final _data = '''
+const _data = '''
 # Der Die Das
 
 © DeFunc Art 2018. All rights reserved.

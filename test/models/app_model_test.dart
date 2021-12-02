@@ -3,7 +3,7 @@ import 'package:flutter_test/flutter_test.dart';
 
 void main() {
   test('Ensure parameters correct', () {
-    final musicAlbumModel = AppModel(
+    const musicAlbumModel = AppModel(
       title: 'Title',
       description: 'Description',
       icon: 'Icon',
@@ -21,7 +21,7 @@ void main() {
   });
 
   test('PlatformsModel constructor', () {
-    final platformsModel = PlatformsModel(
+    const platformsModel = PlatformsModel(
       appStoreLink: 'App Store',
       googlePlayLink: 'Google Play',
     );
@@ -32,7 +32,7 @@ void main() {
   });
 
   test('PlatformsModel.appStore() constructor', () {
-    final platformsModel = PlatformsModel.appStore('App Store');
+    const platformsModel = PlatformsModel.appStore('App Store');
     expect(platformsModel.appStoreLink, 'App Store');
     expect(platformsModel.ios, isTrue);
     expect(platformsModel.googlePlayLink, isNull);
@@ -40,7 +40,7 @@ void main() {
   });
 
   test('PlatformsModel constructor', () {
-    final platformsModel = PlatformsModel.googlePlay('Google Play');
+    const platformsModel = PlatformsModel.googlePlay('Google Play');
     expect(platformsModel.appStoreLink, isNull);
     expect(platformsModel.ios, isFalse);
     expect(platformsModel.googlePlayLink, 'Google Play');

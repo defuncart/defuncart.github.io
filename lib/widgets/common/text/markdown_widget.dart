@@ -24,7 +24,7 @@ class MarkdownWidget extends StatelessWidget {
           margin: const EdgeInsets.all(0),
         ),
         'a': Style(
-          color: Theme.of(context).accentColor,
+          color: Theme.of(context).colorScheme.secondary,
           textDecoration: TextDecoration.none,
         ),
         'td': Style(
