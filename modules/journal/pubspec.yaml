@@ -4,13 +4,13 @@ publish_to: 'none'
 version: 0.0.1
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
-  flutter: ">=2.0.0 <3.0.0"
+  sdk: ">=2.14.0 <3.0.0"
+  flutter: ">=2.5.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  material_design_icons_flutter: ^5.0.5955-rc.1
+  material_design_icons_flutter:
   iframes:
     path: ../iframes
   # unicorndial: ^1.1.5
@@ -18,7 +18,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  pedantic: ^1.11.0
+  flutter_lints:
 
 flutter:
   assets:
