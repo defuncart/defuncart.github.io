@@ -29,6 +29,31 @@ final allPosts = [
 
 final musicPosts = [
   const MusicPost(
+    title: 'Trap Metal 2016 - 2017',
+    date: '2021-12-02',
+    description:
+        'Trap metal is a genre combining elements of trap music and heavy metal, as well as elements of genres such as industrial.',
+    id: 'trap-metal-2016-2017',
+  ),
+  const MusicPost(
+    title: 'Techno 2015',
+    date: '2021-05-25',
+    description: 'A mix comprising of techno tracks from 2015.',
+    id: 'techno-2015',
+  ),
+  const MusicPost(
+    title: 'Techno 2014',
+    date: '2021-04-17',
+    description: 'A mix comprising of techno tracks from 2014.',
+    id: 'techno-2014',
+  ),
+  const MusicPost(
+    title: 'Techno 2011 - 2013',
+    date: '2021-04-02',
+    description: 'A mix comprising of techno bangers from 2011 to 2013.',
+    id: 'techno-2011-2013',
+  ),
+  const MusicPost(
     title: 'Wi†çh H∅u\$3 2010',
     date: '2021-03-15',
     description:
