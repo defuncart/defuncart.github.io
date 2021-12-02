@@ -2,6 +2,35 @@ part of 'blog_settings.dart';
 
 final photographyPosts = [
   const PhotographyPost(
+    date: '2021-10-30',
+    assetPath: 'assets/photography/2021-10-30.png',
+  ),
+  const PhotographyPost(
+    date: '2021-10-02',
+    assetPath: 'assets/photography/2021-10-02.png',
+  ),
+  const PhotographyPost(
+    date: '2021-06-13',
+    assetPath: 'assets/photography/2021-06-13.png',
+  ),
+  const PhotographyPost(
+    date: '2021-06-05',
+    assetPath: 'assets/photography/2021-06-05.png',
+  ),
+  const PhotographyPost(
+    date: '2021-05-17',
+    assetPath: 'assets/photography/2021-05-17.png',
+  ),
+  const PhotographyPost(
+    date: '2021-05-02',
+    assetPath: 'assets/photography/2021-05-02.png',
+  ),
+  const PhotographyPost(
+    date: '2021-04-06',
+    assetPath: 'assets/photography/2021-04-06.png',
+  ),
+  //
+  const PhotographyPost(
     date: '2021-03-10',
     assetPath: 'assets/photography/2021-03-10.png',
   ),
