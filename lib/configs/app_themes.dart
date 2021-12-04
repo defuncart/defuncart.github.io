@@ -17,6 +17,9 @@ abstract class AppThemes {
     colorScheme: const ColorScheme.light().copyWith(
       secondary: _DFAColors.pink,
     ),
+    progressIndicatorTheme: const ProgressIndicatorThemeData(
+      color: _DFAColors.pink,
+    ),
   );
 
   // static final dark = ThemeData.dark().copyWith(
