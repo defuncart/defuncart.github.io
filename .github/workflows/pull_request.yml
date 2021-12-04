@@ -2,7 +2,7 @@ name: pull_request
 on: pull_request
 jobs:
   lint-unit-test:
-    name: Lint + Unit Tests
+    name: Lint + Tests
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -18,7 +18,7 @@ jobs:
       - name: Lint
         run: 
           flutter analyze
-      - name: Unit tests
+      - name: Tests
         run:
           flutter test
   build-web:
