@@ -3,6 +3,7 @@ import 'dart:typed_data';
 
 import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart' as pw;
+import 'package:resume/src/widgets/sections/personal_info.dart';
 
 import '../../resume.dart';
 import '../models/resume_style.dart';
@@ -11,23 +12,20 @@ import 'sections/developer_skills.dart';
 import 'sections/education.dart';
 import 'sections/languages.dart';
 import 'sections/other_skills.dart';
-import 'sections/personal_info.dart';
 import 'sections/work_experience.dart';
 
 Future<Uint8List> generateResume(PdfPageFormat format, ResumeSettings settings) async {
   format = PdfPageFormat.a4.copyWith(
-    marginTop: 1 * PdfPageFormat.cm,
-    marginBottom: 1 * PdfPageFormat.cm,
-    marginLeft: 1 * PdfPageFormat.cm,
-    marginRight: 1 * PdfPageFormat.cm,
+    marginTop: PdfPageFormat.cm,
+    marginBottom: PdfPageFormat.cm,
+    marginLeft: PdfPageFormat.cm,
+    marginRight: PdfPageFormat.cm,
   );
 
   final doc = pw.Document(title: 'Résumé', author: 'James Leahy');
 
-  final profileImage = pw.RawImage(
-    bytes: (await settings.profileAsset).buffer.asUint8List(),
-    width: 150,
-    height: 150,
+  final profileImage = pw.MemoryImage(
+    (await settings.profileAsset).buffer.asUint8List(),
   );
 
   final pageTheme = pw.PageTheme(

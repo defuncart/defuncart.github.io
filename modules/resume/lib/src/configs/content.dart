@@ -3,7 +3,7 @@ const name = 'James Leahy';
 const location = 'Berlin, DE';
 
 const objective =
-    'Mobile App and Game Developer with 7+ years experience shipping successful titles to the AppStore. Lead 5 projects from concept to release. Problem solver who delivers quality code,   scalable  architectures    and    elegant  user  interfaces.';
+    'Mobile App and Game Developer with 8+ years experience shipping successful titles to the AppStore. Lead 5 projects from concept to release. Problem solver who delivers quality code,    scalable  architectures    and    elegant  user  interfaces.';
 
 const email = 'jamesjleahy@gmail.com';
 
@@ -48,9 +48,9 @@ const workExperienceContent = [
     date: 'Sept 2018 – Aug 2019',
   ),
   Entry(
-    title: 'Pixel Racoons, Berlin',
-    subtitle: 'Unity Game Developer',
-    date: 'Jan 2017 – July 2017',
+    title: 'Various, Berlin',
+    subtitle: 'iOS & Unity Developer',
+    date: 'Sept 2013 – Sept 2018',
   ),
 ];
 
@@ -85,7 +85,7 @@ const otherSkillsContent = [
     value: 3,
   ),
   Skill(
-    title: 'Rive',
+    title: 'Figma',
     value: 2,
   ),
 ];
@@ -129,15 +129,15 @@ const developerSkillsContent2 = [
 ];
 const developerSkillsContent3 = [
   Skill(
-    title: 'Rapid Prototyping',
+    title: 'CI/CD',
+    value: 4,
+  ),
+  Skill(
+    title: 'Firebase',
     value: 3,
   ),
   Skill(
     title: 'UI/UX',
-    value: 3,
-  ),
-  Skill(
-    title: 'CI/CD',
     value: 3,
   ),
 ];

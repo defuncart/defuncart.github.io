@@ -10,7 +10,7 @@ class PersonalInfo extends pw.StatelessWidget {
     required this.profileImage,
   });
 
-  final pw.RawImage profileImage;
+  final pw.MemoryImage profileImage;
 
   @override
   pw.Widget build(pw.Context context) {
