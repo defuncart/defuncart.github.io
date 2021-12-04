@@ -21,7 +21,7 @@ class Webpage extends StatelessWidget {
     return LayoutBuilder(
       builder: (_, constraints) => CustomOrientationBuilder(
         builder: (_, orientation) => Scaffold(
-          drawer: orientation == Orientation.portrait ? NavigationDrawer() : null,
+          drawer: orientation == Orientation.portrait ? const NavigationDrawer() : null,
           body: SafeArea(
             child: SingleChildScrollView(
               child: Padding(
@@ -30,7 +30,7 @@ class Webpage extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
                     NavigationBar(orientation: orientation),
-                    SizedBox(height: 16.0),
+                    const SizedBox(height: 16.0),
                     Center(
                       child: SizedBox(
                         width: _constrainWidth(constraints.maxWidth),

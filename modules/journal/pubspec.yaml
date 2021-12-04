@@ -4,13 +4,13 @@ publish_to: 'none'
 version: 0.0.1
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
-  flutter: ">=2.0.0 <3.0.0"
+  sdk: ">=2.14.0 <3.0.0"
+  flutter: ">=2.5.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  material_design_icons_flutter: ^5.0.5955-rc.1
+  material_design_icons_flutter:
   iframes:
     path: ../iframes
   # unicorndial: ^1.1.5
@@ -18,10 +18,17 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  pedantic: ^1.11.0
+  flutter_lints:
 
 flutter:
   assets:
+    - packages/journal/assets/photography/2021-10-30.png
+    - packages/journal/assets/photography/2021-10-02.png
+    - packages/journal/assets/photography/2021-06-13.png
+    - packages/journal/assets/photography/2021-06-05.png
+    - packages/journal/assets/photography/2021-05-17.png
+    - packages/journal/assets/photography/2021-05-02.png
+    - packages/journal/assets/photography/2021-04-06.png
     - packages/journal/assets/photography/2021-03-10.png
     - packages/journal/assets/photography/2021-02-10.png
     - packages/journal/assets/photography/2021-02-09.png

@@ -3,6 +3,8 @@ import 'package:defuncart_github_io/widgets/routing/routing.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(

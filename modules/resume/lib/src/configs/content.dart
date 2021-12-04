@@ -3,7 +3,7 @@ const name = 'James Leahy';
 const location = 'Berlin, DE';
 
 const objective =
-    'Mobile App and Game Developer with 7+ years experience shipping successful titles to the AppStore. Lead 5 projects from concept to release. Problem solver who delivers quality code,   scalable  architectures    and    elegant  user  interfaces.';
+    'Mobile App and Game Developer with 8+ years experience shipping successful titles to the AppStore. Lead 5 projects from concept to release. Problem solver who delivers quality code,    scalable  architectures    and    elegant  user  interfaces.';
 
 const email = 'jamesjleahy@gmail.com';
 
@@ -11,7 +11,7 @@ const linkedin = 'https://linkedin.com/in/jamesjleahy';
 
 const educationHeader = 'Education';
 
-final educationContent = [
+const educationContent = [
   Entry(
     title: 'Goldsmiths College, London',
     subtitle: 'Master of Fine Art in Computational Studio Arts',
@@ -31,7 +31,7 @@ final educationContent = [
 
 const workExperienceHeader = 'Work Experience';
 
-final workExperienceContent = [
+const workExperienceContent = [
   Entry(
     title: 'Superlist, Berlin',
     subtitle: 'Senior Flutter Developer',
@@ -48,14 +48,14 @@ final workExperienceContent = [
     date: 'Sept 2018 – Aug 2019',
   ),
   Entry(
-    title: 'Pixel Racoons, Berlin',
-    subtitle: 'Unity Game Developer',
-    date: 'Jan 2017 – July 2017',
+    title: 'Various, Berlin',
+    subtitle: 'iOS & Unity Developer',
+    date: 'Sept 2013 – Sept 2018',
   ),
 ];
 
 const languagesHeader = 'Languages';
-final languagesContent = [
+const languagesContent = [
   Skill(
     title: 'English',
     value: 5,
@@ -75,7 +75,7 @@ final languagesContent = [
 ];
 
 const otherSkillsHeader = 'Other Skills';
-final otherSkillsContent = [
+const otherSkillsContent = [
   Skill(
     title: 'Audio Engineering',
     value: 4,
@@ -85,13 +85,13 @@ final otherSkillsContent = [
     value: 3,
   ),
   Skill(
-    title: 'Rive',
+    title: 'Figma',
     value: 2,
   ),
 ];
 
 const developerSkillsHeader = 'Developer Skills';
-final developerSkillsContent1 = [
+const developerSkillsContent1 = [
   Skill(
     title: 'Flutter',
     value: 5,
@@ -109,7 +109,7 @@ final developerSkillsContent1 = [
     value: 2,
   ),
 ];
-final developerSkillsContent2 = [
+const developerSkillsContent2 = [
   Skill(
     title: 'Dart',
     value: 5,
@@ -127,17 +127,17 @@ final developerSkillsContent2 = [
     value: 2,
   ),
 ];
-final developerSkillsContent3 = [
+const developerSkillsContent3 = [
   Skill(
-    title: 'Rapid Prototyping',
+    title: 'CI/CD',
+    value: 4,
+  ),
+  Skill(
+    title: 'Firebase',
     value: 3,
   ),
   Skill(
     title: 'UI/UX',
-    value: 3,
-  ),
-  Skill(
-    title: 'CI/CD',
     value: 3,
   ),
 ];

@@ -48,9 +48,9 @@ class Package extends StatelessWidget {
                 package.title,
                 style: Theme.of(context).textTheme.headline5,
               ),
-              SizedBox(height: 8.0),
+              const SizedBox(height: 8.0),
               Text(package.description),
-              SizedBox(height: 8.0),
+              const SizedBox(height: 8.0),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [

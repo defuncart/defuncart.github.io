@@ -3,7 +3,7 @@ import 'package:flutter_test/flutter_test.dart';
 
 void main() {
   test('Ensure parameters correct', () {
-    final socialLinkModel = PackageModel(
+    const socialLinkModel = PackageModel(
       title: 'Title',
       description: 'Description',
       pubDevUrl: 'Url',

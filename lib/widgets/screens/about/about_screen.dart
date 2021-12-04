@@ -15,7 +15,7 @@ class AboutScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final colors = [
-      Theme.of(context).accentColor,
+      Theme.of(context).colorScheme.secondary,
       Theme.of(context).disabledColor,
       Theme.of(context).textTheme.bodyText2!.color,
     ];
@@ -33,7 +33,7 @@ class AboutScreen extends StatelessWidget {
                 Card(
                   elevation: Styling.cardElevation,
                   color: colors[i % colors.length],
-                  shape: RoundedRectangleBorder(
+                  shape: const RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(
                       Radius.circular(16.0),
                     ),
@@ -50,7 +50,7 @@ class AboutScreen extends StatelessWidget {
                 ),
             ],
           ),
-          SizedBox(height: 64.0),
+          const SizedBox(height: 64.0),
           Center(
             child: Wrap(
               spacing: 16.0,
@@ -72,7 +72,7 @@ class AboutScreen extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(height: 64.0),
+          const SizedBox(height: 64.0),
           Center(
             child: Text(WebsiteContent.about.footer),
           ),

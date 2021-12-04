@@ -3,9 +3,8 @@ import 'package:flutter/material.dart';
 // ignore_for_file: unused_field
 abstract class AppThemes {
   static final light = ThemeData.light().copyWith(
-    accentColor: _DFAColors.pink,
     scaffoldBackgroundColor: Colors.white,
-    iconTheme: IconThemeData(
+    iconTheme: const IconThemeData(
       color: _AppColors.regular,
     ),
     textTheme: ThemeData.light().textTheme.apply(
@@ -15,6 +14,12 @@ abstract class AppThemes {
         ),
     cardColor: Colors.white,
     disabledColor: _AppColors.light,
+    colorScheme: const ColorScheme.light().copyWith(
+      secondary: _DFAColors.pink,
+    ),
+    progressIndicatorTheme: const ProgressIndicatorThemeData(
+      color: _DFAColors.pink,
+    ),
   );
 
   // static final dark = ThemeData.dark().copyWith(

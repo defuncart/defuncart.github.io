@@ -19,7 +19,7 @@ class NavigationDrawer extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           mainAxisSize: MainAxisSize.min,
           children: [
-            SizedBox(height: 16.0),
+            const SizedBox(height: 16.0),
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
@@ -29,7 +29,7 @@ class NavigationDrawer extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(height: 32.0),
+            const SizedBox(height: 32.0),
             NavBarItem(
               title: 'Home',
               // TODO doesn't seem to work correctly when webpage opened from drawer
@@ -38,7 +38,7 @@ class NavigationDrawer extends StatelessWidget {
                 RoutePageManager.of(context).resetToHome();
               },
             ),
-            SizedBox(height: 16.0),
+            const SizedBox(height: 16.0),
             for (final item in WebsiteContent.navBarItems)
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 16.0),
@@ -47,8 +47,8 @@ class NavigationDrawer extends StatelessWidget {
                   onPressed: () => RoutePageManager.of(context).setNewRoutePath(item.url),
                 ),
               ),
-            SizedBox(height: 16.0),
-            BlogNavBarItem(),
+            const SizedBox(height: 16.0),
+            const BlogNavBarItem(),
           ],
         ),
       ),

@@ -21,10 +21,10 @@ class MusicAlbum extends StatelessWidget {
           height: 250,
           onPressed: () => launch(album.redirectUrl),
         ),
-        SizedBox(height: 4.0),
+        const SizedBox(height: 4.0),
         Text(
           album.title,
-          style: TextStyle(
+          style: const TextStyle(
             fontStyle: FontStyle.italic,
           ),
         ),

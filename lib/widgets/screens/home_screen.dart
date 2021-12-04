@@ -14,7 +14,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Webpage(
       builder: (_, orientation, availableSize) =>
-          orientation == Orientation.landscape && availableSize.width > 700 ? Landscape() : Portrait(),
+          orientation == Orientation.landscape && availableSize.width > 700 ? const Landscape() : const Portrait(),
     );
   }
 }
@@ -28,14 +28,14 @@ class Landscape extends StatelessWidget {
       children: [
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [
+          children: const [
             Avatar(),
             SizedBox(width: 64.0),
             Intro(),
           ],
         ),
-        SizedBox(height: 32.0),
-        Tagline(),
+        const SizedBox(height: 32.0),
+        const Tagline(),
       ],
     );
   }
@@ -47,7 +47,7 @@ class Portrait extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: [
+      children: const [
         Avatar(),
         SizedBox(height: 32.0),
         Intro(),
@@ -104,7 +104,7 @@ class Intro extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               )
               .apply(
-                color: Theme.of(context).accentColor,
+                color: Theme.of(context).colorScheme.secondary,
               ),
         ),
         Text(
@@ -133,7 +133,7 @@ class Tagline extends StatelessWidget {
           ClickableTextSpan(
             text: 'apps',
             style: Theme.of(context).textTheme.bodyText2!.copyWith(
-                  color: Theme.of(context).accentColor,
+                  color: Theme.of(context).colorScheme.secondary,
                   fontWeight: FontWeight.bold,
                 ),
             onPressed: () => RoutePageManager.of(context).setNewRoutePath(AppsScreen.relativeUrl),
@@ -145,7 +145,7 @@ class Tagline extends StatelessWidget {
           ClickableTextSpan(
             text: 'packages',
             style: Theme.of(context).textTheme.bodyText2!.copyWith(
-                  color: Theme.of(context).accentColor,
+                  color: Theme.of(context).colorScheme.secondary,
                   fontWeight: FontWeight.bold,
                 ),
             onPressed: () => RoutePageManager.of(context).setNewRoutePath(PackagesScreen.relativeUrl),
@@ -157,7 +157,7 @@ class Tagline extends StatelessWidget {
           ClickableTextSpan(
             text: 'music',
             style: Theme.of(context).textTheme.bodyText2!.copyWith(
-                  color: Theme.of(context).accentColor,
+                  color: Theme.of(context).colorScheme.secondary,
                   fontWeight: FontWeight.bold,
                 ),
             onPressed: () => RoutePageManager.of(context).setNewRoutePath(MusicScreen.relativeUrl),

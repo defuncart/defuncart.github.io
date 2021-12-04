@@ -50,20 +50,20 @@ class App extends StatelessWidget {
                   app.title,
                   style: Theme.of(context).textTheme.headline5!.copyWith(fontWeight: FontWeight.bold),
                 ),
-                SizedBox(height: 16.0),
+                const SizedBox(height: 16.0),
                 Image.asset(
                   app.icon,
                   width: 200,
                   height: 200,
                 ),
-                SizedBox(height: 16.0),
+                const SizedBox(height: 16.0),
                 Text(app.description),
-                SizedBox(height: 16.0),
+                const SizedBox(height: 16.0),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    if (app.platforms.ios) IOSLogo(),
-                    if (app.platforms.android) AndroidLogo(),
+                    if (app.platforms.ios) const IOSLogo(),
+                    if (app.platforms.android) const AndroidLogo(),
                   ],
                 ),
               ],
@@ -95,7 +95,7 @@ class AndroidLogo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Icon(
+    return const Icon(
       Icons.android,
       size: 24.0,
     );

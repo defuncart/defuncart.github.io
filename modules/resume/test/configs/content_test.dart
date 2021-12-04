@@ -3,7 +3,7 @@ import 'package:resume/src/configs/content.dart';
 
 void main() {
   test('Entry', () {
-    final entry = Entry(
+    const entry = Entry(
       title: 'Title',
       subtitle: 'Subtitle',
       date: 'Date',
@@ -14,7 +14,7 @@ void main() {
   });
 
   test('Skill', () {
-    final skill = Skill(
+    const skill = Skill(
       title: 'Title',
       value: 1,
     );

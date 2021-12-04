@@ -16,11 +16,11 @@ class FunfzigFunfzigScreen extends StatelessWidget {
       content: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          MarkdownWidget(data: _data),
+          const MarkdownWidget(data: _data),
           SimpleTextButton(
             text: 'Full credits',
             onPressed: () => RoutePageManager.of(context).setNewRoutePath(CreditsFunfzigFunfzigScreen.relativeUrl),
-            textStyle: Theme.of(context).textTheme.bodyText2!.copyWith(color: Theme.of(context).accentColor),
+            textStyle: Theme.of(context).textTheme.bodyText2?.copyWith(color: Theme.of(context).colorScheme.secondary),
           ),
         ],
       ),
@@ -28,7 +28,7 @@ class FunfzigFunfzigScreen extends StatelessWidget {
   }
 }
 
-final _data = '''
+const _data = '''
 *Fünfzig-Fünfzig* is a fun German vocabulary learning game where beginners of all ages learn vocabulary by associating words with descriptive images.
 
 - 24 topics with over 450 words for A1/A2 and B1 CERF language learners.

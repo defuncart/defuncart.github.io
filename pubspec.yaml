@@ -4,18 +4,18 @@ publish_to: 'none'
 version: 0.0.1+1
 
 environment:
-  sdk: '>=2.12.0 <3.0.0'
-  flutter: '>=2.0.0 <3.0.0'
+  sdk: '>=2.14.0 <3.0.0'
+  flutter: '>=2.5.0 <3.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
-  provider: ^5.0.0
+  provider:
   url_launcher:
   iframes:
     path: modules/iframes
-  # flutter_html:
-  markdown: ^4.0.0
+  flutter_html:
+  markdown:
   resume:
     path: modules/resume
   journal:
@@ -24,12 +24,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  pedantic: ^1.11.0
-
-dependency_overrides:
-  flutter_html:
-    git:
-      url: https://github.com/Sub6Resources/flutter_html
+  flutter_lints:
 
 flutter:
   uses-material-design: true
