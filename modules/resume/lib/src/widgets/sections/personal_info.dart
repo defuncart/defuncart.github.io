@@ -21,7 +21,14 @@ class PersonalInfo extends pw.StatelessWidget {
         pw.Container(
           width: 150,
           height: 150,
-          child: pw.Image(profileImage),
+          decoration: pw.BoxDecoration(
+            shape: pw.BoxShape.rectangle,
+            borderRadius: pw.BorderRadius.circular(150 * 0.2237),
+            image: pw.DecorationImage(
+              image: profileImage,
+              fit: pw.BoxFit.fill,
+            ),
+          ),
         ),
         DefaultSpacer.horizontal(),
         pw.Expanded(

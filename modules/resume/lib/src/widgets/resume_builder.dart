@@ -3,6 +3,7 @@ import 'dart:typed_data';
 
 import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart' as pw;
+import 'package:resume/src/configs/content.dart';
 import 'package:resume/src/widgets/sections/personal_info.dart';
 
 import '../../resume.dart';
@@ -79,7 +80,7 @@ Future<Uint8List> generateResume(PdfPageFormat format, ResumeSettings settings) 
           pw.SizedBox(height: 17),
           pw.Center(
             child: pw.Text(
-              'Designed by James Leahy, made with Flutter',
+              footer,
               style: pw.TextStyle(
                 fontStyle: pw.FontStyle.italic,
                 color: defaultResumeStyle.colors.light,

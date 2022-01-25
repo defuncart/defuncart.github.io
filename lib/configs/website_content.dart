@@ -3,7 +3,6 @@ import 'package:defuncart_github_io/models/music_album_model.dart';
 import 'package:defuncart_github_io/models/nav_bar_item_model.dart';
 import 'package:defuncart_github_io/models/package_model.dart';
 import 'package:defuncart_github_io/models/social_link_model.dart';
-import 'package:defuncart_github_io/widgets/screens/about/about_screen.dart';
 import 'package:defuncart_github_io/widgets/screens/screens.dart';
 
 abstract class WebsiteContent {
@@ -208,6 +207,18 @@ class _Packages {
           'A Pseudolocalization tool for Flutter and Dart which generates pseudo, nonsensical translations for multiple languages from a given English source.',
       pubDevUrl: 'https://pub.dev/packages/flutter_pseudolocalizor',
       gitHubUrl: 'https://github.com/defuncart/flutter_pseudolocalizor',
+    ),
+    PackageModel(
+      title: 'arb_generator',
+      description: 'A dart tool which generates ARB files from CSV files.',
+      pubDevUrl: 'https://pub.dev/packages/arb_generator',
+      gitHubUrl: 'https://github.com/defuncart/arb_generator',
+    ),
+    PackageModel(
+      title: 'global_shortcuts',
+      description: 'A macOS plugin which can register a callback for a global keyboard shortcut.',
+      pubDevUrl: 'https://pub.dev/packages/global_shortcuts',
+      gitHubUrl: 'https://github.com/defuncart/global_shortcuts',
     ),
     PackageModel(
       title: 'shogi',

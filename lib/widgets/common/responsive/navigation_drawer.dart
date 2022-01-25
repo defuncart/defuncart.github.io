@@ -3,7 +3,6 @@ import 'package:defuncart_github_io/widgets/common/buttons/simple_icon_button.da
 import 'package:defuncart_github_io/widgets/common/responsive/blog_nav_bar_item.dart';
 import 'package:defuncart_github_io/widgets/common/responsive/nav_bar_item.dart';
 import 'package:defuncart_github_io/widgets/routing/routing.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class NavigationDrawer extends StatelessWidget {
