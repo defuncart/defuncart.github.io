@@ -3,7 +3,6 @@ import 'package:defuncart_github_io/models/music_album_model.dart';
 import 'package:defuncart_github_io/models/nav_bar_item_model.dart';
 import 'package:defuncart_github_io/models/package_model.dart';
 import 'package:defuncart_github_io/models/social_link_model.dart';
-import 'package:defuncart_github_io/widgets/screens/about/about_screen.dart';
 import 'package:defuncart_github_io/widgets/screens/screens.dart';
 
 abstract class WebsiteContent {
