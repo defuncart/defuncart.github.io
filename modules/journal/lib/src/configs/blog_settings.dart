@@ -29,6 +29,12 @@ final allPosts = [
 
 final musicPosts = [
   const MusicPost(
+    title: 'Techno 2021 NYE',
+    date: '2021-12-31',
+    description: 'A mix for New Years Eve comprising of peak techno bangers from 2021.',
+    id: 'technno-2021-nye',
+  ),
+  const MusicPost(
     title: 'Trap Metal 2016 - 2017',
     date: '2021-12-02',
     description:
