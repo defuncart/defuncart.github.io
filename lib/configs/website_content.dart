@@ -209,6 +209,18 @@ class _Packages {
       gitHubUrl: 'https://github.com/defuncart/flutter_pseudolocalizor',
     ),
     PackageModel(
+      title: 'arb_generator',
+      description: 'A dart tool which generates ARB files from CSV files.',
+      pubDevUrl: 'https://pub.dev/packages/arb_generator',
+      gitHubUrl: 'https://github.com/defuncart/arb_generator',
+    ),
+    PackageModel(
+      title: 'global_shortcuts',
+      description: 'A macOS plugin which can register a callback for a global keyboard shortcut.',
+      pubDevUrl: 'https://pub.dev/packages/global_shortcuts',
+      gitHubUrl: 'https://github.com/defuncart/global_shortcuts',
+    ),
+    PackageModel(
       title: 'shogi',
       description: 'A simple shogi engine for Dart and Flutter.',
       pubDevUrl: 'https://pub.dev/packages/shogi',
