@@ -3,9 +3,9 @@ const name = 'James Leahy';
 const location = 'Berlin, DE';
 
 const objective =
-    'Mobile App and Game Developer with 8+ years experience shipping successful titles to the AppStore. Lead 5 projects from concept to release. Problem solver who delivers quality code,    scalable  architectures    and    elegant  user  interfaces.';
+    'Mobile and desktop app developer with 12+ years experience shipping successful apps and games. Lead multiple projects from concept to release. Problem solver who delivers quality code,    scalable  architectures    and    elegant  user  interfaces.';
 
-const email = 'jamesjleahy@gmail.com';
+const email = 'james@flutterexpert.dev';
 
 const linkedin = 'https://linkedin.com/in/jamesjleahy';
 
@@ -81,11 +81,11 @@ const otherSkillsContent = [
     value: 4,
   ),
   Skill(
-    title: 'Adobe Creative Suite',
+    title: 'Figma',
     value: 3,
   ),
   Skill(
-    title: 'Figma',
+    title: 'Sketch',
     value: 2,
   ),
 ];
@@ -106,7 +106,7 @@ const developerSkillsContent1 = [
   ),
   Skill(
     title: 'Android',
-    value: 2,
+    value: 3,
   ),
 ];
 const developerSkillsContent2 = [
@@ -141,6 +141,8 @@ const developerSkillsContent3 = [
     value: 3,
   ),
 ];
+
+const footer = 'Designed by James Leahy, made with Flutter';
 
 class Entry {
   const Entry({
