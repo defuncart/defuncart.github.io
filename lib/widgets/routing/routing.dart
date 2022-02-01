@@ -1,4 +1,5 @@
 import 'package:defuncart_github_io/configs/website_content.dart';
+import 'package:defuncart_github_io/widgets/screens/apps/shogi_proverbs/shogiproverbs_screen.dart';
 import 'package:defuncart_github_io/widgets/screens/screens.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -72,6 +73,7 @@ class RoutePageManager extends ChangeNotifier {
     PolnaPolScreen.relativeUrl: () => const PolnaPolScreen(),
     CreditsPolnaPolScreen.relativeUrl: () => const CreditsPolnaPolScreen(),
     GamesPrivacyPolicyScreen.relativeUrl: () => const GamesPrivacyPolicyScreen(),
+    ShogiProverbsScreen.relativeUrl: () => const ShogiProverbsScreen(),
     MusicScreen.relativeUrl: () => const MusicScreen(),
     PackagesScreen.relativeUrl: () => const PackagesScreen(),
     AboutScreen.relativeUrl: () => const AboutScreen(),
