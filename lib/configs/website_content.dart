@@ -71,7 +71,7 @@ class _Apps {
         googlePlayLink: 'https://play.google.com/store/apps/details?id=com.defuncart.caogacaoga',
       ),
     ),
-    DerDieDasScreen.relativeUrl: AppModel(
+    /*DerDieDasScreen.relativeUrl: AppModel(
       title: 'Der Die Das',
       description: 'A fun German articles quiz game.',
       icon: 'assets/apps/derdiedas/icon.png',
@@ -81,7 +81,7 @@ class _Apps {
         appStoreLink: null,
         googlePlayLink: 'https://play.google.com/store/apps/details?id=com.defuncart.derdiedas',
       ),
-    ),
+    ),*/
     ShogiProverbsScreen.relativeUrl: AppModel(
       title: 'Shogi Proverbs',
       description: '50 shogi proverbs.',
