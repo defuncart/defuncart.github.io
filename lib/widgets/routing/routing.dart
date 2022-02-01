@@ -79,17 +79,19 @@ class RoutePageManager extends ChangeNotifier {
     JournalScreen.relativeUrl: () => const JournalScreen(),
   };
 
-  // to be removed at a later date (if binaries updated on store)
   final _mapOldRelativeUrlNewRedirect = {
+    // can only be removed when store binaries are updated
     '/games': AppsScreen.relativeUrl,
     '/games/caogacaoga': CaogaCaogaScreen.relativeUrl,
     '/games/caogacaoga/credits': CreditsCaogaCaogaScreen.relativeUrl,
+    // legacy, can already be removed
     '/games/derdiedas': DerDieDasScreen.relativeUrl,
     '/games/derdiedas/credits': CreditsDerDieDasScreen.relativeUrl,
     '/games/funfzigfunfzig': FunfzigFunfzigScreen.relativeUrl,
     '/games/funfzigfunfzig/credits': CreditsFunfzigFunfzigScreen.relativeUrl,
     '/games/polnapol': PolnaPolScreen.relativeUrl,
     '/games/polnapol/credits': CreditsPolnaPolScreen.relativeUrl,
+    // nice to have
     '/music/graydawn': MusicScreen.relativeUrl,
     '/music/strawberrycomplexity': MusicScreen.relativeUrl,
   };
