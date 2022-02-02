@@ -57,7 +57,10 @@ class App extends StatelessWidget {
                   height: 200,
                 ),
                 const SizedBox(height: 16.0),
-                Text(app.description),
+                Text(
+                  app.description,
+                  textAlign: TextAlign.center,
+                ),
                 const SizedBox(height: 16.0),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,

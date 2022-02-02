@@ -3,6 +3,7 @@ import 'package:defuncart_github_io/models/music_album_model.dart';
 import 'package:defuncart_github_io/models/nav_bar_item_model.dart';
 import 'package:defuncart_github_io/models/package_model.dart';
 import 'package:defuncart_github_io/models/social_link_model.dart';
+import 'package:defuncart_github_io/widgets/screens/apps/shogi_proverbs/shogiproverbs_screen.dart';
 import 'package:defuncart_github_io/widgets/screens/screens.dart';
 
 abstract class WebsiteContent {
@@ -70,7 +71,7 @@ class _Apps {
         googlePlayLink: 'https://play.google.com/store/apps/details?id=com.defuncart.caogacaoga',
       ),
     ),
-    DerDieDasScreen.relativeUrl: AppModel(
+    /*DerDieDasScreen.relativeUrl: AppModel(
       title: 'Der Die Das',
       description: 'A fun German articles quiz game.',
       icon: 'assets/apps/derdiedas/icon.png',
@@ -79,6 +80,16 @@ class _Apps {
         // appStoreLink: 'https://testflight.apple.com/join/GCX1tFIU',
         appStoreLink: null,
         googlePlayLink: 'https://play.google.com/store/apps/details?id=com.defuncart.derdiedas',
+      ),
+    ),*/
+    ShogiProverbsScreen.relativeUrl: AppModel(
+      title: 'Shogi Proverbs',
+      description: '50 shogi proverbs.',
+      icon: 'assets/apps/shogiproverbs/icon.png',
+      relativeUrl: ShogiProverbsScreen.relativeUrl,
+      platforms: PlatformsModel(
+        appStoreLink: 'https://testflight.apple.com/join/s3lfPRLU',
+        googlePlayLink: 'https://play.google.com/store/apps/details?id=com.defuncart.shogiproverbs',
       ),
     ),
   };

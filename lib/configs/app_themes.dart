@@ -20,21 +20,10 @@ abstract class AppThemes {
     progressIndicatorTheme: const ProgressIndicatorThemeData(
       color: _DFAColors.pink,
     ),
+    textSelectionTheme: TextSelectionThemeData(
+      selectionColor: _DFAColors.blue.withOpacity(0.4),
+    ),
   );
-
-  // static final dark = ThemeData.dark().copyWith(
-  //   accentColor: _DFAColors.pink,
-  //   // scaffoldBackgroundColor: _AppColors.regular,
-  //   iconTheme: IconThemeData(
-  //     color: _AppColors.light,
-  //   ),
-  //   textTheme: ThemeData.light().textTheme.apply(
-  //         fontFamily: 'OpenSans',
-  //         bodyColor: _AppColors.light,
-  //         displayColor: _AppColors.light,
-  //       ),
-  //   // cardColor: Colors.white,
-  // );
 }
 
 abstract class _AppColors {

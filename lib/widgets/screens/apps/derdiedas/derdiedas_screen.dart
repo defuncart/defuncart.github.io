@@ -1,9 +1,7 @@
-import 'package:defuncart_github_io/configs/website_content.dart';
 import 'package:defuncart_github_io/widgets/common/buttons/simple_text_button.dart';
 import 'package:defuncart_github_io/widgets/common/responsive/webpage.dart';
 import 'package:defuncart_github_io/widgets/common/text/markdown_widget.dart';
 import 'package:defuncart_github_io/widgets/routing/routing.dart';
-import 'package:defuncart_github_io/widgets/screens/apps/_common/download_app_stores.dart';
 import 'package:defuncart_github_io/widgets/screens/screens.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -15,7 +13,7 @@ class DerDieDasScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final appModel = WebsiteContent.apps.apps[relativeUrl]!;
+    // final appModel = WebsiteContent.apps.apps[relativeUrl]!;
 
     return Webpage(
       content: Column(
@@ -34,16 +32,17 @@ class DerDieDasScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 16.0),
-              const Text(
-                'Der Die Das is now available for testing, simply click on a link below to join a testing program.',
-              ),
-              const SizedBox(height: 16.0),
+              // const Text(
+              //   'Der Die Das is now available for testing, simply click on a link below to join a testing program.',
+              // ),
+              // const SizedBox(height: 16.0),
             ],
           ),
-          DownloadAppStores(
-            appStoreLink: appModel.platforms.appStoreLink,
-            googlePlayLink: appModel.platforms.googlePlayLink,
-          ),
+          // DownloadAppStores(
+          // appStoreLink: appModel.platforms.appStoreLink,
+          // googlePlayLink: appModel.platforms.googlePlayLink,
+          // appStoreLink: null,
+          // ),
           const SizedBox(height: 16.0),
           const Align(
             alignment: Alignment.centerLeft,

@@ -1,4 +1,5 @@
 import 'package:defuncart_github_io/configs/website_content.dart';
+import 'package:defuncart_github_io/widgets/screens/apps/shogi_proverbs/shogiproverbs_screen.dart';
 import 'package:defuncart_github_io/widgets/screens/screens.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -72,6 +73,7 @@ class RoutePageManager extends ChangeNotifier {
     PolnaPolScreen.relativeUrl: () => const PolnaPolScreen(),
     CreditsPolnaPolScreen.relativeUrl: () => const CreditsPolnaPolScreen(),
     GamesPrivacyPolicyScreen.relativeUrl: () => const GamesPrivacyPolicyScreen(),
+    ShogiProverbsScreen.relativeUrl: () => const ShogiProverbsScreen(),
     MusicScreen.relativeUrl: () => const MusicScreen(),
     PackagesScreen.relativeUrl: () => const PackagesScreen(),
     AboutScreen.relativeUrl: () => const AboutScreen(),
@@ -79,17 +81,19 @@ class RoutePageManager extends ChangeNotifier {
     JournalScreen.relativeUrl: () => const JournalScreen(),
   };
 
-  // to be removed at a later date (if binaries updated on store)
   final _mapOldRelativeUrlNewRedirect = {
+    // can only be removed when store binaries are updated
     '/games': AppsScreen.relativeUrl,
     '/games/caogacaoga': CaogaCaogaScreen.relativeUrl,
     '/games/caogacaoga/credits': CreditsCaogaCaogaScreen.relativeUrl,
+    // legacy, can already be removed
     '/games/derdiedas': DerDieDasScreen.relativeUrl,
     '/games/derdiedas/credits': CreditsDerDieDasScreen.relativeUrl,
     '/games/funfzigfunfzig': FunfzigFunfzigScreen.relativeUrl,
     '/games/funfzigfunfzig/credits': CreditsFunfzigFunfzigScreen.relativeUrl,
     '/games/polnapol': PolnaPolScreen.relativeUrl,
     '/games/polnapol/credits': CreditsPolnaPolScreen.relativeUrl,
+    // nice to have
     '/music/graydawn': MusicScreen.relativeUrl,
     '/music/strawberrycomplexity': MusicScreen.relativeUrl,
   };
