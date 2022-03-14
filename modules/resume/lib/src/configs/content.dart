@@ -33,9 +33,14 @@ const workExperienceHeader = 'Work Experience';
 
 const workExperienceContent = [
   Entry(
+    title: 'Various, Berlin',
+    subtitle: 'Freelance Flutter Developer',
+    date: 'April 2022 –',
+  ),
+  Entry(
     title: 'Superlist, Berlin',
     subtitle: 'Senior Flutter Developer',
-    date: 'Dec 2020 –',
+    date: 'Dec 2020 – April 2022',
   ),
   Entry(
     title: 'Vilua Healthcare, Berlin',
@@ -43,14 +48,9 @@ const workExperienceContent = [
     date: 'Aug 2019 – Dec 2020',
   ),
   Entry(
-    title: 'TreasureHunt, Berlin',
-    subtitle: 'Unity Game Developer',
-    date: 'Sept 2018 – Aug 2019',
-  ),
-  Entry(
     title: 'Various, Berlin',
     subtitle: 'iOS & Unity Developer',
-    date: 'Sept 2013 – Sept 2018',
+    date: 'Sept 2013 – Aug 2019',
   ),
 ];
 
