@@ -1,7 +1,7 @@
 import 'package:defuncart_github_io/widgets/common/responsive/custom_orientation_builder.dart';
 import 'package:defuncart_github_io/widgets/common/responsive/navigation_bar.dart';
 import 'package:defuncart_github_io/widgets/common/responsive/navigation_drawer.dart';
-import 'package:flutter/material.dart' hide NavigationBar;
+import 'package:flutter/material.dart' hide NavigationBar, NavigationDrawer;
 
 class Webpage extends StatelessWidget {
   const Webpage({
