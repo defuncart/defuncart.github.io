@@ -4,7 +4,7 @@ import 'package:defuncart_github_io/models/package_model.dart';
 import 'package:defuncart_github_io/widgets/common/images/clickable_image.dart';
 import 'package:defuncart_github_io/widgets/common/responsive/webpage.dart';
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 class PackagesScreen extends StatelessWidget {
   static const relativeUrl = '/packages';
@@ -46,7 +46,7 @@ class Package extends StatelessWidget {
             children: [
               Text(
                 package.title,
-                style: Theme.of(context).textTheme.headline5,
+                style: Theme.of(context).textTheme.headlineSmall,
               ),
               const SizedBox(height: 8.0),
               Text(package.description),
@@ -59,13 +59,13 @@ class Package extends StatelessWidget {
                       WebsiteContent.packages.dartAssetpath,
                       width: 24,
                       height: 24,
-                      onPressed: () => launch(package.pubDevUrl),
+                      onPressed: () => launchUrlString(package.pubDevUrl),
                     ),
                   ClickableImage(
                     WebsiteContent.packages.gitHubAssetpath,
                     width: 24,
                     height: 24,
-                    onPressed: () => launch(package.gitHubUrl),
+                    onPressed: () => launchUrlString(package.gitHubUrl),
                   ),
                 ],
               ),

@@ -4,7 +4,7 @@ import 'package:defuncart_github_io/widgets/common/text/markdown_widget.dart';
 import 'package:defuncart_github_io/widgets/routing/routing.dart';
 import 'package:defuncart_github_io/widgets/screens/screens.dart';
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 class DerDieDasScreen extends StatelessWidget {
   static const relativeUrl = '/apps/derdiedas';
@@ -54,7 +54,7 @@ class DerDieDasScreen extends StatelessWidget {
             child: SimpleTextButton(
               text: 'Full credits',
               onPressed: () => RoutePageManager.of(context).setNewRoutePath(CreditsDerDieDasScreen.relativeUrl),
-              textStyle: Theme.of(context).textTheme.bodyText2?.copyWith(
+              textStyle: Theme.of(context).textTheme.bodyMedium?.copyWith(
                     color: Theme.of(context).colorScheme.secondary,
                   ),
             ),
@@ -64,20 +64,20 @@ class DerDieDasScreen extends StatelessWidget {
             children: [
               SimpleTextButton(
                 text: 'Press Release',
-                onPressed: () => launch(
+                onPressed: () => launchUrlString(
                   'https://docs.google.com/document/d/1cfavvTwtuMD4Z7UarFtNbQB9UCGdID_K2rMJsmWAeN8/edit?usp=sharing',
                 ),
-                textStyle: Theme.of(context).textTheme.bodyText2?.copyWith(
+                textStyle: Theme.of(context).textTheme.bodyMedium?.copyWith(
                       color: Theme.of(context).colorScheme.secondary,
                     ),
               ),
               const SizedBox(width: 4.0),
               SimpleTextButton(
                 text: 'Press Kit',
-                onPressed: () => launch(
+                onPressed: () => launchUrlString(
                   'https://drive.google.com/open?id=1TM3vD_TuFHSMrH1yiB_FbCmF6anQM3HW',
                 ),
-                textStyle: Theme.of(context).textTheme.bodyText2?.copyWith(
+                textStyle: Theme.of(context).textTheme.bodyMedium?.copyWith(
                       color: Theme.of(context).colorScheme.secondary,
                     ),
               ),

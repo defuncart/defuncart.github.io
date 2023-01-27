@@ -1,7 +1,7 @@
 import 'package:defuncart_github_io/models/music_album_model.dart';
 import 'package:defuncart_github_io/widgets/common/images/clickable_image.dart';
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 class MusicAlbum extends StatelessWidget {
   const MusicAlbum({
@@ -19,7 +19,7 @@ class MusicAlbum extends StatelessWidget {
           album.artworkPath,
           width: 250,
           height: 250,
-          onPressed: () => launch(album.redirectUrl),
+          onPressed: () => launchUrlString(album.redirectUrl),
         ),
         const SizedBox(height: 4.0),
         Text(

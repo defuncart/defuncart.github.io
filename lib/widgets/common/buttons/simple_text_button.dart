@@ -19,7 +19,7 @@ class SimpleTextButton extends StatelessWidget {
       onTap: onPressed,
       child: Text(
         text,
-        style: textStyle ?? Theme.of(context).textTheme.bodyText2,
+        style: textStyle ?? Theme.of(context).textTheme.bodyMedium,
       ),
     );
   }

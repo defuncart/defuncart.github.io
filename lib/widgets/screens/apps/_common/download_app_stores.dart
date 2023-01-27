@@ -1,6 +1,6 @@
 import 'package:defuncart_github_io/widgets/common/images/clickable_image.dart';
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 class DownloadAppStores extends StatelessWidget {
   const DownloadAppStores({
@@ -27,12 +27,12 @@ class DownloadAppStores extends StatelessWidget {
         if (_hasAppStore)
           AppStoreButton(
             assetpath: 'assets/apps/common/download_app_store_logo.png',
-            onPressed: () => launch(appStoreLink!),
+            onPressed: () => launchUrlString(appStoreLink!),
           ),
         if (_hasGooglePlay)
           AppStoreButton(
             assetpath: 'assets/apps/common/get_on_google_play_logo.png',
-            onPressed: () => launch(googlePlayLink!),
+            onPressed: () => launchUrlString(googlePlayLink!),
           ),
       ],
     );

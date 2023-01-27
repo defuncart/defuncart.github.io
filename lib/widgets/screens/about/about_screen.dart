@@ -5,7 +5,7 @@ import 'package:defuncart_github_io/widgets/common/responsive/webpage.dart';
 import 'package:defuncart_github_io/widgets/routing/routing.dart';
 import 'package:defuncart_github_io/widgets/screens/about/resume/resume_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 class AboutScreen extends StatelessWidget {
   static const relativeUrl = '/about';
@@ -17,7 +17,7 @@ class AboutScreen extends StatelessWidget {
     final colors = [
       Theme.of(context).colorScheme.secondary,
       Theme.of(context).disabledColor,
-      Theme.of(context).textTheme.bodyText2!.color,
+      Theme.of(context).textTheme.bodyMedium!.color,
     ];
 
     return Webpage(
@@ -42,7 +42,7 @@ class AboutScreen extends StatelessWidget {
                     padding: const EdgeInsets.all(16.0),
                     child: Text(
                       WebsiteContent.about.traits[i],
-                      style: Theme.of(context).textTheme.bodyText2!.apply(
+                      style: Theme.of(context).textTheme.bodyMedium!.apply(
                             color: Theme.of(context).scaffoldBackgroundColor,
                           ),
                     ),
@@ -61,7 +61,7 @@ class AboutScreen extends StatelessWidget {
                     socialLink.assetpath,
                     width: 64.0,
                     height: 64.0,
-                    onPressed: () => launch(socialLink.url),
+                    onPressed: () => launchUrlString(socialLink.url),
                   ),
                 ClickableImage(
                   WebsiteContent.about.resumeAssetpath,

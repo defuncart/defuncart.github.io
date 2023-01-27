@@ -1,6 +1,7 @@
 // ignore_for_file: constant_identifier_names, use_key_in_widget_constructors, prefer_const_constructors, prefer_const_constructors_in_immutables
 
 import 'package:flutter/material.dart';
+// ignore: depend_on_referenced_packages
 import 'package:vector_math/vector_math_64.dart' as vector;
 
 // ignore_for_file: prefer_if_null_operators, annotate_overrides, unnecessary_this, prefer_is_empty, sort_child_properties_last, prefer_single_quotes, always_declare_return_types
@@ -89,10 +90,10 @@ class UnicornDialer extends StatefulWidget {
       this.childPadding = 4.0,
       this.hasNotch = false});
 
-  _UnicornDialer createState() => _UnicornDialer();
+  State<UnicornDialer> createState() => _UnicornDialerState();
 }
 
-class _UnicornDialer extends State<UnicornDialer> with TickerProviderStateMixin {
+class _UnicornDialerState extends State<UnicornDialer> with TickerProviderStateMixin {
   late AnimationController _animationController;
   late AnimationController _parentController;
 

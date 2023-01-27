@@ -16,10 +16,10 @@ class Journal extends StatefulWidget {
   const Journal({Key? key}) : super(key: key);
 
   @override
-  _BlogState createState() => _BlogState();
+  State<Journal> createState() => _JournalState();
 }
 
-class _BlogState extends State<Journal> {
+class _JournalState extends State<Journal> {
   Category? _selectedCategory;
 
   final Map<Category, List<Post>> _mapPostsToCategory = {
@@ -77,10 +77,10 @@ class JournalFAB extends StatefulWidget {
   const JournalFAB({Key? key}) : super(key: key);
 
   @override
-  _BlogFABState createState() => _BlogFABState();
+  State<JournalFAB> createState() => _JournalFABState();
 }
 
-class _BlogFABState extends State<JournalFAB> {
+class _JournalFABState extends State<JournalFAB> {
   var _expanded = false;
 
   @override
