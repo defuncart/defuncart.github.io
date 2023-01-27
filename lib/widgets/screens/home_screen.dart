@@ -127,7 +127,7 @@ class Tagline extends StatelessWidget {
       text: TextSpan(
         children: [
           TextSpan(
-            text: 'At DeFuncArt I build innovative language learning ',
+            text: 'At defuncart I build innovative language learning ',
             style: Theme.of(context).textTheme.bodyText2,
           ),
           ClickableTextSpan(

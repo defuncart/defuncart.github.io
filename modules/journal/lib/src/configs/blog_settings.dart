@@ -29,6 +29,24 @@ final allPosts = [
 
 final musicPosts = [
   const MusicPost(
+    title: 'Midsommar Techno Rave 2022',
+    date: '2022-06-21',
+    description: 'A hard and acid techno mix comprising of tracks released over the last six months.',
+    id: 'midsommar-techno-rave-2022',
+  ),
+  const MusicPost(
+    title: 'Unholy Techno 2021',
+    date: '2022-04-15',
+    description: 'A 150 bpm hard techno mix comprising of tracks from 2021.',
+    id: 'unholy-techno-2021',
+  ),
+  const MusicPost(
+    title: 'Hard Techno 2021',
+    date: '2022-03-03',
+    description: 'A hard techno mix comprised of tracks from 2021.',
+    id: 'hard-techno-2021',
+  ),
+  const MusicPost(
     title: 'Techno 2021 NYE',
     date: '2021-12-31',
     description: 'A mix for New Years Eve comprising of peak techno bangers from 2021.',
