@@ -88,6 +88,7 @@ class _BlogFABState extends State<JournalFAB> {
     return UnicornDialer(
       backgroundColor: Colors.transparent,
       parentButtonBackground: const Color(0xffE8337E),
+      parentButtonForeground: Colors.white,
       orientation: UnicornOrientation.VERTICAL,
       parentButton: const Icon(Icons.filter_alt),
       childButtons: [
@@ -96,6 +97,7 @@ class _BlogFABState extends State<JournalFAB> {
             currentButton: FloatingActionButton(
               heroTag: category.toString(),
               backgroundColor: _mapCategoryFABButtonColor[category],
+              foregroundColor: Colors.white,
               mini: true,
               onPressed: () {
                 _expanded = false;

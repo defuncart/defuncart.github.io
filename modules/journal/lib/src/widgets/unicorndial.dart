@@ -63,6 +63,7 @@ class UnicornDialer extends StatefulWidget {
   final Icon? finalButtonIcon;
   final bool hasBackground;
   final Color parentButtonBackground;
+  final Color? parentButtonForeground;
   final List<UnicornButton>? childButtons;
   final int animationDuration;
   final int mainAnimationDuration;
@@ -75,6 +76,7 @@ class UnicornDialer extends StatefulWidget {
   UnicornDialer(
       {required this.parentButton,
       required this.parentButtonBackground,
+      this.parentButtonForeground,
       this.childButtons,
       this.onMainButtonPressed,
       this.orientation = 1,
@@ -154,6 +156,7 @@ class _UnicornDialer extends State<UnicornDialer> with TickerProviderStateMixin 
                   isExtended: false,
                   heroTag: widget.parentHeroTag,
                   backgroundColor: widget.parentButtonBackground,
+                  foregroundColor: widget.parentButtonForeground,
                   onPressed: () {
                     mainActionButtonOnPressed();
                     widget.onMainButtonPressed?.call();
