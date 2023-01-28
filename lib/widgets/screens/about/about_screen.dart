@@ -16,8 +16,8 @@ class AboutScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final colors = [
       Theme.of(context).colorScheme.secondary,
-      Theme.of(context).disabledColor,
       Theme.of(context).textTheme.bodyMedium!.color,
+      Theme.of(context).disabledColor,
     ];
 
     return Webpage(

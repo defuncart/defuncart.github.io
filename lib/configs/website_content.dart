@@ -272,7 +272,7 @@ class _About {
 
   final traits = const [
     'App developer',
-    'Flutter specialist',
+    'Flutter expert',
     'Ex-Unity',
     'Ex-iOS',
     'Multi-media artist',
@@ -289,6 +289,7 @@ class _About {
     'Skateboarder',
     'Shogi enthusiast',
     'Backgammon strategist',
+    'Cat lover',
     'Stout appreciator',
     'Berliner',
   ];
