@@ -4,7 +4,7 @@ import 'package:defuncart_github_io/models/package_model.dart';
 import 'package:defuncart_github_io/widgets/common/images/clickable_image.dart';
 import 'package:defuncart_github_io/widgets/common/responsive/webpage.dart';
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher_string.dart';
+import 'package:url_launcher/link.dart';
 
 class PackagesScreen extends StatelessWidget {
   static const relativeUrl = '/packages';
@@ -55,17 +55,25 @@ class Package extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   if (package.pubDevUrl.isNotEmpty)
-                    ClickableImage(
-                      WebsiteContent.packages.dartAssetpath,
+                    Link(
+                      uri: Uri.parse(package.pubDevUrl),
+                      target: LinkTarget.blank,
+                      builder: (context, onOpenLink) => ClickableImage(
+                        WebsiteContent.packages.dartAssetpath,
+                        width: 24,
+                        height: 24,
+                        onPressed: () => onOpenLink?.call(),
+                      ),
+                    ),
+                  Link(
+                    uri: Uri.parse(package.gitHubUrl),
+                    target: LinkTarget.blank,
+                    builder: (context, onOpenLink) => ClickableImage(
+                      WebsiteContent.packages.gitHubAssetpath,
                       width: 24,
                       height: 24,
-                      onPressed: () => launchUrlString(package.pubDevUrl),
+                      onPressed: () => onOpenLink?.call(),
                     ),
-                  ClickableImage(
-                    WebsiteContent.packages.gitHubAssetpath,
-                    width: 24,
-                    height: 24,
-                    onPressed: () => launchUrlString(package.gitHubUrl),
                   ),
                 ],
               ),

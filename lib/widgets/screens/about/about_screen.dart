@@ -5,7 +5,7 @@ import 'package:defuncart_github_io/widgets/common/responsive/webpage.dart';
 import 'package:defuncart_github_io/widgets/routing/routing.dart';
 import 'package:defuncart_github_io/widgets/screens/about/resume/resume_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher_string.dart';
+import 'package:url_launcher/link.dart';
 
 class AboutScreen extends StatelessWidget {
   static const relativeUrl = '/about';
@@ -57,11 +57,15 @@ class AboutScreen extends StatelessWidget {
               runSpacing: 16.0,
               children: [
                 for (final socialLink in WebsiteContent.about.socialMediaLinks)
-                  ClickableImage(
-                    socialLink.assetpath,
-                    width: 64.0,
-                    height: 64.0,
-                    onPressed: () => launchUrlString(socialLink.url),
+                  Link(
+                    uri: Uri.parse(socialLink.url),
+                    target: LinkTarget.blank,
+                    builder: (context, onOpenLink) => ClickableImage(
+                      socialLink.assetpath,
+                      width: 64.0,
+                      height: 64.0,
+                      onPressed: () => onOpenLink?.call(),
+                    ),
                   ),
                 ClickableImage(
                   WebsiteContent.about.resumeAssetpath,
