@@ -72,14 +72,14 @@ class MusicPostTile extends StatelessWidget {
         children: [
           Text(
             post.title!,
-            style: Theme.of(context).textTheme.headline6!.apply(
+            style: Theme.of(context).textTheme.titleLarge!.apply(
                   color: Theme.of(context).scaffoldBackgroundColor,
                 ),
             textAlign: TextAlign.center,
           ),
           Text(
             post.description,
-            style: Theme.of(context).textTheme.bodyText2!.apply(
+            style: Theme.of(context).textTheme.bodyMedium!.apply(
                   color: Theme.of(context).scaffoldBackgroundColor,
                 ),
             maxLines: 3,

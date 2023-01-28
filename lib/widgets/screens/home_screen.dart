@@ -93,13 +93,13 @@ class Intro extends StatelessWidget {
       children: [
         Text(
           WebsiteContent.home.greeting,
-          style: Theme.of(context).textTheme.headline5,
+          style: Theme.of(context).textTheme.headlineSmall,
         ),
         Text(
           WebsiteContent.home.name.toUpperCase(),
           style: Theme.of(context)
               .textTheme
-              .headline3!
+              .displaySmall!
               .copyWith(
                 fontWeight: FontWeight.bold,
               )
@@ -109,7 +109,7 @@ class Intro extends StatelessWidget {
         ),
         Text(
           WebsiteContent.home.tagline,
-          style: Theme.of(context).textTheme.headline6!.apply(
+          style: Theme.of(context).textTheme.titleLarge!.apply(
                 color: Theme.of(context).disabledColor,
               ),
         ),
@@ -127,12 +127,12 @@ class Tagline extends StatelessWidget {
       text: TextSpan(
         children: [
           TextSpan(
-            text: 'At DeFuncArt I build innovative language learning ',
-            style: Theme.of(context).textTheme.bodyText2,
+            text: 'At defuncart I build innovative language learning ',
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
           ClickableTextSpan(
             text: 'apps',
-            style: Theme.of(context).textTheme.bodyText2!.copyWith(
+            style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                   color: Theme.of(context).colorScheme.secondary,
                   fontWeight: FontWeight.bold,
                 ),
@@ -140,11 +140,11 @@ class Tagline extends StatelessWidget {
           ),
           TextSpan(
             text: ', publish dart and flutter ',
-            style: Theme.of(context).textTheme.bodyText2,
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
           ClickableTextSpan(
             text: 'packages',
-            style: Theme.of(context).textTheme.bodyText2!.copyWith(
+            style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                   color: Theme.of(context).colorScheme.secondary,
                   fontWeight: FontWeight.bold,
                 ),
@@ -152,11 +152,11 @@ class Tagline extends StatelessWidget {
           ),
           TextSpan(
             text: ' and release electronic ',
-            style: Theme.of(context).textTheme.bodyText2,
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
           ClickableTextSpan(
             text: 'music',
-            style: Theme.of(context).textTheme.bodyText2!.copyWith(
+            style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                   color: Theme.of(context).colorScheme.secondary,
                   fontWeight: FontWeight.bold,
                 ),
@@ -164,7 +164,7 @@ class Tagline extends StatelessWidget {
           ),
           TextSpan(
             text: '.',
-            style: Theme.of(context).textTheme.bodyText2,
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
         ],
       ),

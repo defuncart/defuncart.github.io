@@ -3,7 +3,7 @@ import 'package:defuncart_github_io/widgets/screens/apps/shogi_proverbs/shogipro
 import 'package:defuncart_github_io/widgets/screens/screens.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 // Inspired by https://github.com/orestesgaolin/navigator_20_example/blob/master/lib/main_router.dart
 
@@ -159,7 +159,7 @@ class RoutePageManager extends ChangeNotifier {
         );
       } else if (_mapRelativeUrlRedirect.containsKey(relativeUrl)) {
         _isLaunchingUrl = true;
-        await launch(
+        await launchUrlString(
           _mapRelativeUrlRedirect[relativeUrl]!,
           // webOnlyWindowName: '_self',
         );

@@ -2,6 +2,14 @@ part of 'blog_settings.dart';
 
 final photographyPosts = [
   const PhotographyPost(
+    date: '2022-09-25',
+    assetPath: 'assets/photography/2022-09-25.png',
+  ),
+  const PhotographyPost(
+    date: '2022-03-24',
+    assetPath: 'assets/photography/2022-03-24.png',
+  ),
+  const PhotographyPost(
     date: '2021-10-30',
     assetPath: 'assets/photography/2021-10-30.png',
   ),

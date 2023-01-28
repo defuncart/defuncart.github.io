@@ -16,10 +16,10 @@ class Journal extends StatefulWidget {
   const Journal({Key? key}) : super(key: key);
 
   @override
-  _BlogState createState() => _BlogState();
+  State<Journal> createState() => _JournalState();
 }
 
-class _BlogState extends State<Journal> {
+class _JournalState extends State<Journal> {
   Category? _selectedCategory;
 
   final Map<Category, List<Post>> _mapPostsToCategory = {
@@ -77,10 +77,10 @@ class JournalFAB extends StatefulWidget {
   const JournalFAB({Key? key}) : super(key: key);
 
   @override
-  _BlogFABState createState() => _BlogFABState();
+  State<JournalFAB> createState() => _JournalFABState();
 }
 
-class _BlogFABState extends State<JournalFAB> {
+class _JournalFABState extends State<JournalFAB> {
   var _expanded = false;
 
   @override
@@ -88,6 +88,7 @@ class _BlogFABState extends State<JournalFAB> {
     return UnicornDialer(
       backgroundColor: Colors.transparent,
       parentButtonBackground: const Color(0xffE8337E),
+      parentButtonForeground: Colors.white,
       orientation: UnicornOrientation.VERTICAL,
       parentButton: const Icon(Icons.filter_alt),
       childButtons: [
@@ -96,6 +97,7 @@ class _BlogFABState extends State<JournalFAB> {
             currentButton: FloatingActionButton(
               heroTag: category.toString(),
               backgroundColor: _mapCategoryFABButtonColor[category],
+              foregroundColor: Colors.white,
               mini: true,
               onPressed: () {
                 _expanded = false;

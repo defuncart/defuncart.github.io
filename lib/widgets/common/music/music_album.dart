@@ -1,7 +1,7 @@
 import 'package:defuncart_github_io/models/music_album_model.dart';
 import 'package:defuncart_github_io/widgets/common/images/clickable_image.dart';
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:url_launcher/link.dart';
 
 class MusicAlbum extends StatelessWidget {
   const MusicAlbum({
@@ -15,11 +15,15 @@ class MusicAlbum extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        ClickableImage(
-          album.artworkPath,
-          width: 250,
-          height: 250,
-          onPressed: () => launch(album.redirectUrl),
+        Link(
+          uri: Uri.parse(album.redirectUrl),
+          target: LinkTarget.blank,
+          builder: (context, onOpenLink) => ClickableImage(
+            album.artworkPath,
+            width: 250,
+            height: 250,
+            onPressed: () => onOpenLink?.call(),
+          ),
         ),
         const SizedBox(height: 4.0),
         Text(

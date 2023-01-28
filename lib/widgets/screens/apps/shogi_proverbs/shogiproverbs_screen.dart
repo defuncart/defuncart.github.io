@@ -4,7 +4,7 @@ import 'package:defuncart_github_io/widgets/common/responsive/webpage.dart';
 import 'package:defuncart_github_io/widgets/common/text/clickable_text_span.dart';
 import 'package:defuncart_github_io/widgets/screens/apps/_common/download_app_stores.dart';
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 class ShogiProverbsScreen extends StatelessWidget {
   static const relativeUrl = '/apps/shogiproverbs';
@@ -32,11 +32,11 @@ class ShogiProverbsScreen extends StatelessWidget {
                     TextSpan(
                       text:
                           'All proverbs taken from Shogi Kakugen Mame Jiten (Tiny dictionary of Shogi proverbs) by Masahiko Urano, in the form presented on ',
-                      style: Theme.of(context).textTheme.bodyText2,
+                      style: Theme.of(context).textTheme.bodyMedium,
                     ),
                     ClickableTextSpan(
                       text: "Takako Tombo Noda's website",
-                      style: Theme.of(context).textTheme.bodyText2!.copyWith(
+                      style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                             color: Theme.of(context).colorScheme.secondary,
                             fontWeight: FontWeight.bold,
                           ),
@@ -44,7 +44,7 @@ class ShogiProverbsScreen extends StatelessWidget {
                     ),
                     TextSpan(
                       text: '.',
-                      style: Theme.of(context).textTheme.bodyText2,
+                      style: Theme.of(context).textTheme.bodyMedium,
                     ),
                   ],
                 ),
@@ -61,10 +61,10 @@ class ShogiProverbsScreen extends StatelessWidget {
             children: [
               SimpleTextButton(
                 text: 'Privacy Policy',
-                onPressed: () => launch(
+                onPressed: () => launchUrlString(
                   'https://github.com/defuncart/shogi_proverbs/blob/main/privacy_policy.md',
                 ),
-                textStyle: Theme.of(context).textTheme.bodyText2?.copyWith(
+                textStyle: Theme.of(context).textTheme.bodyMedium?.copyWith(
                       color: Theme.of(context).colorScheme.secondary,
                     ),
               ),

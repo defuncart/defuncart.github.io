@@ -7,7 +7,7 @@ import 'package:defuncart_github_io/widgets/screens/apps/_common/download_app_st
 import 'package:defuncart_github_io/widgets/screens/screens.dart';
 import 'package:flutter/material.dart';
 import 'package:iframes/iframes.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 class CaogaCaogaScreen extends StatelessWidget {
   static const relativeUrl = '/apps/caogacaoga';
@@ -60,7 +60,7 @@ class CaogaCaogaScreen extends StatelessWidget {
             child: SimpleTextButton(
               text: 'Full credits',
               onPressed: () => RoutePageManager.of(context).setNewRoutePath(CreditsCaogaCaogaScreen.relativeUrl),
-              textStyle: Theme.of(context).textTheme.bodyText2?.copyWith(
+              textStyle: Theme.of(context).textTheme.bodyMedium?.copyWith(
                     color: Theme.of(context).colorScheme.secondary,
                   ),
             ),
@@ -70,20 +70,20 @@ class CaogaCaogaScreen extends StatelessWidget {
             children: [
               SimpleTextButton(
                 text: 'Press Release',
-                onPressed: () => launch(
+                onPressed: () => launchUrlString(
                   'https://docs.google.com/document/d/1ZGiSJ16ubQHUVeqa_OJ6SnR6OxMgpjAufbXifE2Eotw/edit?usp=sharing',
                 ),
-                textStyle: Theme.of(context).textTheme.bodyText2?.copyWith(
+                textStyle: Theme.of(context).textTheme.bodyMedium?.copyWith(
                       color: Theme.of(context).colorScheme.secondary,
                     ),
               ),
               const SizedBox(width: 4.0),
               SimpleTextButton(
                 text: 'Press Kit',
-                onPressed: () => launch(
+                onPressed: () => launchUrlString(
                   'https://drive.google.com/open?id=1pmhD4wX_5HNh9YVenqv4f4r_nN6b7vtM',
                 ),
-                textStyle: Theme.of(context).textTheme.bodyText2?.copyWith(
+                textStyle: Theme.of(context).textTheme.bodyMedium?.copyWith(
                       color: Theme.of(context).colorScheme.secondary,
                     ),
               ),

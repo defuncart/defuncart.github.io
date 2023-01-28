@@ -48,7 +48,7 @@ class App extends StatelessWidget {
               children: [
                 Text(
                   app.title,
-                  style: Theme.of(context).textTheme.headline5!.copyWith(fontWeight: FontWeight.bold),
+                  style: Theme.of(context).textTheme.headlineSmall!.copyWith(fontWeight: FontWeight.bold),
                 ),
                 const SizedBox(height: 16.0),
                 Image.asset(
@@ -85,7 +85,7 @@ class IOSLogo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       'iOS',
-      style: Theme.of(context).textTheme.bodyText2!.copyWith(
+      style: Theme.of(context).textTheme.bodyMedium!.copyWith(
             fontWeight: FontWeight.bold,
             letterSpacing: -0.5,
           ),
