@@ -101,11 +101,11 @@ const developerSkillsContent1 = [
     value: 4,
   ),
   Skill(
-    title: 'Unity',
-    value: 4,
+    title: 'Android',
+    value: 3,
   ),
   Skill(
-    title: 'Android',
+    title: 'Web',
     value: 3,
   ),
 ];
@@ -134,7 +134,7 @@ const developerSkillsContent3 = [
   ),
   Skill(
     title: 'Firebase',
-    value: 3,
+    value: 4,
   ),
   Skill(
     title: 'UI/UX',
