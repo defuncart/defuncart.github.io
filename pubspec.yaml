@@ -1,50 +1,22 @@
 name: defuncart_github_io
 description: The personal website of James Leahy.
-publish_to: 'none'
-version: 0.0.1+1
+version: 0.0.1
 
 environment:
-  sdk: '>=2.19.0 <3.0.0'
-  flutter: '>=3.7.0 <4.0.0'
+  sdk: ^3.6.0
 
 dependencies:
-  flutter:
-    sdk: flutter
-  flutter_web_plugins:
-    sdk: flutter
-  provider:
-  url_launcher:
-  iframes:
-    path: modules/iframes
-  flutter_html:
-  markdown:
-  resume:
-    path: modules/resume
-  journal:
-    path: modules/journal
+  jaspr: ^0.18.0
+  jaspr_router: ^0.6.4
 
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
-  flutter_lints:
+  build_runner: ^2.4.15
+  jaspr_builder: ^0.18.0
+  jaspr_lints: ^0.3.1
+  jaspr_tailwind: ^0.3.3
+  jaspr_web_compilers: ^4.1.1
+  lints: ^5.0.0
+  test:
 
-flutter:
-  uses-material-design: true
-  assets:
-    - assets/common/icons/
-    - assets/common/social_links/
-    - assets/apps/caogacaoga/
-    - assets/apps/derdiedas/
-    - assets/apps/shogiproverbs/
-    - assets/apps/common/
-    - assets/home/
-    - assets/music/gray_dawn/
-    - assets/music/strawberry_complexity/
-  fonts:
-    - family: OpenSans
-      fonts:
-        - asset: assets/fonts/open_sans/OpenSans-Regular.ttf
-        - asset: assets/fonts/open_sans/OpenSans-Italic.ttf
-          style: italic
-        - asset: assets/fonts/open_sans/OpenSans-Bold.ttf
-          weight: 700
+jaspr:
+  mode: static
