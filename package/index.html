@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="/"/>
+    <meta charset="utf-8"/>
+    <style>
+      @import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap);
+      html, body {
+        font-family: 'Open Sans';
+      }
+    </style>
+    <link href="styles.css" rel="stylesheet"/>
+    <!--$-->
+    <title>Packages</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="The personal website of James Leahy."/>
+    <meta name="keywords" content="defuncart james leahy flutter mobile app developer"/>
+    <meta name="author" content="defuncart"/>
+    <!--/-->
+    <script src="components/header.client.dart.js" defer></script>
+  </head>
+  <body>
+    <div class="min-h-screen">
+      <div class="fixed top-0 w-full bg-white">
+        <div class="md:hidden">
+          <!--@components/header-->
+          <header class="m-4 pr-4 flex flex-row justify-end items-center"><button class="mt-[-8px] mr-[-8px] text-3xl text-text-regular font-bold leading-none">☰</button></header>
+          <div id="drawer" class="fixed top-0 right-0 w-0  h-screen z-10 bg-primary duration-150">
+            <div class="hidden">
+              <div class="flex flex-col">
+                <header class="m-4 pr-4 flex flex-row justify-end items-center"><button class="text-2xl text-white font-bold leading-none">X</button></header>
+                <div class="h-16"></div>
+                <div class="flex flex-col justify-center gap-8 text-3xl text-white text-center font-bold leading-none">
+                  <a href="/">HOME</a>
+                  <a href="/apps">APPS</a>
+                  <a href="/music">MUSIC</a>
+                  <a href="/package">PACKAGES</a>
+                  <a href="/about">ABOUT</a>
+                  <a href="https://defuncart.com/blog" target="_blank">BLOG</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--/@components/header-->
+        </div>
+        <div class="max-md:hidden">
+          <header class="m-4 pr-4 flex justify-between items-center">
+            <a href="/"><img src="assets/home/logo.png"/></a>
+            <div class="flex flex-row justify-end text-xl text-text-regular font-bold gap-x-8">
+              <a class="hover:text-primary" href="/apps">APPS</a>
+              <a class="hover:text-primary" href="/music">MUSIC</a>
+              <a class="hover:text-primary" href="/package">PACKAGES</a>
+              <a class="hover:text-primary" href="/about">ABOUT</a>
+              <a class="hover:text-primary" href="https://defuncart.com/blog" target="_blank">BLOG</a>
+            </div>
+          </header>
+        </div>
+      </div>
+      <div class="h-[64px]"></div>
+      <div class="mx-4 md:mx-8 lg:mx-16 xl:mx-32 2xl:mx-64 mb-4 md:mb-8">
+        <div class="flex flex-wrap gap-8 justify-around">
+          <a class="p-4 shadow-lg rounded-md w-[350px]" href="https://pub.dev/packages/flutter_pseudolocalizor" target="_blank">
+            <div class="grid cols-1 gap-4 place-items-center">
+              <div class="text-xl md:text-2xl font-medium text-text-regular">flutter_pseudolocalizor</div>
+              <div class="text-s md:text-m font-light text-text-light text-center">
+                A Pseudolocalization tool for Flutter and Dart which generates pseudo, nonsensical translations for multiple languages from a given English source.
+              </div>
+            </div>
+          </a>
+          <a class="p-4 shadow-lg rounded-md w-[350px]" href="https://pub.dev/packages/arb_generator" target="_blank">
+            <div class="grid cols-1 gap-4 place-items-center">
+              <div class="text-xl md:text-2xl font-medium text-text-regular">arb_generator</div>
+              <div class="text-s md:text-m font-light text-text-light text-center">A dart tool which generates ARB files from CSV files.</div>
+            </div>
+          </a>
+          <a class="p-4 shadow-lg rounded-md w-[350px]" href="https://github.com/defuncart/app_store_screenshots" target="_blank">
+            <div class="grid cols-1 gap-4 place-items-center">
+              <div class="text-xl md:text-2xl font-medium text-text-regular">app_store_screenshots</div>
+              <div class="text-s md:text-m font-light text-text-light text-center">A flutter tool to generate screenshots and other assets for app stores.</div>
+            </div>
+          </a>
+          <a class="p-4 shadow-lg rounded-md w-[350px]" href="https://pub.dev/packages/dart_test_utils" target="_blank">
+            <div class="grid cols-1 gap-4 place-items-center">
+              <div class="text-xl md:text-2xl font-medium text-text-regular">dart_test_utils</div>
+              <div class="text-s md:text-m font-light text-text-light text-center">A dart tool containing test utils.</div>
+            </div>
+          </a>
+          <a class="p-4 shadow-lg rounded-md w-[350px]" href="https://pub.dev/packages/global_shortcuts" target="_blank">
+            <div class="grid cols-1 gap-4 place-items-center">
+              <div class="text-xl md:text-2xl font-medium text-text-regular">global_shortcuts</div>
+              <div class="text-s md:text-m font-light text-text-light text-center">A macOS plugin which can register a callback for a global keyboard shortcut.</div>
+            </div>
+          </a>
+          <a class="p-4 shadow-lg rounded-md w-[350px]" href="https://pub.dev/packages/shogi" target="_blank">
+            <div class="grid cols-1 gap-4 place-items-center">
+              <div class="text-xl md:text-2xl font-medium text-text-regular">shogi</div>
+              <div class="text-s md:text-m font-light text-text-light text-center">A simple shogi engine for Dart and Flutter.</div>
+            </div>
+          </a>
+          <a class="p-4 shadow-lg rounded-md w-[350px]" href="https://pub.dev/packages/flutter_shogi_board" target="_blank">
+            <div class="grid cols-1 gap-4 place-items-center">
+              <div class="text-xl md:text-2xl font-medium text-text-regular">flutter_shogi_board</div>
+              <div class="text-s md:text-m font-light text-text-light text-center">
+                A shogi board widget for Flutter. This widget can be used to render static game board positions, tsume problems or shogi castles.
+              </div>
+            </div>
+          </a>
+          <a class="p-4 shadow-lg rounded-md w-[350px]" href="https://github.com/defuncart/json_to_csv" target="_blank">
+            <div class="grid cols-1 gap-4 place-items-center">
+              <div class="text-xl md:text-2xl font-medium text-text-regular">json_to_csv</div>
+              <div class="text-s md:text-m font-light text-text-light text-center">A tool to convert multiple json files to csv.</div>
+            </div>
+          </a>
+          <a class="p-4 shadow-lg rounded-md w-[350px]" href="https://pub.dev/packages/flappy_translator" target="_blank">
+            <div class="grid cols-1 gap-4 place-items-center">
+              <div class="text-xl md:text-2xl font-medium text-text-regular">flappy_translator</div>
+              <div class="text-s md:text-m font-light text-text-light text-center">A tool which automatically generates Flutter localization resources from CSV and Excel files.</div>
+            </div>
+          </a>
+          <a class="p-4 shadow-lg rounded-md w-[350px]" href="https://github.com/defuncart/steamgriddb" target="_blank">
+            <div class="grid cols-1 gap-4 place-items-center">
+              <div class="text-xl md:text-2xl font-medium text-text-regular">steamgriddb</div>
+              <div class="text-s md:text-m font-light text-text-light text-center">A dart client for steamgriddb.com.</div>
+            </div>
+          </a>
+          <a class="p-4 shadow-lg rounded-md w-[350px]" href="https://github.com/defuncart/dart_code_coverage" target="_blank">
+            <div class="grid cols-1 gap-4 place-items-center">
+              <div class="text-xl md:text-2xl font-medium text-text-regular">dart_code_coverage</div>
+              <div class="text-s md:text-m font-light text-text-light text-center">A package with helpers for generating and editing code coverage reports in dart.</div>
+            </div>
+          </a>
+          <a class="p-4 shadow-lg rounded-md w-[350px]" href="https://github.com/defuncart/dart_dependencies_report" target="_blank">
+            <div class="grid cols-1 gap-4 place-items-center">
+              <div class="text-xl md:text-2xl font-medium text-text-regular">dart_dependencies_report</div>
+              <div class="text-s md:text-m font-light text-text-light text-center">A package which generates a report of all a project's dependencies.</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="/"/>
+    <meta charset="utf-8"/>
+    <style>
+      @import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap);
+      html, body {
+        font-family: 'Open Sans';
+      }
+    </style>
+    <link href="styles.css" rel="stylesheet"/>
+    <!--$-->
+    <title>Music</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="The personal website of James Leahy."/>
+    <meta name="keywords" content="defuncart james leahy flutter mobile app developer"/>
+    <meta name="author" content="defuncart"/>
+    <!--/-->
+    <script src="components/header.client.dart.js" defer></script>
+  </head>
+  <body>
+    <div class="min-h-screen">
+      <div class="fixed top-0 w-full bg-white">
+        <div class="md:hidden">
+          <!--@components/header-->
+          <header class="m-4 pr-4 flex flex-row justify-end items-center"><button class="mt-[-8px] mr-[-8px] text-3xl text-text-regular font-bold leading-none">☰</button></header>
+          <div id="drawer" class="fixed top-0 right-0 w-0  h-screen z-10 bg-primary duration-150">
+            <div class="hidden">
+              <div class="flex flex-col">
+                <header class="m-4 pr-4 flex flex-row justify-end items-center"><button class="text-2xl text-white font-bold leading-none">X</button></header>
+                <div class="h-16"></div>
+                <div class="flex flex-col justify-center gap-8 text-3xl text-white text-center font-bold leading-none">
+                  <a href="/">HOME</a>
+                  <a href="/apps">APPS</a>
+                  <a href="/music">MUSIC</a>
+                  <a href="/package">PACKAGES</a>
+                  <a href="/about">ABOUT</a>
+                  <a href="https://defuncart.com/blog" target="_blank">BLOG</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--/@components/header-->
+        </div>
+        <div class="max-md:hidden">
+          <header class="m-4 pr-4 flex justify-between items-center">
+            <a href="/"><img src="assets/home/logo.png"/></a>
+            <div class="flex flex-row justify-end text-xl text-text-regular font-bold gap-x-8">
+              <a class="hover:text-primary" href="/apps">APPS</a>
+              <a class="hover:text-primary" href="/music">MUSIC</a>
+              <a class="hover:text-primary" href="/package">PACKAGES</a>
+              <a class="hover:text-primary" href="/about">ABOUT</a>
+              <a class="hover:text-primary" href="https://defuncart.com/blog" target="_blank">BLOG</a>
+            </div>
+          </header>
+        </div>
+      </div>
+      <div class="h-[64px]"></div>
+      <div class="mx-4 md:mx-8 lg:mx-16 xl:mx-32 2xl:mx-64 mb-4 md:mb-8">
+        <div class="flex flex-wrap gap-8 justify-around">
+          <a href="https://graydawn.bandcamp.com/album/die-neumayer" target="_blank">
+            <div class="w-[250px]">
+              <img width="250" height="250" src="assets/music/gray_dawn/dieneumayer.jpg"/>
+              <div class="h-2"></div>
+              <p class="text-s italic text-center text-text-light">Die Neumayer</p>
+            </div>
+          </a>
+          <a href="https://graydawn.bandcamp.com/album/czterna-cie-cz-ci-a-moll" target="_blank">
+            <div class="w-[250px]">
+              <img width="250" height="250" src="assets/music/gray_dawn/czternascieczeciamoll.jpg"/>
+              <div class="h-2"></div>
+              <p class="text-s italic text-center text-text-light">Czternaście części a​-​moll</p>
+            </div>
+          </a>
+          <a href="https://graydawn.bandcamp.com/album/f-r-einen-imagin-ren-film" target="_blank">
+            <div class="w-[250px]">
+              <img width="250" height="250" src="assets/music/gray_dawn/fureinenimaginarenfilm.jpg"/>
+              <div class="h-2"></div>
+              <p class="text-s italic text-center text-text-light">.​.​.​für einen imaginären Film</p>
+            </div>
+          </a>
+          <a href="https://graydawn.bandcamp.com/album/--5" target="_blank">
+            <div class="w-[250px]">
+              <img width="250" height="250" src="assets/music/gray_dawn/zabitytebetsejakdihatyvodoju.jpg"/>
+              <div class="h-2"></div>
+              <p class="text-s italic text-center text-text-light">Забути тебе – це як дихати водою</p>
+            </div>
+          </a>
+          <a href="https://graydawn.bandcamp.com/album/--4" target="_blank">
+            <div class="w-[250px]">
+              <img width="250" height="250" src="assets/music/gray_dawn/pi.jpg"/>
+              <div class="h-2"></div>
+              <p class="text-s italic text-center text-text-light">П</p>
+            </div>
+          </a>
+          <a href="https://graydawn.bandcamp.com/album/--2" target="_blank">
+            <div class="w-[250px]">
+              <img width="250" height="250" src="assets/music/gray_dawn/batkivshchyna.jpg"/>
+              <div class="h-2"></div>
+              <p class="text-s italic text-center text-text-light">Батьківщина</p>
+            </div>
+          </a>
+          <a href="https://graydawn.bandcamp.com/album/-" target="_blank">
+            <div class="w-[250px]">
+              <img width="250" height="250" src="assets/music/gray_dawn/vavilon.jpg"/>
+              <div class="h-2"></div>
+              <p class="text-s italic text-center text-text-light">Вавилон</p>
+            </div>
+          </a>
+          <a href="https://graydawn.bandcamp.com/album/the-light-of-day" target="_blank">
+            <div class="w-[250px]">
+              <img width="250" height="250" src="assets/music/gray_dawn/thelightofday.jpg"/>
+              <div class="h-2"></div>
+              <p class="text-s italic text-center text-text-light">The Light of Day</p>
+            </div>
+          </a>
+          <a href="https://graydawn.bandcamp.com/album/the-dark-of-night" target="_blank">
+            <div class="w-[250px]">
+              <img width="250" height="250" src="assets/music/gray_dawn/thedarkofnight.jpg"/>
+              <div class="h-2"></div>
+              <p class="text-s italic text-center text-text-light">The Dark of Night</p>
+            </div>
+          </a>
+          <a href="https://strawberrycomplexity.bandcamp.com/" target="_blank">
+            <div class="w-[250px]">
+              <img width="250" height="250" src="assets/music/strawberry_complexity/thisispopmusic.jpg"/>
+              <div class="h-2"></div>
+              <p class="text-s italic text-center text-text-light">This is Pop Music</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

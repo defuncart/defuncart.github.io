@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="/"/>
+    <meta charset="utf-8"/>
+    <style>
+      @import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap);
+      html, body {
+        font-family: 'Open Sans';
+      }
+    </style>
+    <link href="styles.css" rel="stylesheet"/>
+    <!--$-->
+    <title>Apps</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="The personal website of James Leahy."/>
+    <meta name="keywords" content="defuncart james leahy flutter mobile app developer"/>
+    <meta name="author" content="defuncart"/>
+    <!--/-->
+    <script src="components/header.client.dart.js" defer></script>
+  </head>
+  <body>
+    <div class="min-h-screen">
+      <div class="fixed top-0 w-full bg-white">
+        <div class="md:hidden">
+          <!--@components/header-->
+          <header class="m-4 pr-4 flex flex-row justify-end items-center"><button class="mt-[-8px] mr-[-8px] text-3xl text-text-regular font-bold leading-none">☰</button></header>
+          <div id="drawer" class="fixed top-0 right-0 w-0  h-screen z-10 bg-primary duration-150">
+            <div class="hidden">
+              <div class="flex flex-col">
+                <header class="m-4 pr-4 flex flex-row justify-end items-center"><button class="text-2xl text-white font-bold leading-none">X</button></header>
+                <div class="h-16"></div>
+                <div class="flex flex-col justify-center gap-8 text-3xl text-white text-center font-bold leading-none">
+                  <a href="/">HOME</a>
+                  <a href="/apps">APPS</a>
+                  <a href="/music">MUSIC</a>
+                  <a href="/package">PACKAGES</a>
+                  <a href="/about">ABOUT</a>
+                  <a href="https://defuncart.com/blog" target="_blank">BLOG</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--/@components/header-->
+        </div>
+        <div class="max-md:hidden">
+          <header class="m-4 pr-4 flex justify-between items-center">
+            <a href="/"><img src="assets/home/logo.png"/></a>
+            <div class="flex flex-row justify-end text-xl text-text-regular font-bold gap-x-8">
+              <a class="hover:text-primary" href="/apps">APPS</a>
+              <a class="hover:text-primary" href="/music">MUSIC</a>
+              <a class="hover:text-primary" href="/package">PACKAGES</a>
+              <a class="hover:text-primary" href="/about">ABOUT</a>
+              <a class="hover:text-primary" href="https://defuncart.com/blog" target="_blank">BLOG</a>
+            </div>
+          </header>
+        </div>
+      </div>
+      <div class="h-[64px]"></div>
+      <div class="mx-4 md:mx-8 lg:mx-16 xl:mx-32 2xl:mx-64 mb-4 md:mb-8">
+        <div class="flex flex-wrap gap-8 justify-around">
+          <div class="p-4 shadow-lg rounded-md w-[325px] h-[350px]">
+            <a href="https://github.com/defuncart/der_die_das" target="_blank">
+              <div class="grid cols-1 gap-4 place-items-center">
+                <div class="text-2xl font-medium text-text-regular">Der Die Das</div>
+                <img class="h-[200px] w-[200px] rounded-[44px]" src="assets/apps/derdiedas/app_icon.png"/>
+                <div class="text-lg font-light text-text-regular text-center">A fun German articles quiz game.</div>
+              </div>
+            </a>
+          </div>
+          <div class="p-4 shadow-lg rounded-md w-[325px] h-[350px]">
+            <a href="https://github.com/defuncart/shogi_proverbs" target="_blank">
+              <div class="grid cols-1 gap-4 place-items-center">
+                <div class="text-2xl font-medium text-text-regular">Shogi Proverbs</div>
+                <img class="h-[200px] w-[200px] rounded-[44px]" src="assets/apps/shogiproverbs/app_icon.png"/>
+                <div class="text-lg font-light text-text-regular text-center">A mobile application containing 50 Shogi proverbs.</div>
+              </div>
+            </a>
+          </div>
+          <div class="p-4 shadow-lg rounded-md w-[325px] h-[350px]">
+            <a href="https://github.com/defuncart/bratacha" target="_blank">
+              <div class="grid cols-1 gap-4 place-items-center">
+                <div class="text-2xl font-medium text-text-regular">Bratacha</div>
+                <img class="h-[200px] w-[200px] rounded-[44px]" src="assets/apps/bratacha/app_icon.png"/>
+                <div class="text-lg font-light text-text-regular text-center">A fun flag quiz game as Gaeilge (and other languages)!</div>
+              </div>
+            </a>
+          </div>
+          <div class="p-4 shadow-lg rounded-md w-[325px] h-[350px]">
+            <a href="https://apps.apple.com/us/app/caoga-caoga-learn-irish/id1336431902" target="_blank">
+              <div class="grid cols-1 gap-4 place-items-center">
+                <div class="text-2xl font-medium text-text-regular">Caoga caoga</div>
+                <img class="h-[200px] w-[200px] rounded-[44px]" src="assets/apps/caogacaoga/app_icon.png"/>
+                <div class="text-lg font-light text-text-regular text-center">A fun Irish vocabulary learning game.</div>
+              </div>
+            </a>
+          </div>
+          <div class="p-4 shadow-lg rounded-md w-[325px] h-[350px]">
+            <a href="https://github.com/defuncart/game_saves_backup" target="_blank">
+              <div class="grid cols-1 gap-4 place-items-center">
+                <div class="text-2xl font-medium text-text-regular">Game Saves Backup</div>
+                <img class="h-[200px] w-[200px] rounded-[44px]" src="assets/apps/game_saves_backup/app_icon.png"/>
+                <div class="text-lg font-light text-text-regular text-center">A linux application to backup game saves.</div>
+              </div>
+            </a>
+          </div>
+          <div class="p-4 shadow-lg rounded-md w-[325px] h-[350px]">
+            <a href="https://github.com/defuncart/non_steam_artwork" target="_blank">
+              <div class="grid cols-1 gap-4 place-items-center">
+                <div class="text-2xl font-medium text-text-regular">Non Steam Artwork</div>
+                <img class="h-[200px] w-[200px] rounded-[44px]" src="assets/apps/non_steam_artwork/app_icon.png"/>
+                <div class="text-lg font-light text-text-regular text-center">A steam deck tool to update artwork for non-steam programs.</div>
+              </div>
+            </a>
+          </div>
+          <div class="p-4 shadow-lg rounded-md w-[325px] h-[350px]">
+            <a href="https://github.com/defuncart/ip_location" target="_blank">
+              <div class="grid cols-1 gap-4 place-items-center">
+                <div class="text-2xl font-medium text-text-regular">IP Location</div>
+                <img class="h-[200px] w-[200px] rounded-[44px]" src="assets/apps/ip_location/app_icon.png"/>
+                <div class="text-lg font-light text-text-regular text-center">A macOS Menu Bar application displaying the current ip address.</div>
+              </div>
+            </a>
+          </div>
+          <div class="p-4 shadow-lg rounded-md w-[325px] h-[350px]">
+            <a href="https://github.com/defuncart/download_manager" target="_blank">
+              <div class="grid cols-1 gap-4 place-items-center">
+                <div class="text-2xl font-medium text-text-regular">Download Manager</div>
+                <img class="h-[200px] w-[200px] rounded-[44px]" src="assets/apps/download_manager/app_icon.png"/>
+                <div class="text-lg font-light text-text-regular text-center">A simple download manager for Android.</div>
+              </div>
+            </a>
+          </div>
+          <div class="p-4 shadow-lg rounded-md w-[325px] h-[350px]">
+            <a href="https://github.com/defuncart/qr_code_wallet" target="_blank">
+              <div class="grid cols-1 gap-4 place-items-center">
+                <div class="text-2xl font-medium text-text-regular">QR Code Wallet</div>
+                <img class="h-[200px] w-[200px] rounded-[44px]" src="assets/apps/qr_code_wallet/app_icon.png"/>
+                <div class="text-lg font-light text-text-regular text-center">An application to scan &amp; save QR codes.</div>
+              </div>
+            </a>
+          </div>
+          <div class="p-4 shadow-lg rounded-md w-[325px] h-[350px]">
+            <a href="https://github.com/defuncart/kifu_viewer" target="_blank">
+              <div class="grid cols-1 gap-4 place-items-center">
+                <div class="text-2xl font-medium text-text-regular">Kifu Viewer</div>
+                <img class="h-[200px] w-[200px] rounded-[44px]" src="assets/apps/kifu_viewer/app_icon.png"/>
+                <div class="text-lg font-light text-text-regular text-center">An application to view Shogi games by loading Kifu files.</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
