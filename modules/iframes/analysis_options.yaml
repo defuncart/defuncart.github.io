@@ -1,7 +1,0 @@
-include: package:flutter_lints/flutter.yaml
-
-analyzer:
-  errors:
-    undefined_prefixed_name: ignore # due to https://github.com/flutter/flutter/issues/41563
-  exclude:
-    - lib/src/widgets/i_frame_widget.dart

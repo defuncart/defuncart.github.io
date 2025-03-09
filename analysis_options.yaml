@@ -1,11 +1,22 @@
-include: package:flutter_lints/flutter.yaml
-
-linter:
-  rules:
-    prefer_relative_imports: false
-    always_use_package_imports: false
-    public_member_api_docs: false
+include: package:lints/recommended.yaml
 
 analyzer:
-  errors:
-    missing_required_param: error
+  # Jaspr has a custom lint package 'jaspr_lints', which needs the 'custom_lint' analyzer plugin.
+  #
+  # Unfortunately, running 'dart analyze' does not pick up the custom lints. Instead, you need to
+  # run a separate command for this: `jaspr analyze`
+  plugins:
+    - custom_lint
+  exclude:
+    - lib/jaspr_options.dart
+linter:
+  rules:
+    - prefer_const_constructors
+    - prefer_const_declarations
+    - prefer_const_literals_to_create_immutables
+
+custom_lint:
+  rules:
+    prefer_html_methods: true
+    sort_children_properties_last: true
+    styles_ordering: true
